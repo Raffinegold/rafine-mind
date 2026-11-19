@@ -1941,13 +1941,13 @@ const COMBOS = {
       wsum += w;
     });
     dist = dist / wsum;
-    var score = Math.round(100 - 0.75 * dist);
-    return Math.max(45, Math.min(98, score));
+    var score = Math.round(100 - 0.62 * dist);
+    return Math.max(54, Math.min(98, score));
   }
   function compatLevel(v){
     if(v >= 85) return { label:"찰떡 궁합", tone:"mint" };
     if(v >= 72) return { label:"편안하게 맞는 궁합", tone:"mint" };
-    if(v >= 60) return { label:"서로를 자극하는 궁합", tone:"sun" };
+    if(v >= 63) return { label:"서로를 자극하는 궁합", tone:"sun" };
     return { label:"서로 다른 결을 배우는 궁합", tone:"coral" };
   }
 
@@ -1971,7 +1971,7 @@ const COMBOS = {
     if(!m) return "코드를 읽지 못했어요.";
     var momT = MOM_TYPES["M"+m[1]], kidT = KID_TYPES["K"+m[2]];
     return "<b>" + esc(code) + "</b> · 어머니 M" + m[1] + "(" + momT.name + ") / 아이 K" + m[2] + "(" + kidT.name + ")" +
-      "<br>축 높낮이 — 어머니 <code>" + decodeMask(m[3]) + "</code>, 아이 <code>" + decodeMask(m[4]) + "</code> " +
+      "<br>· 축 높낮이 — 어머니 <code>" + decodeMask(m[3]) + "</code> / 아이 <code>" + decodeMask(m[4]) + "</code> " +
       "<span style=\"color:#A08A6E\">(순서: 속도·구조·표현·민감, ↑ 높은 쪽)</span>";
   }
 
@@ -2242,7 +2242,7 @@ const COMBOS = {
 
     var gaps = {};
     AXES.forEach(function(a){ gaps[a.id] = Math.round(Math.abs(r.mom.scores[a.id] - r.kid.scores[a.id])); });
-    var sameCnt = AXES.filter(function(a){ return gaps[a.id] < 17; }).length;
+    var sameCnt = AXES.filter(function(a){ return gaps[a.id] <= 20; }).length;
     var farAxis = AXES.slice().sort(function(a,b){ return gaps[b.id]-gaps[a.id]; })[0];
     var closeAxis = AXES.slice().sort(function(a,b){ return gaps[a.id]-gaps[b.id]; })[0];
 
@@ -2270,9 +2270,10 @@ const COMBOS = {
             '</div>' +
           '</div>' +
           '<div class="hero-chips" style="margin:14px 0 0">' +
-            '<span class="chip">' + (sameCnt === 0 ? "네 축 모두 다른 결" : "결이 같은 축 " + sameCnt + "곳") + '</span>' +
-            '<span class="chip">가장 다른 축 · ' + farAxis.short + '</span>' +
-            '<span class="chip">가장 닮은 축 · ' + closeAxis.short + '</span>' +
+            '<span class="chip">' + (sameCnt === 0 ? "네 축 모두 다른 결" : (sameCnt === 4 ? "네 축 모두 가까운 결" : "결이 같은 축 " + sameCnt + "곳")) + '</span>' +
+            (farAxis.id === closeAxis.id
+              ? '<span class="chip">네 축 고른 결</span>'
+              : '<span class="chip">가장 다른 축 · ' + farAxis.short + '</span><span class="chip">가장 닮은 축 · ' + closeAxis.short + '</span>') +
           '</div>' +
         '</div>' +
       '</div>';
@@ -2339,9 +2340,9 @@ const COMBOS = {
       AXES.map(function(a){
         var m = r.mom.scores[a.id], k = r.kid.scores[a.id];
         var g = gaps[a.id];
-        var cls = g < 17 ? "same" : (g <= 33 ? "near" : "far");
-        var gtxt = g < 17 ? "같은 결" : g + "점 차이";
-        var read = AXIS_READ[a.id][g < 17 ? "same" : (m > k ? "momUp" : "kidUp")].replace("{g}", g);
+        var cls = g <= 20 ? "same" : (g <= 45 ? "near" : "far");
+        var gtxt = g <= 20 ? "같은 결" : g + "점 차이";
+        var read = AXIS_READ[a.id][g <= 20 ? "same" : (m > k ? "momUp" : "kidUp")].replace("{g}", g);
         var left = Math.min(m,k), width = Math.abs(m-k);
         return '<div class="axis-block">' +
           '<div class="axis-head"><span class="axis-name">' + a.name + '</span><span class="axis-gap ' + cls + '">' + gtxt + '</span></div>' +
