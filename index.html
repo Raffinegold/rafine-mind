@@ -2240,10 +2240,18 @@ const COMBOS = {
       '<p class="theory-foot">기질은 아이를 규정하는 딱지가 아니라 <b>반응이 먼저 나가는 방향</b>이에요. 16문항의 응답은 지금의 경향을 보여 줄 뿐이고, 실제 무료 체험수업에서 원장이 아이의 반응과 눈빛을 직접 보며 1:1로 정밀하게 맞춰 드립니다.</p>';
   }
 
-  function basisLine(subject, name, share){
+  function sharesFlat(shares, order){
+    var v = order.map(function(id){ return shares[id]; });
+    return (Math.max.apply(null, v) - Math.min.apply(null, v)) <= 8;
+  }
+
+  function basisLine(subject, name, share, flat){
     var who = subject ? subject + " " : "";
-    return '<p class="basis-line">어머님이 체크해 주신 ' + who + '일상 행동 지표로 보면, 지금은 <b>' +
-      name + '</b> 경향이 ' + share + '%로 가장 두드러져 보여요. 확정된 유형이 아니라 지금의 경향입니다.</p>';
+    var body = flat
+      ? '네 가지 경향이 고르게 나타나서, 그중 대표로 <b>' + name + '</b> 경향을 보여 드려요.'
+      : '지금은 <b>' + name + '</b> 경향이 ' + share + '%로 가장 두드러져 보여요.';
+    return '<p class="basis-line">어머님이 체크해 주신 ' + who + '일상 행동 지표로 보면, ' + body +
+      ' 확정된 유형이 아니라 지금의 경향입니다.</p>';
   }
 
   /* ---------- 결과 렌더 ---------- */
@@ -2337,7 +2345,7 @@ const COMBOS = {
       '<div class="pair-row" style="margin-bottom:10px">' +
         '<span class="pair-chip mom"><span class="pe">' + momT.emoji + '</span><span><span class="pl">어머니</span>' + momT.name + '</span></span>' +
       '</div>' +
-      basisLine("", momT.name, r.mom.shares[r.mom.type]) +
+      basisLine("", momT.name, r.mom.shares[r.mom.type], sharesFlat(r.mom.shares, MOM_ORDER)) +
       '<p class="combo-one" style="margin-bottom:10px"><b>' + momT.tagline + '</b></p>' +
       '<p class="axis-read" style="margin-top:0">' + momT.essence + '</p>' +
       typeBars(r.mom, MOM_ORDER, MOM_TYPES, "mom") + flatNote(r.mom, MOM_ORDER) +
@@ -2352,7 +2360,7 @@ const COMBOS = {
       '<div class="pair-row" style="margin-bottom:10px">' +
         '<span class="pair-chip kid"><span class="pe">' + kidT.emoji + '</span><span><span class="pl">아이</span>' + kidT.name + '</span></span>' +
       '</div>' +
-      basisLine("아이의", kidT.name, r.kid.shares[r.kid.type]) +
+      basisLine("아이의", kidT.name, r.kid.shares[r.kid.type], sharesFlat(r.kid.shares, KID_ORDER)) +
       '<p class="combo-one" style="margin-bottom:10px"><b>' + kidT.tagline + '</b></p>' +
       '<p class="axis-read" style="margin-top:0">' + kidT.essence + '</p>' +
       typeBars(r.kid, KID_ORDER, KID_TYPES, "kid") + flatNote(r.kid, KID_ORDER) +
@@ -2522,7 +2530,7 @@ const COMBOS = {
             '<span class="pair-chip kid"><span class="pe">' + kidT.emoji + '</span><span><span class="pl">아이</span>' + kidT.name + '</span></span>' +
             '<span class="kid-mode-badge">간편 진단 · 아이 8문항</span>' +
           '</div>' +
-          basisLine("아이의", kidT.name, r.kid.shares[r.kid.type]) +
+          basisLine("아이의", kidT.name, r.kid.shares[r.kid.type], sharesFlat(r.kid.shares, KID_ORDER)) +
           '<h2 class="combo-title">' + kidT.tagline + '</h2>' +
           '<p class="combo-one">' + kidT.essence + '</p>' +
         '</div>' +
@@ -2564,7 +2572,7 @@ const COMBOS = {
       '<div class="pair-row" style="margin-bottom:10px">' +
         '<span class="pair-chip kid"><span class="pe">' + kidT.emoji + '</span><span><span class="pl">아이</span>' + kidT.name + '</span></span>' +
       '</div>' +
-      basisLine("아이의", kidT.name, r.kid.shares[r.kid.type]) +
+      basisLine("아이의", kidT.name, r.kid.shares[r.kid.type], sharesFlat(r.kid.shares, KID_ORDER)) +
       '<p class="combo-one" style="margin-bottom:10px"><b>' + kidT.tagline + '</b></p>' +
       '<p class="axis-read" style="margin-top:0">' + kidT.essence + '</p>' +
       typeBars(r.kid, KID_ORDER, KID_TYPES, "kid") + flatNote(r.kid, KID_ORDER) +
