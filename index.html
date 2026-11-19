@@ -640,6 +640,66 @@ ul.ticks li::before{content:"";position:absolute;left:2px;top:8px;width:6px;heig
 }
 .kid-gate-btn:hover{background:#F3FBF8}
 
+
+/* 이론적 바탕 · 경향 서술 */
+.theory-note{
+  margin:16px 0 0;padding:12px 14px;border-radius:14px;
+  background:#F6FBF9;border:1px solid #DCEFE8;
+}
+.theory-note b{display:block;font-size:11px;font-weight:800;letter-spacing:.06em;color:var(--mint-deep);margin-bottom:4px}
+.theory-note p{margin:0;font-size:12.3px;line-height:1.72;color:#4A5A55}
+.theory-note p b{display:inline;font-size:inherit;letter-spacing:0;color:#2E5348;font-weight:800}
+
+.basis-band{
+  display:flex;gap:12px;align-items:flex-start;
+  margin:0 0 22px;padding:15px 17px;border-radius:16px;
+  background:linear-gradient(135deg,#FFF7EE,#F3FBF8);
+  border:1px solid #E8DECD;
+}
+.bb-ico{font-size:20px;line-height:1;margin-top:1px}
+.bb-body b{display:block;font-size:14px;font-weight:800;color:var(--ink);margin-bottom:4px}
+.bb-body b::after{content:""}
+.basis-band .bb-body b{font-size:14px}
+.basis-band p{margin:0;font-size:12.5px;line-height:1.72;color:#5B5346}
+.basis-band p b{display:inline;color:#2E5348;font-weight:800}
+
+.basis-line{
+  margin:0 0 10px;padding:9px 12px;border-radius:12px;
+  background:#FBF7F0;border:1px dashed #E7DACA;
+  font-size:12.2px;line-height:1.68;color:#5C5449;
+}
+.basis-line b{color:var(--ink);font-weight:800}
+
+.theory-grid{display:grid;gap:10px;margin:4px 0 12px}
+.theory-item{display:flex;gap:11px;align-items:flex-start;background:#FFFDFA;border:1px solid var(--line);border-radius:14px;padding:12px 14px}
+.ti-no{
+  flex:none;width:22px;height:22px;border-radius:50%;background:var(--mint-bg);color:var(--mint-deep);
+  font-size:11.5px;font-weight:800;display:flex;align-items:center;justify-content:center;margin-top:1px;
+}
+.ti-body{min-width:0;display:flex;flex-direction:column;gap:3px}
+.ti-name{font-size:13.5px;font-weight:800;color:var(--ink);line-height:1.45}
+.ti-theory{font-size:11.5px;font-weight:700;color:var(--mint-deep)}
+.ti-basis{font-size:12.2px;line-height:1.62;color:var(--muted)}
+.ti-poles{font-size:11.8px;color:#8A7F71;display:flex;gap:6px;align-items:center;flex-wrap:wrap}
+.ti-poles em{font-style:normal;font-weight:700;color:var(--ink-2)}
+.ti-arrow{color:#C9B9A4}
+.theory-method{
+  margin:0 0 10px;padding:11px 13px;border-radius:12px;
+  background:#F6FBF9;border:1px solid #DCEFE8;
+  font-size:12.2px;line-height:1.7;color:#4A5A55;
+}
+.theory-method b{color:var(--mint-deep);font-weight:800}
+.theory-foot{margin:2px 0 0;font-size:12.3px;line-height:1.72;color:var(--muted)}
+.theory-foot b{color:var(--ink-2);font-weight:800}
+
+@media (max-width:640px){
+  .theory-note{margin-top:14px;padding:11px 12px}
+  .theory-note p{font-size:11.9px;line-height:1.68}
+  .basis-band{flex-direction:row;padding:13px 14px;gap:10px}
+  .basis-band p{font-size:12px}
+  .theory-item{padding:11px 12px}
+}
+
 @media print{
   .academy-foot{display:block;break-inside:avoid;page-break-inside:avoid}
   .code-pill{border-style:solid}
@@ -667,6 +727,11 @@ ul.ticks li::before{content:"";position:absolute;left:2px;top:8px;width:6px;heig
             <h1 class="title">라피네코딩<br><span class="coral">기질·학습 성향</span> <span class="mint">궁합 테스트</span></h1>
             <p class="lead">엄마와 아이의 기질이 어디서 같고 어디서 다른지, 그 다름을 코딩 수업과 집에서의 대화에 어떻게 쓰면 좋은지 <b>2분</b>이면 알 수 있어요.</p>
             <p class="lead small">정답을 맞히는 검사가 아니라, 우리 아이를 조금 더 편하게 도와주기 위한 대화의 시작입니다.</p>
+
+            <div class="theory-note">
+              <b>이론적 바탕</b>
+              <p>Thomas &amp; Chess의 기질 모델이 다룬 <b>반응 속도 · 규칙성 · 정서 표현 · 자극 민감도</b> 차원을, 미술심리상담사 박종혁 원장이 코딩 학습 상담용으로 <b>4개 행동 지표</b>로 구조화했습니다. 16문항은 모두 집·학교·놀이에서 겪는 일상 장면이라, 학원을 다녀 본 적 없는 분도 바로 답할 수 있어요.</p>
+            </div>
 
             <div class="cred">
               <span class="cred-ico" aria-hidden="true">🎨</span>
@@ -737,7 +802,7 @@ ul.ticks li::before{content:"";position:absolute;left:2px;top:8px;width:6px;heig
         </div>
 
         <p class="start-foot">
-          * 이 리포트는 정식 심리검사가 아니라, 학부모 상담을 위해 만든 참고용 도구입니다. 아이를 판정하지 않고 이해하는 데 씁니다.<br>
+          * Thomas &amp; Chess 기질 모델의 핵심 차원을 미술심리상담사 원장이 상담용 4개 행동 지표로 구조화한 참고 도구입니다. 정식 심리검사가 아니며, 아이를 판정하지 않고 이해하는 데 씁니다.<br>
           입력한 이름은 이 기기 안에서만 쓰이고 어디로도 전송되지 않습니다.
         </p>
 
@@ -779,7 +844,15 @@ ul.ticks li::before{content:"";position:absolute;left:2px;top:8px;width:6px;heig
           <div class="result-date" id="resDate"></div>
           <p class="head-note" id="headNote">두 사람을 비교해 우열을 가리는 자료가 아니에요. 서로 다른 결을 이해하는 데 쓰는 리포트입니다.</p>
         </div>
-        <span class="result-badge" id="resBadge">엄마 8문항 · 아이 8문항 · 미술심리상담사 해석</span>
+        <span class="result-badge" id="resBadge">일상 행동 지표 16문항 · 미술심리상담사 해석</span>
+      </div>
+
+      <div class="basis-band">
+        <span class="bb-ico" aria-hidden="true">🌱</span>
+        <div class="bb-body">
+          <b>이 리포트는 출발점이에요</b>
+          <p>실제 무료 체험수업에서 미술심리상담사 원장이 아이의 반응과 눈빛을 직접 보며 1:1로 정밀하게 맞춰 드립니다. 아래 해석은 어머님이 체크해 주신 일상 행동 지표를 바탕으로 한 <b>경향</b> 해석이라, 한두 항목이 다르게 느껴지는 것은 자연스러운 일이에요.</p>
+        </div>
       </div>
 
       <div class="grid stagger">
@@ -792,6 +865,7 @@ ul.ticks li::before{content:"";position:absolute;left:2px;top:8px;width:6px;heig
         <div class="card" id="planCard"></div>
         <div class="card col-span" id="trackCard"></div>
         <div class="card col-span" id="trialCard"></div>
+        <div class="card col-span" id="theoryCard"></div>
       </div>
 
       <div class="actions no-print">
@@ -822,10 +896,18 @@ ul.ticks li::before{content:"";position:absolute;left:2px;top:8px;width:6px;heig
 <script>
 /* ============ 1. 축 정의 ============ */
 const AXES = [
-  { id:"speed", name:"탐색·실행 속도",  short:"속도", low:"신중 설계형",     high:"직관 도전형" },
-  { id:"rules", name:"구조·규칙 선호",  short:"구조", low:"자유 창작형",     high:"논리 체계형" },
-  { id:"expr",  name:"표현·소통 에너지", short:"표현", low:"내면 몰입형",     high:"적극 표현형" },
-  { id:"sens",  name:"오류·완성 민감도", short:"민감", low:"큰 그림·유연형",  high:"디테일·완벽형" }
+  { id:"speed", name:"탐색·반응 속도",  short:"속도", low:"숙고 설계", high:"즉각 도전",
+    theory:"활동 수준 · 접근-회피 반응",
+    basis:"낯선 것 앞에서 먼저 살피고 들어가는지, 바로 손을 대 보는지" },
+  { id:"rules", name:"구조·규칙 지향성", short:"구조", low:"자유 확산", high:"체계 수렴",
+    theory:"규칙성 · 적응성",
+    basis:"순서와 틀을 스스로 세우는지, 자기 방식으로 넓게 펼치는지" },
+  { id:"expr",  name:"정서·표현 에너지", short:"표현", low:"내면 몰입", high:"외현 소통",
+    theory:"반응 강도 · 정서 표현",
+    basis:"느낀 것을 안에서 다듬은 뒤 말하는지, 그 자리에서 바로 꺼내는지" },
+  { id:"sens",  name:"완성·자극 민감도", short:"민감", low:"유연 수용", high:"세밀 완벽",
+    theory:"반응 역치 · 주의 지속성",
+    basis:"작은 어긋남도 오래 신경 쓰는지, 크게 넘기고 다음으로 가는지" }
 ];
 
 /* ============ 2. 문항 (엄마 8 + 아이 8, 축별 2문항 · 4점 척도) ============ */
@@ -965,57 +1047,58 @@ const QUESTIONS = [
 ];
 
 /* ============ 3. 엄마 4유형 ============ */
+/* 문체 원칙: 단정하지 않고 '지금 보이는 경향'으로 서술한다 */
 const MOM_TYPES = {
   M1:{ emoji:"🔥", name:"직진·추진형", short:"직진",
     tagline:"빠르게 시작하고 끝까지 밀어붙이는 힘",
-    essence:"결정이 빠르고 목표가 또렷해요. 아이의 가능성이 보이면 그 길로 앞당겨 주고 싶은 마음이 먼저 움직입니다. 과정보다 도착점을 먼저 보는 편이라, 아이가 흐지부지될까 봐 조바심이 나기도 해요.",
+    essence:"결정이 빠르고 목표가 또렷한 편이에요. 아이의 가능성이 보이면 그 길로 앞당겨 주고 싶은 마음이 먼저 움직이는 경향이 있습니다. 과정보다 도착점을 먼저 보는 쪽이라, 아이가 흐지부지될까 봐 조바심이 날 때가 있어요.",
     strengths:[
-      "아이의 첫걸음을 하루라도 앞당깁니다",
+      "아이가 첫걸음을 하루라도 앞당기게 됩니다",
       "중간에 포기하지 않게 끝까지 데려갑니다",
       "아이가 ‘나도 될 수 있겠다’는 상상을 먼저 갖게 합니다"
     ],
-    root:"기다리는 시간이 ‘놓치는 시간’처럼 느껴지기 때문이에요.",
+    root:"기다리는 시간이 ‘놓치는 시간’처럼 느껴질 때가 있기 때문이에요.",
     style:"목표를 정했다면, 그 목표가 아이 눈높이인지 한 번만 더 확인해 주세요." },
 
   M2:{ emoji:"🌈", name:"대화·감성형", short:"대화",
     tagline:"아이의 마음을 먼저 읽는 눈",
-    essence:"아이 표정과 말투의 작은 변화를 잘 알아차려요. 대화로 풀어 가는 걸 좋아하고, 규칙은 아이 기분에 맞춰 유연하게 조정하는 편입니다. 다만 마음이 앞서면 루틴이 자주 흔들릴 수 있어요.",
+    essence:"아이 표정과 말투의 작은 변화를 잘 알아차리는 편이에요. 대화로 풀어 가는 쪽을 좋아하고, 규칙은 아이 기분에 맞춰 유연하게 조정하는 경향이 있습니다. 다만 마음이 앞서면 루틴이 흔들릴 때가 있어요.",
     strengths:[
       "아이가 말을 꺼내기 전에 마음을 알아차립니다",
       "코딩을 ‘관계’와 ‘재미’로 기억하게 만듭니다",
       "갈등이 커지기 전에 부드럽게 풀어냅니다"
     ],
-    root:"아이 기분이 상한 게 오래 마음에 남기 때문이에요.",
-    style:"정해진 시간 하나만 지켜 주면, 아이가 안심하고 실력을 쌓아요." },
+    root:"아이 기분이 상한 일이 오래 마음에 남기 때문이에요.",
+    style:"정해진 시간 하나만 지켜 주면, 아이가 안심하고 실력을 쌓습니다." },
 
   M3:{ emoji:"🧭", name:"계획·루틴형", short:"계획",
     tagline:"같은 시간, 같은 자리로 만드는 힘",
-    essence:"정해진 흐름이 있을 때 마음이 놓여요. 매일 같은 시간, 같은 순서로 이어지는 반복을 잘 만들어 내고, 그 안에서 아이가 안심하고 자라도록 돕습니다. 갑작스러운 변화에는 시간이 조금 필요해요.",
+    essence:"정해진 흐름이 있을 때 마음이 놓이는 편이에요. 매일 같은 시간, 같은 순서로 이어지는 반복을 잘 만들어 내고, 그 안에서 아이가 안심하고 자라도록 돕는 경향이 있습니다. 갑작스러운 변화에는 시간이 조금 걸릴 수 있어요.",
     strengths:[
       "슬럼프가 와도 루틴이 아이를 붙잡아 줍니다",
       "아이에게 ‘예측 가능한 하루’를 선물합니다",
       "작은 진전을 꾸준히 쌓아 올립니다"
     ],
-    root:"흐트러지면 아이가 더 힘들어할까 봐 미리 챙기게 돼요.",
+    root:"흐트러지면 아이가 더 힘들어할까 봐 미리 챙기게 되기 때문이에요.",
     style:"가끔은 ‘오늘은 다르게’ 한 번쯤 허용해 주면 아이가 더 신나요." },
 
   M4:{ emoji:"🔍", name:"관찰·섬세형", short:"섬세",
     tagline:"한 번 더 확인하는 꼼꼼함",
-    essence:"세세한 부분이 눈에 잘 들어오고, 시작 전에 충분히 살펴보는 편이에요. 아이 결과물에서 아쉬운 부분이 먼저 보이지만, 그건 더 잘 되길 바라는 마음이 크기 때문입니다. 마음속에서 정리한 뒤에 말을 꺼내는 스타일이에요.",
+    essence:"세세한 부분이 눈에 잘 들어오고, 시작 전에 충분히 살펴보는 편이에요. 아이 결과물에서는 아쉬운 부분이 먼저 보이는 경향이 있는데, 그건 더 잘 되길 바라는 마음이 크기 때문이에요. 마음속에서 정리한 뒤에 말을 꺼내는 스타일입니다.",
     strengths:[
       "아이가 놓친 부분을 정확히 짚어 줍니다",
       "기준을 세워 주어 아이가 스스로 다듬게 합니다",
       "조용히 오래 지켜보며 아이를 이해합니다"
     ],
-    root:"작은 실수가 쌓이면 되돌리기 어려울까 봐 미리 살피게 돼요.",
+    root:"작은 실수가 쌓이면 되돌리기 어려울까 봐 미리 살피게 되기 때문이에요.",
     style:"칭찬을 먼저 말로 꺼내면, 아이가 훨씬 오래 버팁니다." }
 };
 
 /* ============ 4. 아이 4유형 ============ */
 const KID_TYPES = {
   K1:{ emoji:"🚀", name:"도전·실험형", short:"도전",
-    tagline:"일단 눌러 보고 배우는 아이",
-    essence:"새로운 것에 눈이 반짝이고 손이 먼저 움직여요. 해 보면서 익히는 걸 좋아하고, 틀려도 크게 개의치 않습니다. 시작은 누구보다 빠르지만 마무리가 흐려지기 쉬워요.",
+    tagline:"일단 해 보고 배우는 아이",
+    essence:"새로운 것에 눈이 반짝이고 손이 먼저 움직이는 편이에요. 해 보면서 익히는 쪽이고, 틀려도 크게 개의치 않는 경향이 있습니다. 시작은 빠른 대신 마무리가 흐려질 때가 있어요.",
     strengths:[
       "새 도구를 두려움 없이 시도합니다",
       "수업을 금방 활기 있게 만듭니다",
@@ -1026,7 +1109,7 @@ const KID_TYPES = {
 
   K2:{ emoji:"🎤", name:"표현·발표형", short:"표현",
     tagline:"보여 주고 싶어서 못 견디는 아이",
-    essence:"말하고 보여 줄 때 기억이 오래 남아요. 리액션이 크고 사람들 사이에서 에너지를 얻습니다. 혼자 조용히 반복하는 작업에는 금방 흥미를 잃을 수 있어요.",
+    essence:"말하고 보여 줄 때 기억이 오래 남는 편이에요. 리액션이 크고 사람들 사이에서 에너지를 얻는 경향이 있습니다. 혼자 조용히 반복하는 작업에서는 흥미가 빨리 식을 수 있어요.",
     strengths:[
       "배운 것을 바로 말하고 보여 줍니다",
       "친구들의 분위기를 끌어올립니다",
@@ -1037,7 +1120,7 @@ const KID_TYPES = {
 
   K3:{ emoji:"🧩", name:"규칙·설계형", short:"설계",
     tagline:"틀을 세우고 차곡차곡 쌓는 아이",
-    essence:"정해진 순서와 규칙이 있을 때 마음이 놓이고, 한 번 익힌 것은 오래 간직합니다. 계획을 세워 두면 혼자서도 잘 해내요. 대신 순서가 갑자기 바뀌면 다시 적응하는 시간이 필요합니다.",
+    essence:"정해진 순서와 규칙이 있을 때 마음이 놓이는 편이고, 한 번 익힌 것은 오래 간직하는 경향이 있어요. 계획을 세워 두면 혼자서도 잘 해내는 편입니다. 대신 순서가 갑자기 바뀌면 다시 적응하는 시간이 필요해요.",
     strengths:[
       "배운 것을 오래, 정확하게 기억합니다",
       "스스로 순서를 만들어 끝까지 해냅니다",
@@ -1048,7 +1131,7 @@ const KID_TYPES = {
 
   K4:{ emoji:"🦉", name:"몰입·관찰형", short:"몰입",
     tagline:"보는 시간이 길고, 혼자 깊이 파는 아이",
-    essence:"바로 나서기보다 충분히 보고 나서 움직여요. 마음속에서 답을 완성한 뒤에 말하는 편이라 조용해 보여도 생각은 활발합니다. 틀리는 것에 민감해서 한 번 창피하면 오래 기억해요.",
+    essence:"바로 나서기보다 충분히 보고 나서 움직이는 편이에요. 마음속에서 답을 완성한 뒤에 말하는 쪽이라 조용해 보여도 생각은 활발한 경향이 있습니다. 틀리는 것에 예민해서 한 번 창피했던 일이 오래 마음에 남을 수 있어요.",
     strengths:[
       "관찰이 세밀하고 이해가 깊습니다",
       "한 번 말하면 정확합니다",
@@ -2019,10 +2102,10 @@ const COMBOS = {
       return '<line x1="' + cx + '" y1="' + cy + '" x2="' + p[0].toFixed(1) + '" y2="' + p[1].toFixed(1) + '" stroke="#F4EBDD" stroke-width="1"/>';
     }).join("");
     var labels = [
-      { t:"탐색·속도", x:cx, y:cy-R-15, anchor:"middle" },
+      { t:"탐색·반응", x:cx, y:cy-R-15, anchor:"middle" },
       { t:"구조·규칙", x:cx+R+10, y:cy+4, anchor:"start" },
-      { t:"표현·소통", x:cx, y:cy+R+27, anchor:"middle" },
-      { t:"오류·완성", x:cx-R-10, y:cy+4, anchor:"end" }
+      { t:"정서·표현", x:cx, y:cy+R+27, anchor:"middle" },
+      { t:"완성·민감", x:cx-R-10, y:cy+4, anchor:"end" }
     ].map(function(l){
       return '<text x="' + l.x + '" y="' + l.y + '" text-anchor="' + l.anchor + '" font-size="11" font-weight="700" fill="#8A7F72">' + l.t + '</text>';
     }).join("");
@@ -2070,8 +2153,8 @@ const COMBOS = {
       kidUp:"아이의 에너지가 {g}점 높아요. ‘지금 말하고 싶구나’ 한 번만 알아봐 주면 수업 태도가 달라집니다."
     },
     sens:{
-      same:"오류와 완성도에 반응하는 정도가 비슷해요. 기준을 함께 정하기 쉬운 조합입니다.",
-      momUp:"어머니의 디테일 감각이 {g}점 예리해요. 한 번에 하나만 짚어 주는 것만으로 아이가 편해집니다.",
+      same:"완성도와 작은 어긋남에 반응하는 정도가 비슷해요. 기준을 함께 정하기 쉬운 조합입니다.",
+      momUp:"어머니의 세밀함이 {g}점 앞서요. 한 번에 하나만 짚어 주는 것만으로 아이가 편해집니다.",
       kidUp:"아이가 {g}점 더 민감해요. 틀린 것보다 시도한 것을 먼저 말해 주세요."
     }
   };
@@ -2135,6 +2218,34 @@ const COMBOS = {
     return lines.join("\n");
   }
 
+  /* ---------- 이론적 바탕 · 경향 서술 ---------- */
+  function theoryCardHTML(){
+    return '<span class="card-tag">해석의 바탕 · 이론적 근거</span>' +
+      '<h2 class="card-title">이 4개 지표는 어디에서 왔나요</h2>' +
+      '<p class="card-sub">Thomas &amp; Chess의 기질(temperament) 모델이 다룬 핵심 차원을, 미술심리상담사 박종혁 원장이 코딩 학습 상담에 맞게 <b>4개 행동 지표</b>로 구조화했습니다. 정식 심리검사가 아니라 상담을 위한 참고 도구예요.</p>' +
+      '<div class="theory-grid">' +
+        AXES.map(function(a, i){
+          return '<div class="theory-item">' +
+            '<span class="ti-no">' + (i+1) + '</span>' +
+            '<div class="ti-body">' +
+              '<b class="ti-name">' + a.name + '</b>' +
+              '<span class="ti-theory">' + a.theory + '</span>' +
+              '<span class="ti-basis">' + a.basis + ' — 이 차이를 봅니다</span>' +
+              '<span class="ti-poles"><em>' + a.low + '</em><span class="ti-arrow">↔</span><em>' + a.high + '</em></span>' +
+            '</div>' +
+          '</div>';
+        }).join("") +
+      '</div>' +
+      '<p class="theory-method"><b>채점 방식</b> — 축마다 4점 척도 2문항을 합산해 0~100 지표로 환산합니다. 4축 지표를 유형별 축 프로파일과 비교해 가장 가까운 경향을 대표로 삼고, 두 유형이 팽팽할 때는 프로파일 유사도로 한 번 더 판정합니다. 축마다 50점을 기준으로 위·아래 방향(↑↓)을 기록해 결과 코드에 담기 때문에, 상담에서 같은 코드로 같은 해석이 이어집니다.</p>' +
+      '<p class="theory-foot">기질은 아이를 규정하는 딱지가 아니라 <b>반응이 먼저 나가는 방향</b>이에요. 16문항의 응답은 지금의 경향을 보여 줄 뿐이고, 실제 무료 체험수업에서 원장이 아이의 반응과 눈빛을 직접 보며 1:1로 정밀하게 맞춰 드립니다.</p>';
+  }
+
+  function basisLine(subject, name, share){
+    var who = subject ? subject + " " : "";
+    return '<p class="basis-line">어머님이 체크해 주신 ' + who + '일상 행동 지표로 보면, 지금은 <b>' +
+      name + '</b> 경향이 ' + share + '%로 가장 두드러져 보여요. 확정된 유형이 아니라 지금의 경향입니다.</p>';
+  }
+
   /* ---------- 결과 렌더 ---------- */
   function renderResult(){
     if(state.result.mode === "kid"){ renderKidResult(state.result); return; }
@@ -2149,15 +2260,15 @@ const COMBOS = {
   }
 
   function renderFullResult(r){
-    ["#heroCard","#codeCard","#momTypeCard","#kidTypeCard","#axisCard","#transCard","#planCard","#trackCard","#trialCard"].forEach(function(s){ $(s).style.display = ""; });
+    ["#heroCard","#codeCard","#momTypeCard","#kidTypeCard","#axisCard","#transCard","#planCard","#trackCard","#trialCard","#theoryCard"].forEach(function(s){ $(s).style.display = ""; });
     var momT = MOM_TYPES[r.mom.type], kidT = KID_TYPES[r.kid.type];
     var lv = compatLevel(r.compat);
     var momName = state.names.mom || "어머니";
     var kidName = state.names.kid || "아이";
 
     $("#resKicker").textContent = "라피네코딩 기질·학습 성향 리포트";
-    $("#resBadge").textContent = "엄마 8문항 · 아이 8문항 · 미술심리상담사 해석";
-    $("#headNote").textContent = "두 사람을 비교해 우열을 가리는 자료가 아니에요. 서로 다른 결을 이해하는 데 쓰는 리포트입니다.";
+    $("#resBadge").textContent = "일상 행동 지표 16문항 · 미술심리상담사 해석";
+    $("#headNote").textContent = "어머님이 체크해 주신 일상 행동 지표로 본 경향 해석이에요. 두 사람을 비교해 우열을 가리는 자료가 아니라, 서로 다른 결을 이해하는 데 쓰는 리포트입니다.";
     $("#resName").innerHTML = esc(kidName) + ' <span class="amp">×</span> ' + esc(momName);
     $("#resDate").textContent = today() + " · 16문항 · 4개 축 · 결과 코드 " + r.code;
 
@@ -2222,10 +2333,11 @@ const COMBOS = {
 
     /* ③④ 기질 카드 */
     $("#momTypeCard").innerHTML =
-      '<span class="card-tag coral">어머니의 기질</span>' +
+      '<span class="card-tag coral">어머니의 행동 기질 경향</span>' +
       '<div class="pair-row" style="margin-bottom:10px">' +
         '<span class="pair-chip mom"><span class="pe">' + momT.emoji + '</span><span><span class="pl">어머니</span>' + momT.name + '</span></span>' +
       '</div>' +
+      basisLine("", momT.name, r.mom.shares[r.mom.type]) +
       '<p class="combo-one" style="margin-bottom:10px"><b>' + momT.tagline + '</b></p>' +
       '<p class="axis-read" style="margin-top:0">' + momT.essence + '</p>' +
       typeBars(r.mom, MOM_ORDER, MOM_TYPES, "mom") + flatNote(r.mom, MOM_ORDER) +
@@ -2236,10 +2348,11 @@ const COMBOS = {
       '<p class="axis-read" style="color:var(--muted);margin-top:2px"><b style="color:var(--ink-2);font-weight:700">한 가지만 더하면</b> — ' + momT.style + '</p>';
 
     $("#kidTypeCard").innerHTML =
-      '<span class="card-tag mint">아이의 기질</span>' +
+      '<span class="card-tag mint">아이의 행동 기질 경향</span>' +
       '<div class="pair-row" style="margin-bottom:10px">' +
         '<span class="pair-chip kid"><span class="pe">' + kidT.emoji + '</span><span><span class="pl">아이</span>' + kidT.name + '</span></span>' +
       '</div>' +
+      basisLine("아이의", kidT.name, r.kid.shares[r.kid.type]) +
       '<p class="combo-one" style="margin-bottom:10px"><b>' + kidT.tagline + '</b></p>' +
       '<p class="axis-read" style="margin-top:0">' + kidT.essence + '</p>' +
       typeBars(r.kid, KID_ORDER, KID_TYPES, "kid") + flatNote(r.kid, KID_ORDER) +
@@ -2369,6 +2482,9 @@ const COMBOS = {
         '</div>' +
       '</div>';
 
+    /* ⑩ 해석의 바탕 */
+    $("#theoryCard").innerHTML = theoryCardHTML();
+
     /* 버튼 */
     var cs = $("#btnCopySummary"); if(cs) cs.addEventListener("click", function(){ copyText(summaryText(r), "상담 전송용 요약을 복사했어요"); });
     var cc = $("#btnCopyCode"); if(cc) cc.addEventListener("click", function(){ copyText(r.code, "결과 코드 " + r.code + " 복사 완료"); });
@@ -2392,20 +2508,21 @@ const COMBOS = {
     var kidName = state.names.kid || "아이";
 
     $("#resKicker").textContent = "라피네코딩 아이 기질 리포트 · 간편 진단";
-    $("#resBadge").textContent = "아이 8문항 · 4개 축 · 미술심리상담사 해석";
+    $("#resBadge").textContent = "아이 일상 행동 지표 8문항 · 미술심리상담사 해석";
     $("#resName").innerHTML = esc(kidName) + ' <span class="amp">·</span> ' + kidT.name;
     $("#resDate").textContent = today() + " · 아이 8문항 · 4개 축 · 결과 코드 " + r.code;
-    $("#headNote").textContent = "아이 한 사람의 기질을 먼저 본 간편 진단이에요. 엄마 문항까지 함께 답하면 두 사람의 궁합 해석이 더해집니다.";
+    $("#headNote").textContent = "아이 한 사람의 일상 행동 지표로 본 경향 해석이에요. 엄마 문항까지 함께 답하면 두 사람의 궁합 해석이 더해집니다.";
 
     /* ① 아이 기질 요약 */
     card("#heroCard",
-      '<span class="card-tag mint">① 아이 기질 요약</span>' +
+      '<span class="card-tag mint">① 아이 행동 기질 요약</span>' +
       '<div class="hero-grid">' +
         '<div class="hero-left">' +
           '<div class="pair-row">' +
             '<span class="pair-chip kid"><span class="pe">' + kidT.emoji + '</span><span><span class="pl">아이</span>' + kidT.name + '</span></span>' +
             '<span class="kid-mode-badge">간편 진단 · 아이 8문항</span>' +
           '</div>' +
+          basisLine("아이의", kidT.name, r.kid.shares[r.kid.type]) +
           '<h2 class="combo-title">' + kidT.tagline + '</h2>' +
           '<p class="combo-one">' + kidT.essence + '</p>' +
         '</div>' +
@@ -2443,10 +2560,11 @@ const COMBOS = {
 
     /* ③ 아이 기질 */
     card("#kidTypeCard",
-      '<span class="card-tag mint">③ 아이의 기질 · 4축 성향</span>' +
+      '<span class="card-tag mint">③ 아이의 행동 기질 경향 · 4축</span>' +
       '<div class="pair-row" style="margin-bottom:10px">' +
         '<span class="pair-chip kid"><span class="pe">' + kidT.emoji + '</span><span><span class="pl">아이</span>' + kidT.name + '</span></span>' +
       '</div>' +
+      basisLine("아이의", kidT.name, r.kid.shares[r.kid.type]) +
       '<p class="combo-one" style="margin-bottom:10px"><b>' + kidT.tagline + '</b></p>' +
       '<p class="axis-read" style="margin-top:0">' + kidT.essence + '</p>' +
       typeBars(r.kid, KID_ORDER, KID_TYPES, "kid") + flatNote(r.kid, KID_ORDER) +
@@ -2460,6 +2578,9 @@ const COMBOS = {
     card("#momTypeCard", null);
     card("#axisCard", null);
     card("#transCard", null);
+
+    /* 해석의 바탕 */
+    card("#theoryCard", theoryCardHTML());
 
     /* ④ 수업 · 가정 */
     card("#planCard",
