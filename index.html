@@ -1388,7 +1388,7 @@ const COMBOS = {
   one:"둘 다 말이 많은 조합이에요. 수업이 시끌시끌 신나지만, 혼자 몰입해 결과를 만들어 본 경험이 적어요.",
   clash:"아이는 보여 주려고 하고 엄마는 그걸 받아 주느라 시간이 갑니다. 정작 ‘혼자 15분’이 없어서 결과물이 얇아지고, 둘 다 그건 잘 모릅니다. 즐거움과 성취는 다른 근육이에요.",
   bridge:"‘조용한 10분’을 약속하세요. 그 10분은 엄마도 말을 걸지 않고, 아이도 설명하지 않습니다. 끝나면 그때 마음껏 보여 주게 해요.",
-  momView:"애가 재밊게 하는 건 좋은데, 결과물이 늘 비슷해.",
+  momView:"애가 재밌게 하는 건 좋은데, 결과물이 늘 비슷해.",
   kidView:"엄마가 봐 주면 더 신나는데, 왜 혼자 하래?",
   dialogs:[
     {before:"“잠깐만 조용히 해 봐.”",
@@ -2271,9 +2271,11 @@ const COMBOS = {
           '</div>' +
           '<div class="hero-chips" style="margin:14px 0 0">' +
             '<span class="chip">' + (sameCnt === 0 ? "네 축 모두 다른 결" : (sameCnt === 4 ? "네 축 모두 가까운 결" : "결이 같은 축 " + sameCnt + "곳")) + '</span>' +
-            (farAxis.id === closeAxis.id
-              ? '<span class="chip">네 축 고른 결</span>'
-              : '<span class="chip">가장 다른 축 · ' + farAxis.short + '</span><span class="chip">가장 닮은 축 · ' + closeAxis.short + '</span>') +
+            (sameCnt === 4
+              ? ''
+              : (farAxis.id === closeAxis.id
+                  ? '<span class="chip">네 축 고른 결</span>'
+                  : '<span class="chip">가장 다른 축 · ' + farAxis.short + '</span><span class="chip">가장 닮은 축 · ' + closeAxis.short + '</span>')) +
           '</div>' +
         '</div>' +
       '</div>';
