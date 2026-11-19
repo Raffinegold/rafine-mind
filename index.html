@@ -1,0 +1,2546 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover">
+<meta name="color-scheme" content="light">
+<meta name="description" content="라피네코딩컴퓨터학원 두정점의 학부모 상담용 기질·학습 성향 궁합 테스트. 엄마 8문항 + 아이 8문항, 2분이면 우리 아이에게 맞는 코딩 트랙과 체험수업 방식을 알 수 있어요.">
+<meta name="theme-color" content="#3EA391">
+<meta property="og:type" content="website">
+<meta property="og:title" content="라피네코딩 기질·학습 성향 궁합 테스트">
+<meta property="og:description" content="엄마와 아이의 기질을 비교해, 우리 아이에게 맞는 코딩 트랙과 24주 커리큘럼을 알려 드립니다. (라피네코딩컴퓨터학원 두정점)">
+<meta property="og:site_name" content="라피네코딩컴퓨터학원 두정점">
+<title>라피네코딩 기질·학습 성향 궁합 테스트 | 라피네코딩컴퓨터학원 두정점</title>
+<link rel="icon" href="data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 32 32'%3E%3Crect width='32' height='32' rx='9' fill='%233EA391'/%3E%3Cpath d='M11 10l-4 6 4 6M21 10l4 6-4 6' stroke='%23FFF6EA' stroke-width='2' fill='none' stroke-linecap='round' stroke-linejoin='round'/%3E%3C/svg%3E">
+<style>/* ===== 라피네코딩 기질·학습 성향 궁합 리포트 ===== */
+:root{
+  --cream:#FBF7F0;
+  --cream-deep:#F5EDE1;
+  --card:#FFFFFF;
+  --ink:#2E2A26;
+  --ink-2:#4B443C;
+  --muted:#847A6E;
+  --line:#EFE4D6;
+  --line-soft:#F6EEE4;
+  --coral:#EC7A61;
+  --coral-deep:#CC5A41;
+  --coral-bg:#FCEDE7;
+  --mint:#3EA391;
+  --mint-deep:#2C8977;
+  --mint-bg:#E4F3EE;
+  --sun:#F2C063;
+  --lilac:#B9A7D9;
+  --shadow-sm:0 2px 10px rgba(94,74,52,.06);
+  --shadow:0 8px 26px rgba(94,74,52,.08);
+  --shadow-lg:0 16px 44px rgba(94,74,52,.12);
+  --r-lg:26px;
+  --r-md:18px;
+  --r-sm:13px;
+  --font:-apple-system,BlinkMacSystemFont,"Apple SD Gothic Neo","Pretendard","Noto Sans KR","Noto Sans CJK KR","Malgun Gothic",system-ui,sans-serif;
+}
+*{box-sizing:border-box;-webkit-tap-highlight-color:transparent}
+html,body{margin:0;padding:0}
+body{
+  font-family:var(--font);
+  color:var(--ink);
+  background:
+    radial-gradient(1100px 520px at 82% -12%, #FDEBE2 0%, rgba(253,235,226,0) 62%),
+    radial-gradient(900px 520px at -8% 8%, #E7F4EF 0%, rgba(231,244,239,0) 58%),
+    var(--cream);
+  background-attachment:fixed;
+  -webkit-font-smoothing:antialiased;
+  line-height:1.62;
+  word-break:keep-all;
+  overflow-wrap:break-word;
+}
+button{font-family:inherit;color:inherit;border:0;background:none;cursor:pointer}
+input{font-family:inherit}
+.screen{display:none}
+.screen.is-active{display:block}
+.wrap{width:100%;max-width:1100px;margin:0 auto;padding:0 18px 64px}
+
+/* ---------- 상단 브랜드 ---------- */
+.topbar{
+  display:flex;align-items:center;gap:10px;
+  padding:18px 4px 6px;
+}
+.brandmark{
+  width:34px;height:34px;border-radius:12px;flex:none;
+  background:linear-gradient(150deg,var(--mint) 0%,#7FC8B8 55%,var(--coral) 130%);
+  display:grid;place-items:center;box-shadow:var(--shadow-sm);
+}
+.brandmark svg{width:19px;height:19px;display:block}
+.topbar .who{font-size:13px;letter-spacing:.02em;color:var(--muted)}
+.topbar .who b{color:var(--ink-2);font-weight:600}
+
+/* ---------- 시작 화면 ---------- */
+.start-hero{
+  margin-top:14px;
+  background:linear-gradient(168deg,#FFFFFF 0%,#FFFCF7 58%,#FDF3EA 100%);
+  border:1px solid var(--line);
+  border-radius:34px;
+  padding:34px 26px 26px;
+  box-shadow:var(--shadow);
+  position:relative;overflow:hidden;
+}
+.start-hero::after{
+  content:"";position:absolute;right:-70px;top:-70px;width:220px;height:220px;border-radius:50%;
+  background:radial-gradient(circle at 30% 30%,rgba(62,163,145,.16),rgba(62,163,145,0) 70%);
+}
+.start-hero::before{
+  content:"";position:absolute;left:-60px;bottom:-90px;width:200px;height:200px;border-radius:50%;
+  background:radial-gradient(circle at 60% 40%,rgba(236,122,97,.14),rgba(236,122,97,0) 70%);
+}
+.start-hero>*{position:relative;z-index:1}
+.eyebrow{
+  display:inline-flex;align-items:center;gap:6px;
+  font-size:12px;font-weight:600;letter-spacing:.06em;color:var(--mint-deep);
+  background:var(--mint-bg);border-radius:999px;padding:5px 12px;
+}
+h1.title{
+  font-size:clamp(24px,6.4vw,34px);
+  line-height:1.34;margin:16px 0 10px;letter-spacing:-.02em;font-weight:800;
+}
+h1.title .coral{color:var(--coral-deep)}
+h1.title .mint{color:var(--mint-deep)}
+.lead{color:var(--ink-2);font-size:15px;margin:0 0 4px;max-width:56ch}
+.lead.small{font-size:13.5px;color:var(--muted)}
+.hero-chips{display:flex;flex-wrap:wrap;gap:7px;margin:16px 0 22px}
+.chip{
+  font-size:12.5px;font-weight:600;color:var(--ink-2);
+  background:#FFF;border:1px solid var(--line);border-radius:999px;padding:6px 12px;
+  box-shadow:var(--shadow-sm);
+}
+.form-grid{display:grid;gap:12px;margin-bottom:16px}
+@media(min-width:620px){.form-grid{grid-template-columns:1fr 1fr}}
+.field{display:block}
+.field span{display:block;font-size:12.5px;font-weight:600;color:var(--muted);margin-bottom:6px;letter-spacing:.01em}
+.field input{
+  width:100%;border:1px solid var(--line);background:#FFFDFB;border-radius:14px;
+  padding:14px 15px;font-size:16px;color:var(--ink);outline:none;
+  transition:border-color .18s,box-shadow .18s;
+}
+.field input::placeholder{color:#B7AC9E}
+.field input:focus{border-color:var(--mint);box-shadow:0 0 0 4px rgba(62,163,145,.12)}
+
+.btn{
+  display:inline-flex;align-items:center;justify-content:center;gap:8px;
+  border-radius:16px;font-weight:700;font-size:15.5px;
+  padding:16px 20px;transition:transform .14s ease,box-shadow .18s,background .18s;
+  width:100%;
+}
+.btn:active{transform:scale(.986)}
+.btn-primary{
+  background:linear-gradient(135deg,var(--mint) 0%,#4FB6A2 100%);
+  color:#fff;box-shadow:0 10px 24px rgba(62,163,145,.28);
+}
+.btn-primary:hover{box-shadow:0 12px 28px rgba(62,163,145,.34)}
+.btn-ghost{background:#fff;border:1px solid var(--line);color:var(--ink-2);box-shadow:var(--shadow-sm)}
+.btn-coral{background:linear-gradient(135deg,var(--coral) 0%,#F08A72 100%);color:#fff;box-shadow:0 10px 24px rgba(236,122,97,.26)}
+
+.sample-block{margin-top:26px;padding-top:22px;border-top:1px dashed var(--line)}
+.sample-title{display:flex;align-items:center;gap:8px;font-size:13.5px;font-weight:700;color:var(--ink-2);margin-bottom:4px}
+.sample-title .dot{width:6px;height:6px;border-radius:50%;background:var(--coral)}
+.sample-sub{font-size:12.5px;color:var(--muted);margin:0 0 12px}
+.sample-list{display:grid;gap:9px}
+@media(min-width:700px){.sample-list{grid-template-columns:repeat(3,1fr)}}
+.sample{
+  text-align:left;background:#FFFDFA;border:1px solid var(--line);border-radius:16px;
+  padding:13px 14px;display:flex;flex-direction:column;gap:3px;
+  transition:transform .14s,border-color .18s,box-shadow .18s;
+}
+.sample:hover{border-color:#E2D3BE;box-shadow:var(--shadow-sm);transform:translateY(-1px)}
+.sample .s-tag{font-size:11px;font-weight:700;color:var(--coral-deep);letter-spacing:.04em}
+.sample b{font-size:13.5px;font-weight:700;color:var(--ink);line-height:1.45}
+.sample .s-desc{font-size:11.5px;color:var(--muted);line-height:1.5}
+.start-foot{margin-top:22px;font-size:11.5px;color:#A2968A;line-height:1.6}
+
+/* 시작 화면 2단 */
+.hero2{display:grid;gap:24px}
+@media(min-width:940px){.hero2{grid-template-columns:1.18fr .82fr;gap:40px;align-items:start}}
+.hero2-right{display:none}
+@media(min-width:940px){.hero2-right{display:block}}
+.preview-card{
+  background:linear-gradient(180deg,#FFFDF9,#FBF6EE);
+  border:1px solid var(--line);border-radius:22px;padding:22px 20px;
+  box-shadow:var(--shadow-sm);
+}
+.pc-title{font-size:13px;font-weight:800;color:var(--ink-2);margin:0 0 14px;letter-spacing:-.01em}
+.pc-list{list-style:none;margin:0;padding:0;display:grid;gap:12px}
+.pc-list li{display:grid;grid-template-columns:24px 1fr;gap:10px;align-items:start}
+.pc-num{
+  width:22px;height:22px;border-radius:8px;background:var(--mint-bg);color:var(--mint-deep);
+  font-size:11px;font-weight:800;display:grid;place-items:center;margin-top:1px;
+}
+.pc-list b{display:block;font-size:13px;font-weight:700;color:var(--ink);line-height:1.45}
+.pc-list small{display:block;font-size:11.5px;color:var(--muted);line-height:1.55;margin-top:1px}
+.pc-foot{margin:16px 0 0;padding-top:13px;border-top:1px dashed var(--line);font-size:11.5px;color:#A2968A;line-height:1.6}
+
+/* ---------- 문항 화면 ---------- */
+.quiz-top{
+  position:sticky;top:0;z-index:20;
+  backdrop-filter:blur(12px);-webkit-backdrop-filter:blur(12px);
+  background:rgba(251,247,240,.9);
+  padding:12px 0;
+  border-bottom:1px solid rgba(239,228,214,.7);
+}
+.quiz-top-row{display:flex;align-items:center;gap:12px;max-width:700px;margin:0 auto;padding:0 18px}
+.icon-btn{
+  width:38px;height:38px;flex:none;border-radius:12px;display:grid;place-items:center;
+  background:#fff;border:1px solid var(--line);box-shadow:var(--shadow-sm);color:var(--ink-2);
+  transition:opacity .15s,transform .14s;
+}
+.icon-btn:active{transform:scale(.94)}
+.icon-btn:disabled{opacity:.35}
+.progress-wrap{flex:1;min-width:0}
+.progress-meta{display:flex;justify-content:space-between;align-items:baseline;font-size:12px;color:var(--muted);margin-bottom:6px}
+.progress-meta b{color:var(--ink);font-weight:700;font-variant-numeric:tabular-nums}
+.progress{height:8px;border-radius:99px;background:#EFE6DA;overflow:hidden}
+.progress-fill{
+  height:100%;width:0%;border-radius:99px;
+  background:linear-gradient(90deg,var(--coral) 0%,#F0A189 100%);
+  transition:width .42s cubic-bezier(.4,.1,.2,1),background .3s;
+}
+.progress-fill.kid{background:linear-gradient(90deg,var(--mint) 0%,#6FC6B3 100%)}
+
+.quiz-body{max-width:660px;margin:0 auto;padding-top:26px;min-height:calc(100vh - 132px);min-height:calc(100dvh - 132px);display:flex;flex-direction:column;justify-content:center;padding-bottom:40px}
+.person-chip{
+  display:inline-flex;align-items:center;gap:7px;font-size:12.5px;font-weight:700;
+  padding:6px 13px;border-radius:999px;margin-bottom:16px;
+}
+.person-chip.mom{background:var(--coral-bg);color:var(--coral-deep)}
+.person-chip.kid{background:var(--mint-bg);color:var(--mint-deep)}
+.person-chip .p-dot{width:7px;height:7px;border-radius:50%;background:currentColor}
+
+.q-card{
+  background:#fff;border:1px solid var(--line);border-radius:var(--r-lg);
+  padding:24px 20px 20px;box-shadow:var(--shadow);
+}
+.q-num{font-size:12px;font-weight:700;color:#B4A796;letter-spacing:.08em;margin-bottom:8px}
+.q-text{font-size:clamp(18px,4.6vw,21px);font-weight:700;line-height:1.5;margin:0 0 6px;letter-spacing:-.01em}
+.q-hint{font-size:12.5px;color:var(--muted);margin:0 0 18px}
+.opts{display:grid;gap:9px}
+.opt{
+  display:flex;align-items:flex-start;gap:11px;text-align:left;
+  background:#FFFDFB;border:1.5px solid var(--line-soft);border-radius:15px;
+  padding:14px 15px;font-size:14.5px;line-height:1.5;color:var(--ink-2);
+  transition:border-color .16s,background .16s,transform .12s,box-shadow .16s;
+}
+.opt:hover{border-color:#E6D8C6;background:#fff}
+.opt:active{transform:scale(.992)}
+.opt .num{
+  flex:none;width:23px;height:23px;border-radius:50%;display:grid;place-items:center;
+  font-size:11.5px;font-weight:700;color:#A79A8A;background:#F4ECE1;margin-top:1px;
+  transition:background .16s,color .16s;
+}
+.opt .txt{flex:1;min-width:0}
+.opt.mom.is-picked{border-color:var(--coral);background:var(--coral-bg)}
+.opt.mom.is-picked .num{background:var(--coral);color:#fff}
+.opt.kid.is-picked{border-color:var(--mint);background:var(--mint-bg)}
+.opt.kid.is-picked .num{background:var(--mint);color:#fff}
+.opt.is-picked .txt{font-weight:600;color:var(--ink)}
+.q-fade{animation:qIn .3s cubic-bezier(.2,.7,.3,1)}
+@keyframes qIn{from{opacity:0;transform:translateY(10px)}to{opacity:1;transform:none}}
+.quiz-foot{display:flex;justify-content:center;margin-top:18px}
+.link-btn{font-size:12.5px;color:var(--muted);text-decoration:underline;text-underline-offset:3px;padding:8px}
+
+/* ---------- 결과 화면 ---------- */
+.result-head{max-width:1100px;margin:0 auto;padding:16px 2px 14px;display:flex;align-items:flex-end;justify-content:space-between;gap:14px;flex-wrap:wrap}
+.result-head .rh-left{min-width:0}
+.result-kicker{font-size:12px;font-weight:700;letter-spacing:.1em;color:var(--mint-deep);margin-bottom:5px}
+.result-name{font-size:clamp(19px,4.4vw,25px);font-weight:800;letter-spacing:-.02em;margin:0;line-height:1.35}
+.result-name .amp{color:var(--coral);font-weight:700;margin:0 3px}
+.result-date{font-size:12px;color:var(--muted);margin-top:5px}
+.head-note{font-size:12px;color:#94897B;margin:8px 0 0;max-width:52ch;line-height:1.6}
+.result-badge{
+  font-size:11.5px;font-weight:700;color:var(--mint-deep);background:var(--mint-bg);
+  border-radius:999px;padding:7px 13px;white-space:nowrap;
+}
+
+.grid{display:grid;gap:16px}
+@media(min-width:980px){.grid{grid-template-columns:1fr 1fr;align-items:start}.col-span{grid-column:1 / -1}}
+
+.card{
+  background:var(--card);border:1px solid var(--line);border-radius:var(--r-lg);
+  padding:22px 20px;box-shadow:var(--shadow);position:relative;
+}
+@media(min-width:700px){.card{padding:26px 26px}}
+.card.hero{padding:26px 20px 24px}
+@media(min-width:820px){
+  .hero-grid{display:grid;grid-template-columns:1.15fr .85fr;gap:28px;align-items:center}
+  .hero-right{border-left:1px dashed var(--line);padding-left:26px}
+  .hero-right .gauge-row{justify-content:flex-start}
+}
+@media(min-width:700px){.card.hero{padding:32px 32px 28px}}
+.card-tag{
+  display:inline-flex;align-items:center;gap:6px;font-size:11px;font-weight:700;letter-spacing:.06em;
+  color:#9C8F80;background:#F7F1E8;border-radius:8px;padding:4px 9px;margin-bottom:12px;
+}
+.card-tag.coral{color:var(--coral-deep);background:var(--coral-bg)}
+.card-tag.mint{color:var(--mint-deep);background:var(--mint-bg)}
+h2.card-title{font-size:clamp(17px,3.2vw,19.5px);font-weight:800;margin:0 0 4px;letter-spacing:-.02em;line-height:1.42}
+.card-sub{font-size:12.5px;color:var(--muted);margin:0 0 18px}
+
+/* 조합 타이틀 카드 */
+.pair-row{display:flex;align-items:center;gap:10px;flex-wrap:wrap;margin-bottom:16px}
+.pair-chip{
+  display:flex;align-items:center;gap:8px;border-radius:14px;padding:9px 13px;
+  font-size:13.5px;font-weight:700;line-height:1.3;
+}
+.pair-chip .pe{font-size:17px;line-height:1}
+.pair-chip .pl{display:block;font-size:10.5px;font-weight:600;opacity:.75;letter-spacing:.04em;margin-bottom:1px}
+.pair-chip.mom{background:var(--coral-bg);color:var(--coral-deep)}
+.pair-chip.kid{background:var(--mint-bg);color:var(--mint-deep)}
+.pair-x{font-size:15px;color:#C9BBA9;font-weight:700}
+.combo-title{
+  font-size:clamp(21px,5vw,28px);font-weight:800;letter-spacing:-.03em;line-height:1.36;margin:6px 0 10px;
+}
+.combo-title mark{background:linear-gradient(180deg,transparent 58%,#FDE6C9 58%);color:inherit;padding:0 2px}
+.combo-one{font-size:14.5px;color:var(--ink-2);margin:0 0 20px;max-width:56ch}
+
+.gauge-row{display:flex;align-items:center;gap:18px;flex-wrap:wrap;padding-top:2px}
+@media(max-width:600px){
+  .gauge-row{flex-direction:column;align-items:center;text-align:center;gap:10px}
+  .gauge{width:104px;height:104px}
+  .gauge-txt .num{font-size:24px}
+  .gauge-txt .num small{font-size:12px}
+  .gauge-side{min-width:0;width:100%}
+  .hero-right .hero-chips{justify-content:center;margin-top:10px !important}
+  .combo-one{margin-bottom:12px}
+}
+.gauge{position:relative;width:132px;height:132px;flex:none}
+.gauge svg{width:100%;height:100%;display:block;transform:rotate(-90deg)}
+.gauge-txt{position:absolute;inset:0;display:flex;flex-direction:column;align-items:center;justify-content:center;gap:1px}
+.gauge-txt .num{font-size:30px;font-weight:800;letter-spacing:-.03em;line-height:1;font-variant-numeric:tabular-nums}
+.gauge-txt .num small{font-size:14px;font-weight:700;margin-left:1px;opacity:.6}
+.gauge-txt .lab{font-size:10.5px;font-weight:700;color:var(--muted);letter-spacing:.04em}
+.gauge-side{flex:1;min-width:190px}
+.gauge-level{font-size:15.5px;font-weight:800;margin:0 0 4px}
+.gauge-note{font-size:12.5px;color:var(--muted);margin:0;line-height:1.6}
+.mini-axes{display:grid;gap:7px;margin-top:14px}
+.mini-axis{display:grid;grid-template-columns:74px 1fr auto;gap:9px;align-items:center;font-size:11.5px;color:var(--muted)}
+.mini-axis .ma-name{font-weight:700;color:var(--ink-2);font-size:11.5px;white-space:nowrap}
+.mini-axis .ma-bar{height:7px;border-radius:99px;background:#F3ECE2;overflow:hidden;display:flex}
+.mini-axis .ma-fill{height:100%;border-radius:99px;background:linear-gradient(90deg,#F2A88F,var(--coral))}
+.mini-axis .ma-val{font-variant-numeric:tabular-nums;font-weight:700;color:var(--ink-2);font-size:11px}
+
+/* 4축 차트 */
+.axis-layout{display:grid;gap:20px}
+@media(min-width:820px){.axis-layout{grid-template-columns:308px 1fr;gap:30px;align-items:start}}
+.radar-box{
+  background:linear-gradient(175deg,#FDFAF4,#FFFFFF);
+  border:1px solid var(--line-soft);border-radius:20px;padding:6px 8px 2px;
+}
+.radar-box svg{display:block;width:100%;height:auto}
+.legend{display:flex;gap:14px;flex-wrap:wrap;margin:2px 0 16px;font-size:12px;color:var(--muted)}
+.legend i{display:inline-block;width:9px;height:9px;border-radius:50%;margin-right:5px;vertical-align:1px}
+.legend .l-mom i{background:var(--coral)}
+.legend .l-kid i{background:var(--mint)}
+.axis-block{margin-bottom:18px}
+.axis-head{display:flex;justify-content:space-between;align-items:baseline;gap:10px;margin-bottom:2px}
+.axis-name{font-size:13.5px;font-weight:700;color:var(--ink)}
+.axis-gap{font-size:11px;font-weight:700;padding:2px 8px;border-radius:99px;white-space:nowrap}
+.axis-gap.same{background:#F2F6F1;color:#6E8C69}
+.axis-gap.near{background:#FDF4E5;color:#A5813C}
+.axis-gap.far{background:var(--coral-bg);color:var(--coral-deep)}
+.axis-poles{display:flex;justify-content:space-between;font-size:10.5px;color:#AFA295;margin-bottom:6px}
+.axis-track{position:relative;height:26px}
+.axis-rail{position:absolute;left:9px;right:9px;top:0;bottom:0}
+.axis-line{position:absolute;left:0;right:0;top:12px;height:2px;border-radius:2px;background:repeating-linear-gradient(90deg,#EDE3D5 0 5px,transparent 5px 10px)}
+.axis-link{position:absolute;top:11px;height:4px;border-radius:99px;background:linear-gradient(90deg,var(--coral),var(--mint));opacity:.35}
+.axis-dot{position:absolute;top:5px;width:16px;height:16px;border-radius:50%;transform:translateX(-50%);border:3px solid #fff;box-shadow:0 2px 6px rgba(94,74,52,.18)}
+.axis-dot.mom{background:var(--coral);z-index:3}
+.axis-dot.kid{background:var(--mint);z-index:2}
+.axis-read{font-size:12.5px;color:var(--ink-2);margin:8px 0 0;line-height:1.6}
+.axis-read b.m{color:var(--coral-deep);font-weight:700}
+.axis-read b.k{color:var(--mint-deep);font-weight:700}
+
+/* 속마음 통역기 */
+.translate{display:grid;gap:12px;margin-bottom:18px}
+@media(min-width:620px){.translate{grid-template-columns:1fr 1fr}}
+.bubble{
+  border-radius:18px;padding:15px 16px;position:relative;font-size:13.5px;line-height:1.62;
+}
+.bubble .who{display:flex;align-items:center;gap:6px;font-size:11px;font-weight:800;letter-spacing:.05em;margin-bottom:7px}
+.bubble p{margin:0;color:var(--ink-2)}
+.bubble.mom{background:var(--coral-bg);border:1px solid #F8DCD2}
+.bubble.mom .who{color:var(--coral-deep)}
+.bubble.kid{background:var(--mint-bg);border:1px solid #CFE9E1}
+.bubble.kid .who{color:var(--mint-deep)}
+.fix-title{display:flex;align-items:center;gap:8px;font-size:13px;font-weight:800;color:var(--ink);margin:20px 0 10px}
+.fix-title .bar{width:16px;height:3px;border-radius:2px;background:var(--sun)}
+.dialog{display:grid;gap:7px;margin-bottom:12px}
+.say{display:grid;grid-template-columns:22px 1fr;gap:9px;font-size:13.5px;line-height:1.6;border-radius:13px;padding:11px 13px}
+.say .mk{font-size:13px;line-height:1.5}
+.say.bad{background:#FBF3F1;border:1px solid #F3E0DA}
+.say.bad .mk{color:#D08B78}
+.say.good{background:#F1F8F5;border:1px solid #D8ECE4}
+.say.good .mk{color:#3E9B85}
+.say .lbl{font-size:10.5px;font-weight:800;letter-spacing:.04em;display:block;margin-bottom:2px;opacity:.85}
+.say.bad .lbl{color:#B9705D}
+.say.good .lbl{color:#2F8B76}
+.say .q{color:var(--ink-2)}
+.say .q em{font-style:normal;background:linear-gradient(180deg,transparent 62%,#FFF0C9 62%)}
+
+/* 수업 / 가정 */
+.panel{border:1px solid var(--line);border-radius:var(--r-md);padding:16px;background:#FFFDFA}
+.panel + .panel{margin-top:12px}
+.panel-head{display:flex;align-items:center;gap:8px;font-size:13.5px;font-weight:800;margin-bottom:10px}
+.panel-head .pe{font-size:16px}
+.panel.class{background:linear-gradient(170deg,#F4FAF8,#FFFFFF);border-color:#DCEDE7}
+.panel.home{background:linear-gradient(170deg,#FEF7F0,#FFFFFF);border-color:#F5E3D3}
+ul.ticks{margin:0;padding:0;list-style:none;display:grid;gap:8px}
+ul.ticks li{position:relative;padding-left:19px;font-size:13px;line-height:1.62;color:var(--ink-2)}
+ul.ticks li::before{content:"";position:absolute;left:2px;top:8px;width:6px;height:6px;border-radius:50%;background:#CFE3DC}
+.panel.home ul.ticks li::before{background:#F3D7BE}
+.routine{display:grid;gap:0;margin-top:2px}
+.routine-item{display:grid;grid-template-columns:52px 1fr;gap:12px;position:relative;padding-bottom:12px}
+.routine-item:last-child{padding-bottom:0}
+.routine-item .t{
+  font-size:10.5px;font-weight:800;color:var(--coral-deep);background:#fff;border:1px solid #F5E1D3;
+  border-radius:8px;padding:4px 0;text-align:center;height:24px;line-height:1.4;font-variant-numeric:tabular-nums;
+}
+.routine-item .rt{font-size:12.8px;color:var(--ink-2);line-height:1.58;padding-top:1px}
+.routine-item::after{content:"";position:absolute;left:25px;top:28px;bottom:0;width:1px;background:#F1E2D2}
+.routine-item:last-child::after{display:none}
+
+/* 원장님 모드 */
+.teacher-toggle{
+  margin:18px auto 0;max-width:1100px;display:flex;justify-content:center;
+}
+.toggle-btn{
+  display:inline-flex;align-items:center;gap:9px;
+  background:#2E2A26;color:#FCF7EF;border-radius:999px;padding:13px 20px;
+  font-size:13.5px;font-weight:700;box-shadow:0 10px 24px rgba(46,42,38,.22);
+  transition:transform .14s,box-shadow .2s;
+}
+.toggle-btn:active{transform:scale(.98)}
+.toggle-btn .sw{
+  width:30px;height:17px;border-radius:99px;background:rgba(255,255,255,.22);position:relative;flex:none;transition:background .2s;
+}
+.toggle-btn .sw::after{content:"";position:absolute;top:2px;left:2px;width:13px;height:13px;border-radius:50%;background:#fff;transition:transform .22s}
+.toggle-btn[aria-pressed="true"] .sw{background:var(--sun)}
+.toggle-btn[aria-pressed="true"] .sw::after{transform:translateX(13px)}
+
+.teacher{
+  display:grid;grid-template-rows:0fr;transition:grid-template-rows .38s cubic-bezier(.4,.1,.2,1),opacity .3s,margin .3s;
+  opacity:0;margin-top:0;overflow:hidden;
+}
+.teacher.open{grid-template-rows:1fr;opacity:1;margin-top:16px}
+.teacher-inner{min-height:0;overflow:hidden}
+.teacher .card{
+  background:linear-gradient(175deg,#FFFDF8,#FBF6EC);
+  border:1.5px dashed #D9C9B2;
+}
+.t-badge{display:inline-flex;align-items:center;gap:6px;font-size:10.5px;font-weight:800;letter-spacing:.06em;color:#8A7357;background:#F3E9DA;border-radius:7px;padding:4px 9px;margin-bottom:12px}
+.opening{
+  background:#fff;border:1px solid #EFE2CF;border-left:3px solid var(--sun);border-radius:12px;
+  padding:14px 16px;font-size:13.5px;line-height:1.72;color:var(--ink-2);margin:0 0 14px;position:relative;
+}
+.opening .qmark{font-size:20px;color:#E4CB9E;line-height:1;display:block;margin-bottom:2px}
+.opening-foot{display:flex;justify-content:flex-end;margin:-8px 0 16px}
+.copy-btn{font-size:11px;font-weight:700;color:#8A7357;
+  background:#FBF3E6;border-radius:8px;padding:6px 11px;border:1px solid #EDDFC8;transition:background .15s}
+.copy-btn:hover{background:#F7EDDC}
+.t-grid{display:grid;gap:12px}
+@media(min-width:700px){.t-grid{grid-template-columns:1.15fr 1fr}}
+.t-box{background:#fff;border:1px solid #EFE2CF;border-radius:13px;padding:14px 15px}
+.t-box h4{margin:0 0 8px;font-size:12.5px;font-weight:800;color:#6E5B45;display:flex;align-items:center;gap:6px}
+.t-box ul{margin:0;padding:0;list-style:none;display:grid;gap:7px}
+.t-box li{font-size:12.8px;line-height:1.6;color:var(--ink-2);padding-left:16px;position:relative}
+.t-box li::before{content:"";position:absolute;left:0;top:8px;width:5px;height:5px;border-radius:50%;background:#DCC7A6}
+.t-box.risk{border-color:#F1D9D0;background:#FFFBFA}
+.t-box.risk h4{color:#A85F49}
+.t-box.risk li::before{background:#EFBCA9}
+
+/* 푸터 액션 */
+.actions{display:grid;gap:10px;margin-top:18px}
+@media(min-width:620px){.actions{grid-template-columns:1fr 1fr}}
+.actions .btn{padding:15px 18px;font-size:14.5px}
+.sync{
+  display:flex;align-items:center;gap:10px;margin-top:12px;
+  background:#F6F2EC;border:1px dashed #DDD2C2;border-radius:14px;padding:12px 14px;font-size:12px;color:#8A7E6E;
+}
+.sync .sync-ico{font-size:15px;flex:none}
+.sync b{color:#6E6355;font-weight:700}
+.sync .ok{margin-left:auto;font-size:10.5px;font-weight:800;color:var(--mint-deep);background:var(--mint-bg);border-radius:99px;padding:2px 8px;white-space:nowrap}
+.disclaimer{margin-top:16px;font-size:11px;color:#A99D8F;line-height:1.65;text-align:center;max-width:56ch;margin-left:auto;margin-right:auto}
+.disclaimer b{color:#8C7F70}
+
+/* 토스트 */
+.toast{
+  position:fixed;left:50%;bottom:26px;transform:translate(-50%,20px);
+  background:#2E2A26;color:#FCF7EF;font-size:12.5px;font-weight:600;
+  border-radius:12px;padding:12px 18px;box-shadow:0 12px 30px rgba(0,0,0,.22);
+  opacity:0;pointer-events:none;transition:opacity .25s,transform .25s;z-index:99;max-width:86vw;text-align:center;
+}
+.toast.show{opacity:1;transform:translate(-50%,0)}
+
+.fade-in{animation:fadeIn .45s ease both}
+@keyframes fadeIn{from{opacity:0;transform:translateY(12px)}to{opacity:1;transform:none}}
+.stagger>*{animation:fadeIn .5s ease both}
+.stagger>*:nth-child(2){animation-delay:.06s}
+.stagger>*:nth-child(3){animation-delay:.12s}
+.stagger>*:nth-child(4){animation-delay:.18s}
+.stagger>*:nth-child(5){animation-delay:.24s}
+.stagger>*:nth-child(6){animation-delay:.3s}
+
+/* 인쇄 */
+@media print{
+  body{background:#fff !important}
+  .no-print{display:none !important}
+  .wrap{max-width:100%;padding:0}
+  .card{box-shadow:none !important;border:1px solid #E3D9CB !important;break-inside:avoid;page-break-inside:avoid}
+  .grid{display:block}
+  .card{margin-bottom:12px}
+  .teacher{display:block;opacity:1;margin-top:12px;grid-template-rows:1fr}
+  .result-head{padding-top:0}
+  @page{margin:12mm}
+}
+@media (prefers-reduced-motion:reduce){
+  *{animation:none !important;transition:none !important}
+}
+/* ===== 라피네코딩 확장 ===== */
+.opt-mark{font-style:normal;font-size:11px;color:#B4A796;font-weight:500}
+
+/* 원장 신뢰 배지 */
+.cred{
+  display:flex;gap:12px;align-items:flex-start;
+  background:linear-gradient(152deg,#EFF8F5 0%,#F8FCFA 70%,#FFF9F2 100%);
+  border:1px solid #D8ECE5;border-radius:18px;padding:14px 16px;margin:18px 0 4px;
+}
+.cred .cred-ico{
+  flex:none;width:34px;height:34px;border-radius:11px;display:grid;place-items:center;
+  background:#fff;border:1px solid #DCEFE8;box-shadow:var(--shadow-sm);font-size:17px;
+}
+.cred .cred-body{min-width:0}
+.cred b{display:block;font-size:13px;font-weight:800;color:var(--mint-deep);letter-spacing:-.01em;margin-bottom:3px}
+.cred p{margin:0;font-size:12.3px;line-height:1.62;color:var(--ink-2)}
+
+/* 학원 정보 스트립 */
+.academy-strip{
+  display:flex;flex-wrap:wrap;gap:6px 14px;align-items:center;
+  margin-top:18px;padding-top:14px;border-top:1px solid var(--line);
+  font-size:11.5px;color:var(--muted);
+}
+.academy-strip b{color:var(--ink-2);font-weight:700}
+.academy-strip a{color:var(--mint-deep);text-decoration:none;font-weight:700;border-bottom:1px solid #CFE7DF;padding-bottom:1px}
+
+/* 결과 코드 카드 */
+.code-wrap{display:grid;gap:16px}
+@media(min-width:820px){.code-wrap{grid-template-columns:1fr 1fr;gap:26px;align-items:center}}
+.code-left{min-width:0}
+.code-line{display:flex;align-items:center;gap:10px;flex-wrap:wrap;margin:2px 0 10px}
+.code-pill{
+  font-family:ui-monospace,SFMono-Regular,Menlo,Consolas,monospace;
+  font-size:clamp(23px,5.6vw,29px);font-weight:800;letter-spacing:.09em;line-height:1;
+  color:var(--ink);background:#FBF6EE;border:1.6px dashed #D6C4AC;border-radius:15px;
+  padding:13px 17px;
+}
+.code-type{
+  font-size:12px;font-weight:700;color:var(--mint-deep);background:var(--mint-bg);
+  border-radius:999px;padding:7px 12px;white-space:nowrap;
+}
+.code-note{font-size:12.3px;color:var(--muted);line-height:1.62;margin:0}
+.code-btns{display:grid;gap:9px}
+.code-btns .btn{padding:15px 16px;font-size:14.5px}
+.btn-mint{background:linear-gradient(135deg,#2E8F7C 0%,#3EA391 100%);color:#fff;box-shadow:0 10px 24px rgba(46,143,124,.24)}
+
+/* 추천 트랙 */
+.track-hero{
+  display:flex;flex-wrap:wrap;gap:14px;align-items:center;justify-content:space-between;
+  background:linear-gradient(160deg,#F1F9F6,#FFFFFF);border:1px solid #DCEEE7;border-radius:20px;
+  padding:16px 18px;margin-bottom:16px;
+}
+.track-main{min-width:0}
+.track-kicker{font-size:11px;font-weight:800;letter-spacing:.06em;color:var(--mint-deep);margin-bottom:4px}
+.track-name{font-size:clamp(19px,4.6vw,23px);font-weight:800;letter-spacing:-.02em;line-height:1.3;margin:0 0 5px}
+.track-why{font-size:12.6px;color:var(--ink-2);margin:0;line-height:1.62;max-width:52ch}
+.track-alt{
+  flex:none;font-size:11.5px;font-weight:700;color:#7A6C5A;background:#FBF5EC;
+  border:1px solid #EFE1CE;border-radius:13px;padding:10px 13px;line-height:1.55;
+}
+.track-alt b{display:block;font-size:10.5px;letter-spacing:.05em;color:#A08A6E;font-weight:800;margin-bottom:2px}
+.stage-flow{display:flex;gap:5px;margin:0 0 16px;flex-wrap:wrap}
+.stage-flow span{
+  flex:1;min-width:44px;text-align:center;font-size:10.5px;font-weight:700;color:#8A7E6E;
+  background:#F6F1E9;border-radius:999px;padding:5px 4px;white-space:nowrap;
+}
+.stage-flow span.on{background:var(--mint-bg);color:var(--mint-deep)}
+.stage-list{display:grid;gap:9px}
+@media(min-width:700px){.stage-list{grid-template-columns:1fr 1fr}}
+.stage{
+  border:1px solid var(--line);border-radius:15px;padding:13px 14px;background:#FFFDFA;
+}
+.stage-top{display:flex;align-items:baseline;gap:8px;margin-bottom:5px}
+.stage-idx{
+  flex:none;font-size:10.5px;font-weight:800;color:var(--coral-deep);background:var(--coral-bg);
+  border-radius:7px;padding:2px 7px;
+}
+.stage-name{font-size:13px;font-weight:800;color:var(--ink);line-height:1.4}
+.stage-weeks{font-size:10.5px;color:#A2968A;font-weight:700;margin-left:auto;white-space:nowrap}
+.stage-goal{font-size:12.2px;color:var(--ink-2);line-height:1.6;margin:0 0 6px}
+.stage-acts{margin:0;padding:0;list-style:none;display:grid;gap:3px}
+.stage-acts li{position:relative;padding-left:13px;font-size:11.8px;color:var(--muted);line-height:1.55}
+.stage-acts li::before{content:"";position:absolute;left:2px;top:7px;width:4px;height:4px;border-radius:50%;background:#CFE3DC}
+.stage-out{
+  margin-top:7px;font-size:11.5px;font-weight:700;color:var(--mint-deep);
+  background:#F2FAF7;border-radius:9px;padding:5px 9px;line-height:1.5;
+}
+
+/* 체험수업 매칭 */
+.trial-grid{display:grid;gap:14px}
+@media(min-width:820px){.trial-grid{grid-template-columns:1.05fr .95fr;gap:26px;align-items:start}}
+.trial-badge{display:inline-flex;align-items:center;gap:7px;font-size:11.5px;font-weight:800;
+  color:#8A6034;background:#FDF2E2;border-radius:999px;padding:6px 12px;margin-bottom:10px}
+.trial-title{font-size:clamp(17px,3.6vw,20px);font-weight:800;letter-spacing:-.02em;margin:0 0 6px;line-height:1.4}
+.trial-sub{font-size:12.6px;color:var(--muted);margin:0 0 12px;line-height:1.6}
+.trial-steps{display:grid;gap:8px;margin:0;padding:0;list-style:none}
+.trial-step{display:grid;grid-template-columns:44px 1fr;gap:10px;align-items:start}
+.trial-step .tt{
+  font-size:10.5px;font-weight:800;color:var(--coral-deep);background:#fff;border:1px solid #F5E1D3;
+  border-radius:8px;padding:4px 0;text-align:center;font-variant-numeric:tabular-nums;
+}
+.trial-step .tx{font-size:12.6px;color:var(--ink-2);line-height:1.6;padding-top:1px}
+.trial-point{
+  background:#FBF7F0;border:1px dashed #E2D3BE;border-radius:15px;padding:14px 15px;
+}
+.trial-point b{display:block;font-size:12px;font-weight:800;color:#8A7357;margin-bottom:6px}
+.trial-point p{margin:0;font-size:12.4px;line-height:1.65;color:var(--ink-2)}
+
+/* 하단 상담 CTA */
+.academy-foot{
+  margin-top:20px;background:linear-gradient(165deg,#FFFFFF,#FFF9F1);
+  border:1px solid var(--line);border-radius:24px;padding:20px 18px;box-shadow:var(--shadow-sm);
+}
+.af-title{font-size:15px;font-weight:800;letter-spacing:-.02em;margin-bottom:5px;line-height:1.45}
+.af-sub{font-size:12.4px;color:var(--muted);margin:0 0 14px;line-height:1.62}
+.cta-row{display:grid;gap:9px}
+@media(min-width:620px){.cta-row{grid-template-columns:1fr 1fr}}
+.cta-row .btn{text-decoration:none;padding:15px 16px;font-size:14.5px}
+.btn-kakao{background:#FEE500;color:#3C1E1E;box-shadow:0 8px 20px rgba(254,229,0,.28)}
+.btn-tel{background:#fff;border:1px solid var(--line);color:var(--ink-2);box-shadow:var(--shadow-sm)}
+.af-info{margin:13px 0 0;font-size:11.3px;color:#A2968A;line-height:1.6}
+
+/* 원장 가이드 확장 */
+.code-decode{
+  display:grid;gap:4px;background:#fff;border:1px solid #EFE2CF;border-radius:12px;
+  padding:11px 13px;margin-bottom:14px;font-size:12.2px;color:var(--ink-2);line-height:1.6;
+}
+.code-decode b{color:#6E5B45;font-weight:800}
+.code-decode code{font-family:ui-monospace,Menlo,monospace;font-weight:700;color:var(--coral-deep)}
+
+@media print{
+  .academy-foot{display:block;break-inside:avoid;page-break-inside:avoid}
+  .code-pill{border-style:solid}
+}
+
+</style>
+</head>
+<body>
+<div id="app">
+
+  <!-- ================= 시작 ================= -->
+  <section id="screen-start" class="screen is-active">
+    <div class="wrap">
+      <div class="topbar">
+        <span class="brandmark" aria-hidden="true">
+          <svg viewBox="0 0 24 24" fill="none" aria-hidden="true"><path d="M8.4 7.6 4.2 12l4.2 4.4" stroke="#fff" stroke-width="1.9" stroke-linecap="round" stroke-linejoin="round"/><path d="M15.6 7.6 19.8 12l-4.2 4.4" stroke="#fff" stroke-width="1.9" stroke-linecap="round" stroke-linejoin="round"/><path d="M13.2 5.6 10.8 18.4" stroke="#fff" stroke-width="1.5" stroke-linecap="round" opacity=".85"/></svg>
+        </span>
+        <span class="who">라피네코딩컴퓨터학원 <b>두정점</b> · 학부모 상담 도구</span>
+      </div>
+
+      <div class="start-hero">
+        <div class="hero2">
+          <div class="hero2-left">
+            <span class="eyebrow">✦ 엄마 × 아이 기질 궁합 · 코딩 학습 코칭</span>
+            <h1 class="title">라피네코딩<br><span class="coral">기질·학습 성향</span> <span class="mint">궁합 테스트</span></h1>
+            <p class="lead">엄마와 아이의 기질이 어디서 같고 어디서 다른지, 그 다름을 코딩 수업과 집에서의 대화에 어떻게 쓰면 좋은지 <b>2분</b>이면 알 수 있어요.</p>
+            <p class="lead small">정답을 맞히는 검사가 아니라, 우리 아이를 조금 더 편하게 도와주기 위한 대화의 시작입니다.</p>
+
+            <div class="cred">
+              <span class="cred-ico" aria-hidden="true">🎨</span>
+              <div class="cred-body">
+                <b>박종혁 원장 · 미술심리상담사 자격 보유</b>
+                <p>코딩 문법만 가르치는 곳이 아니라, 미술심리상담사 원장이 아이의 기질과 정서를 먼저 읽고 1:1 맞춤 수업을 설계합니다.</p>
+              </div>
+            </div>
+
+            <div class="hero-chips">
+              <span class="chip">16문항 · 4개 축</span>
+              <span class="chip">엄마 8 + 아이 8</span>
+              <span class="chip">로그인 없이 2분</span>
+              <span class="chip">결과지 인쇄 가능</span>
+            </div>
+
+            <div class="form-grid">
+              <label class="field">
+                <span>아이 이름</span>
+                <input id="inpKid" type="text" placeholder="예: 서윤" autocomplete="off" maxlength="12">
+              </label>
+              <label class="field">
+                <span>어머니 성함 <em class="opt-mark">(선택)</em></span>
+                <input id="inpMom" type="text" placeholder="예: 박지영" autocomplete="off" maxlength="12">
+              </label>
+            </div>
+
+            <button type="button" class="btn btn-primary" id="btnStart">
+              <span>2분 진단 시작하기</span>
+              <span aria-hidden="true">→</span>
+            </button>
+          </div>
+
+          <aside class="hero2-right">
+            <div class="preview-card">
+              <p class="pc-title">결과지에는 이런 것들이 담겨요</p>
+              <ul class="pc-list">
+                <li><span class="pc-num">1</span><span><b>우리 조합의 궁합 타이틀</b><small>16가지 조합마다 다른 해석과 궁합 온도</small></span></li>
+                <li><span class="pc-num">2</span><span><b>엄마 vs 아이 4축 비교</b><small>어디서 같은 결이고 어디서 다른지 한눈에</small></span></li>
+                <li><span class="pc-num">3</span><span><b>부딪히는 지점 + 한마디 팁</b><small>같은 장면을 다르게 보는 두 사람의 말</small></span></li>
+                <li><span class="pc-num">4</span><span><b>추천 트랙 · 24주 커리큘럼</b><small>스크래치·파이썬·로블록스·유니티·캡컷 중 어디부터</small></span></li>
+                <li><span class="pc-num">5</span><span><b>결과 코드 · 요약 복사</b><small>RC-코드로 상담 기록에 바로 입력</small></span></li>
+              </ul>
+              <p class="pc-foot">결과지는 인쇄하거나 PDF로 저장해 상담 자료로 쓸 수 있어요.</p>
+            </div>
+          </aside>
+        </div>
+
+        <div class="sample-block">
+          <div class="sample-title"><span class="dot"></span>먼저 결과지를 구경해 보세요</div>
+          <p class="sample-sub">16문항을 다 누르지 않아도, 1초 만에 실제 리포트를 볼 수 있어요.</p>
+          <div class="sample-list" id="sampleList">
+            <button type="button" class="sample">
+              <span class="s-tag">샘플 1</span>
+              <b>직진형 엄마 × 몰입형 아이</b>
+              <span class="s-desc">빠르게 이끄는 엄마, 혼자 깊이 파는 아이</span>
+            </button>
+            <button type="button" class="sample">
+              <span class="s-tag">샘플 2</span>
+              <b>대화형 엄마 × 표현형 아이</b>
+              <span class="s-desc">대화로 다가가는 엄마, 보여 주고 싶은 아이</span>
+            </button>
+            <button type="button" class="sample">
+              <span class="s-tag">샘플 3</span>
+              <b>계획형 엄마 × 도전형 아이</b>
+              <span class="s-desc">순서를 세우는 엄마, 일단 눌러 보는 아이</span>
+            </button>
+          </div>
+        </div>
+
+        <p class="start-foot">
+          * 이 리포트는 정식 심리검사가 아니라, 학부모 상담을 위해 만든 참고용 도구입니다. 아이를 판정하지 않고 이해하는 데 씁니다.<br>
+          입력한 이름은 이 기기 안에서만 쓰이고 어디로도 전송되지 않습니다.
+        </p>
+
+        <div class="academy-strip">
+          <span><b>라피네코딩컴퓨터학원 두정점</b></span>
+          <span>천안시 서북구 부성1길 19, 3층</span>
+          <span><a href="tel:0415641101">041-564-1101</a></span>
+          <span><a href="https://pf.kakao.com/_NPJhG" target="_blank" rel="noopener">카톡 상담</a></span>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- ================= 문항 ================= -->
+  <section id="screen-quiz" class="screen">
+    <div class="quiz-top">
+      <div class="quiz-top-row">
+        <button type="button" class="icon-btn" id="btnBack" aria-label="이전 문항으로">
+          <svg width="17" height="17" viewBox="0 0 24 24" fill="none" aria-hidden="true"><path d="M15 5l-7 7 7 7" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/></svg>
+        </button>
+        <div class="progress-wrap">
+          <div class="progress-meta" id="progMeta"><span>엄마 문항</span><span><b>1</b> / 16</span></div>
+          <div class="progress"><div class="progress-fill" id="progFill"></div></div>
+        </div>
+      </div>
+    </div>
+    <div class="wrap">
+      <div class="quiz-body" id="quizBody"></div>
+    </div>
+  </section>
+
+  <!-- ================= 결과 ================= -->
+  <section id="screen-result" class="screen">
+    <div class="wrap">
+      <div class="result-head">
+        <div class="rh-left">
+          <div class="result-kicker">라피네코딩 기질·학습 성향 리포트</div>
+          <h1 class="result-name" id="resName">아이 × 어머니</h1>
+          <div class="result-date" id="resDate"></div>
+          <p class="head-note">두 사람을 비교해 우열을 가리는 자료가 아니에요. 서로 다른 결을 이해하는 데 쓰는 리포트입니다.</p>
+        </div>
+        <span class="result-badge">엄마 8문항 · 아이 8문항 · 미술심리상담사 해석</span>
+      </div>
+
+      <div class="grid stagger">
+        <div class="card hero col-span" id="heroCard"></div>
+        <div class="card col-span" id="codeCard"></div>
+        <div class="card" id="momTypeCard"></div>
+        <div class="card" id="kidTypeCard"></div>
+        <div class="card col-span" id="axisCard"></div>
+        <div class="card" id="transCard"></div>
+        <div class="card" id="planCard"></div>
+        <div class="card col-span" id="trackCard"></div>
+        <div class="card col-span" id="trialCard"></div>
+      </div>
+
+      <div class="teacher-toggle no-print">
+        <button type="button" class="toggle-btn" id="btnTeacher" aria-pressed="false" aria-controls="teacherBox">
+          <span class="sw" aria-hidden="true"></span>
+          <span>🎓 <span id="teacherLabel">원장님 상담 가이드 보기</span></span>
+        </button>
+      </div>
+
+      <div class="teacher" id="teacherBox">
+        <div class="teacher-inner" id="teacherBody"></div>
+      </div>
+
+      <div class="actions no-print">
+        <button type="button" class="btn btn-ghost" id="btnPrint">🖨️ 결과지 인쇄 / PDF 저장</button>
+        <button type="button" class="btn btn-ghost" id="btnRetest">🔗 다시 테스트하기</button>
+      </div>
+
+      <div class="academy-foot">
+        <div class="af-title">무료 체험수업은 20~30분, 아이 기질에 맞춰 진행합니다</div>
+        <p class="af-sub">결과 코드를 카톡으로 보내 주시면, 원장이 아이 기질에 맞는 트랙과 체험수업 방식을 먼저 준비해 둡니다.</p>
+        <div class="cta-row no-print">
+          <a class="btn btn-kakao" href="https://pf.kakao.com/_NPJhG" target="_blank" rel="noopener">💬 카톡 채널로 상담 예약</a>
+          <a class="btn btn-tel" href="tel:0415641101">📞 041-564-1101 전화 예약</a>
+        </div>
+        <p class="af-info">라피네코딩컴퓨터학원 두정점 · 천안시 서북구 부성1길 19, 3층 · 박종혁 원장(미술심리상담사)</p>
+      </div>
+
+      <p class="disclaimer">
+        <b>이 검사는 정식 심리검사가 아닙니다.</b> 박종혁 원장이 학부모 상담을 위해 만든 참고용 도구로, 아이를 평가하거나 판정하는 데 쓰지 않습니다.
+        결과는 두 사람이 서로를 이해하는 대화의 시작점으로만 사용해 주세요.
+      </p>
+    </div>
+  </section>
+
+  <div class="toast" id="toast" role="status" aria-live="polite"></div>
+</div>
+
+<script>
+/* ============ 1. 축 정의 ============ */
+const AXES = [
+  { id:"speed", name:"탐색·실행 속도",  short:"속도", low:"신중 설계형",     high:"직관 도전형" },
+  { id:"rules", name:"구조·규칙 선호",  short:"구조", low:"자유 창작형",     high:"논리 체계형" },
+  { id:"expr",  name:"표현·소통 에너지", short:"표현", low:"내면 몰입형",     high:"적극 표현형" },
+  { id:"sens",  name:"오류·완성 민감도", short:"민감", low:"큰 그림·유연형",  high:"디테일·완벽형" }
+];
+
+/* ============ 2. 문항 (엄마 8 + 아이 8, 축별 2문항 · 4점 척도) ============ */
+/* s: 1~4점 (4 = 해당 축의 '높은' 쪽) */
+const QUESTIONS = [
+  /* ── 엄마 ── */
+  { p:"mom", axis:"speed",
+    text:"아이가 새로 만든 게임 화면을 보여 줄 때, 나는",
+    opts:[
+      {t:"“잘했네!” 하고 바로 같이 해 본다", s:4},
+      {t:"칭찬하고 어디까지 만들었는지 물어본다", s:3},
+      {t:"어떤 원리로 만들었는지 천천히 들어 본다", s:2},
+      {t:"“나중에 완성되면 보자” 하고 미뤄 둔다", s:1}
+    ]},
+  { p:"mom", axis:"speed",
+    text:"학원에서 새 코딩 과정(예: 파이썬)을 시작할 수 있다고 안내받으면",
+    opts:[
+      {t:"그날 바로 아이와 이야기해 결정한다", s:4},
+      {t:"며칠 안에 알아보고 정한다", s:3},
+      {t:"아이 의견을 충분히 듣고 천천히 정한다", s:2},
+      {t:"아이가 먼저 하겠다고 할 때까지 기다린다", s:1}
+    ]},
+  { p:"mom", axis:"rules",
+    text:"우리 집에서 아이가 컴퓨터로 만드는 시간은",
+    opts:[
+      {t:"정해진 요일·시간·순서가 있다", s:4},
+      {t:"요일은 정해 두고 시작 시간은 그날 맞춘다", s:3},
+      {t:"그날 컨디션을 보고 정한다", s:2},
+      {t:"하고 싶을 때, 생각날 때 한다", s:1}
+    ]},
+  { p:"mom", axis:"rules",
+    text:"아이가 만든 작품을 다시 열어 볼 때, 나는",
+    opts:[
+      {t:"만든 순서대로 하나씩 확인한다", s:4},
+      {t:"결과 화면을 먼저 보고 필요한 부분만 본다", s:3},
+      {t:"아이가 보여 주는 부분만 본다", s:2},
+      {t:"그때그때 다르게 본다", s:1}
+    ]},
+  { p:"mom", axis:"expr",
+    text:"아이가 “엄마 이거 봐!” 하며 화면을 보여 줄 때, 나는",
+    opts:[
+      {t:"같이 소리 내어 반응하고 이것저것 물어본다", s:4},
+      {t:"웃으며 고개를 끄덕이고 한 가지를 말해 준다", s:3},
+      {t:"조용히 보다가 마지막에 한마디 한다", s:2},
+      {t:"잠깐 봐 주고 하던 일로 돌아간다", s:1}
+    ]},
+  { p:"mom", axis:"expr",
+    text:"학원 상담이나 학부모 모임에서 나는",
+    opts:[
+      {t:"먼저 말을 걸고 궁금한 것을 다 물어본다", s:4},
+      {t:"분위기를 보다가 필요한 것만 묻는다", s:3},
+      {t:"듣는 편이고 질문은 정리해서 한 번에 한다", s:2},
+      {t:"질문은 적어 두었다가 나중에 따로 전한다", s:1}
+    ]},
+  { p:"mom", axis:"sens",
+    text:"아이 작품에서 글자가 삐뚤거나 색이 어긋난 걸 보면",
+    opts:[
+      {t:"바로 짚고 고치게 한다", s:4},
+      {t:"한 번 말해 보고 아이가 고치면 넘어간다", s:3},
+      {t:"“나는 그게 조금 신경 쓰여”라고만 말한다", s:2},
+      {t:"잘 모르겠고 크게 신경 쓰지 않는다", s:1}
+    ]},
+  { p:"mom", axis:"sens",
+    text:"아이가 “다 했어!”라고 했는데 내 눈에는 아직 아쉬울 때",
+    opts:[
+      {t:"어디가 아쉬운지 구체적으로 말해 준다", s:4},
+      {t:"한 가지만 골라 말해 준다", s:3},
+      {t:"“다음에 해 보자” 하고 넘어간다", s:2},
+      {t:"아이가 끝났다고 하면 끝난 것으로 본다", s:1}
+    ]},
+
+  /* ── 아이 ── */
+  { p:"kid", axis:"speed",
+    text:"새 블록이나 새 프로그램을 처음 열었을 때 우리 아이는",
+    opts:[
+      {t:"설명서를 안 보고 일단 눌러 본다", s:4},
+      {t:"몇 번 눌러 보고 금방 시작한다", s:3},
+      {t:"예시를 하나 보고 따라 한다", s:2},
+      {t:"한참 구경하고 나서야 손을 댄다", s:1}
+    ]},
+  { p:"kid", axis:"speed",
+    text:"만들고 싶은 게 생기면 우리 아이는",
+    opts:[
+      {t:"바로 만들기 시작한다", s:4},
+      {t:"대충 계획을 세우고 바로 시작한다", s:3},
+      {t:"무엇을 만들지 정리한 뒤에 시작한다", s:2},
+      {t:"오래 생각하고 나서야 시작한다", s:1}
+    ]},
+  { p:"kid", axis:"rules",
+    text:"게임이나 만들기에서 아이가 편해하는 방식은",
+    opts:[
+      {t:"정해진 규칙과 순서대로 하는 것", s:4},
+      {t:"틀은 있지만 조금 바꿔도 되는 것", s:3},
+      {t:"자유롭게 만들되 마지막에 규칙을 맞춰 보는 것", s:2},
+      {t:"정해진 것 없이 만들고 싶은 대로 하는 것", s:1}
+    ]},
+  { p:"kid", axis:"rules",
+    text:"블록·퍼즐·만들기 놀이에서 아이는",
+    opts:[
+      {t:"설명서 순서대로 끝까지 맞춘다", s:4},
+      {t:"설명서를 보다가 중간부터 응용한다", s:3},
+      {t:"자기 방식으로 만들다가 마지막에 설명서를 본다", s:2},
+      {t:"만들고 싶은 것만 만들고 설명서는 보지 않는다", s:1}
+    ]},
+  { p:"kid", axis:"expr",
+    text:"게임에서 이기거나 새로 만든 게 나오면 우리 아이는",
+    opts:[
+      {t:"큰 소리로 자랑하고 보여 주러 온다", s:4},
+      {t:"말로 설명하면서 보여 준다", s:3},
+      {t:"가까이 와서 살짝 보여 주고 간다", s:2},
+      {t:"혼자 뿌듯해하고 나중에야 알게 된다", s:1}
+    ]},
+  { p:"kid", axis:"expr",
+    text:"모르는 게 생겼을 때 우리 아이는",
+    opts:[
+      {t:"바로 물어보고 같이 찾는다", s:4},
+      {t:"한 번 찾아보고 안 되면 묻는다", s:3},
+      {t:"혼자 오래 해 보고 나서야 묻는다", s:2},
+      {t:"끝까지 혼자 해결하고 말하지 않는다", s:1}
+    ]},
+  { p:"kid", axis:"sens",
+    text:"만든 것에서 마음에 안 드는 부분이 생기면 우리 아이는",
+    opts:[
+      {t:"그 부분이 될 때까지 다시 만든다", s:4},
+      {t:"조금 다듬고 넘어간다", s:3},
+      {t:"다음에 고치면 된다고 생각한다", s:2},
+      {t:"신경 쓰지 않고 새로 만든다", s:1}
+    ]},
+  { p:"kid", axis:"sens",
+    text:"게임에서 지거나 오류로 안 될 때 우리 아이는",
+    opts:[
+      {t:"왜 안 되는지 끝까지 들여다보며 속상해한다", s:4},
+      {t:"속상해하지만 금방 다시 시도한다", s:3},
+      {t:"다른 걸로 바꿔서 논다", s:2},
+      {t:"금방 잊고 웃으면서 다른 걸 한다", s:1}
+    ]}
+];
+
+/* ============ 3. 엄마 4유형 ============ */
+const MOM_TYPES = {
+  M1:{ emoji:"🔥", name:"직진·추진형", short:"직진",
+    tagline:"빠르게 시작하고 끝까지 밀어붙이는 힘",
+    essence:"결정이 빠르고 목표가 또렷해요. 아이의 가능성이 보이면 그 길로 앞당겨 주고 싶은 마음이 먼저 움직입니다. 과정보다 도착점을 먼저 보는 편이라, 아이가 흐지부지될까 봐 조바심이 나기도 해요.",
+    strengths:[
+      "아이의 첫걸음을 하루라도 앞당깁니다",
+      "중간에 포기하지 않게 끝까지 데려갑니다",
+      "아이가 ‘나도 될 수 있겠다’는 상상을 먼저 갖게 합니다"
+    ],
+    root:"기다리는 시간이 ‘놓치는 시간’처럼 느껴지기 때문이에요.",
+    style:"목표를 정했다면, 그 목표가 아이 눈높이인지 한 번만 더 확인해 주세요." },
+
+  M2:{ emoji:"🌈", name:"대화·감성형", short:"대화",
+    tagline:"아이의 마음을 먼저 읽는 눈",
+    essence:"아이 표정과 말투의 작은 변화를 잘 알아차려요. 대화로 풀어 가는 걸 좋아하고, 규칙은 아이 기분에 맞춰 유연하게 조정하는 편입니다. 다만 마음이 앞서면 루틴이 자주 흔들릴 수 있어요.",
+    strengths:[
+      "아이가 말을 꺼내기 전에 마음을 알아차립니다",
+      "코딩을 ‘관계’와 ‘재미’로 기억하게 만듭니다",
+      "갈등이 커지기 전에 부드럽게 풀어냅니다"
+    ],
+    root:"아이 기분이 상한 게 오래 마음에 남기 때문이에요.",
+    style:"정해진 시간 하나만 지켜 주면, 아이가 안심하고 실력을 쌓아요." },
+
+  M3:{ emoji:"🧭", name:"계획·루틴형", short:"계획",
+    tagline:"같은 시간, 같은 자리로 만드는 힘",
+    essence:"정해진 흐름이 있을 때 마음이 놓여요. 매일 같은 시간, 같은 순서로 이어지는 반복을 잘 만들어 내고, 그 안에서 아이가 안심하고 자라도록 돕습니다. 갑작스러운 변화에는 시간이 조금 필요해요.",
+    strengths:[
+      "슬럼프가 와도 루틴이 아이를 붙잡아 줍니다",
+      "아이에게 ‘예측 가능한 하루’를 선물합니다",
+      "작은 진전을 꾸준히 쌓아 올립니다"
+    ],
+    root:"흐트러지면 아이가 더 힘들어할까 봐 미리 챙기게 돼요.",
+    style:"가끔은 ‘오늘은 다르게’ 한 번쯤 허용해 주면 아이가 더 신나요." },
+
+  M4:{ emoji:"🔍", name:"관찰·섬세형", short:"섬세",
+    tagline:"한 번 더 확인하는 꼼꼼함",
+    essence:"세세한 부분이 눈에 잘 들어오고, 시작 전에 충분히 살펴보는 편이에요. 아이 결과물에서 아쉬운 부분이 먼저 보이지만, 그건 더 잘 되길 바라는 마음이 크기 때문입니다. 마음속에서 정리한 뒤에 말을 꺼내는 스타일이에요.",
+    strengths:[
+      "아이가 놓친 부분을 정확히 짚어 줍니다",
+      "기준을 세워 주어 아이가 스스로 다듬게 합니다",
+      "조용히 오래 지켜보며 아이를 이해합니다"
+    ],
+    root:"작은 실수가 쌓이면 되돌리기 어려울까 봐 미리 살피게 돼요.",
+    style:"칭찬을 먼저 말로 꺼내면, 아이가 훨씬 오래 버팁니다." }
+};
+
+/* ============ 4. 아이 4유형 ============ */
+const KID_TYPES = {
+  K1:{ emoji:"🚀", name:"도전·실험형", short:"도전",
+    tagline:"일단 눌러 보고 배우는 아이",
+    essence:"새로운 것에 눈이 반짝이고 손이 먼저 움직여요. 해 보면서 익히는 걸 좋아하고, 틀려도 크게 개의치 않습니다. 시작은 누구보다 빠르지만 마무리가 흐려지기 쉬워요.",
+    strengths:[
+      "새 도구를 두려움 없이 시도합니다",
+      "수업을 금방 활기 있게 만듭니다",
+      "실수에서 빨리 배웁니다"
+    ],
+    root:"궁금한 게 생기면 확인하기 전에 손이 먼저 나가기 때문이에요.",
+    style:"끝맺음 3분을 함께 정해 주면, 완주가 습관이 됩니다." },
+
+  K2:{ emoji:"🎤", name:"표현·발표형", short:"표현",
+    tagline:"보여 주고 싶어서 못 견디는 아이",
+    essence:"말하고 보여 줄 때 기억이 오래 남아요. 리액션이 크고 사람들 사이에서 에너지를 얻습니다. 혼자 조용히 반복하는 작업에는 금방 흥미를 잃을 수 있어요.",
+    strengths:[
+      "배운 것을 바로 말하고 보여 줍니다",
+      "친구들의 분위기를 끌어올립니다",
+      "발표와 피드백에서 빠르게 자랍니다"
+    ],
+    root:"말로 꺼내야 머릿속이 정리되는 방식이기 때문이에요.",
+    style:"짧게 자주, 만들고 바로 보여 주는 순서로 바꿔 주면 집중이 살아납니다." },
+
+  K3:{ emoji:"🧩", name:"규칙·설계형", short:"설계",
+    tagline:"틀을 세우고 차곡차곡 쌓는 아이",
+    essence:"정해진 순서와 규칙이 있을 때 마음이 놓이고, 한 번 익힌 것은 오래 간직합니다. 계획을 세워 두면 혼자서도 잘 해내요. 대신 순서가 갑자기 바뀌면 다시 적응하는 시간이 필요합니다.",
+    strengths:[
+      "배운 것을 오래, 정확하게 기억합니다",
+      "스스로 순서를 만들어 끝까지 해냅니다",
+      "약속과 규칙을 잘 지킵니다"
+    ],
+    root:"예측되는 흐름 안에서 마음이 안정되고 힘을 내기 때문이에요.",
+    style:"새 활동은 하루 전에 미리 알려 주면 훨씬 편해합니다." },
+
+  K4:{ emoji:"🦉", name:"몰입·관찰형", short:"몰입",
+    tagline:"보는 시간이 길고, 혼자 깊이 파는 아이",
+    essence:"바로 나서기보다 충분히 보고 나서 움직여요. 마음속에서 답을 완성한 뒤에 말하는 편이라 조용해 보여도 생각은 활발합니다. 틀리는 것에 민감해서 한 번 창피하면 오래 기억해요.",
+    strengths:[
+      "관찰이 세밀하고 이해가 깊습니다",
+      "한 번 말하면 정확합니다",
+      "혼자만의 몰입 시간에 강합니다"
+    ],
+    root:"틀린 모습을 보이는 게 오래 마음에 남기 때문이에요.",
+    style:"정답을 재촉하지 않고 ‘준비되면 말해 줘’가 잘 통해요." }
+};
+
+/* ============ 5. 샘플 시나리오 ============ */
+const SAMPLES = [
+  { tag:"샘플 1", label:"직진형 엄마 × 몰입형 아이",
+    desc:"빠르게 이끄는 엄마, 혼자 깊이 파는 아이",
+    momName:"김지영", kidName:"서준",
+    momScores:{ speed:100, rules:83, expr:67, sens:17 },
+    kidScores:{ speed:17, rules:33, expr:0, sens:100 } },
+  { tag:"샘플 2", label:"대화형 엄마 × 표현형 아이",
+    desc:"대화로 다가가는 엄마, 보여 주고 싶은 아이",
+    momName:"이수진", kidName:"하윤",
+    momScores:{ speed:50, rules:17, expr:100, sens:33 },
+    kidScores:{ speed:67, rules:17, expr:100, sens:17 } },
+  { tag:"샘플 3", label:"계획형 엄마 × 도전형 아이",
+    desc:"순서를 세우는 엄마, 일단 눌러 보는 아이",
+    momName:"박나래", kidName:"지후",
+    momScores:{ speed:17, rules:100, expr:33, sens:67 },
+    kidScores:{ speed:100, rules:17, expr:67, sens:17 } }
+];
+
+/* ============ 6. 아이 기질별 추천 트랙 · 24주 커리큘럼 ============ */
+const TRACKS = {
+  K1:{
+    primary:"로블록스 게임 만들기",
+    sub:"스크래치",
+    why:"일단 만들어 보고 바로 친구에게 보여 줄 수 있는 환경이 가장 잘 맞아요. 로블록스는 만든 것이 즉시 3D 세상에서 움직여서, 시작이 빠른 아이의 에너지가 그대로 결과로 이어집니다. 마무리 습관은 4주 단위 ‘출시’ 목표로 붙여 줍니다.",
+    trial:{ minutes:"20분", mode:"만들면서 시작하는 체험",
+      steps:[
+        {t:"0~5분", text:"스튜디오를 켜고 아이 손으로 오브젝트 하나를 움직여 봅니다 (설명 최소)"},
+        {t:"5~15분", text:"‘점프하면 점수’ 되는 3줄짜리 규칙을 같이 붙여 봅니다"},
+        {t:"15~20분", text:"만든 걸 직접 해 보고, 다음에 만들고 싶은 것을 아이가 말합니다"}
+      ],
+      point:"체험 뒤에 “다음엔 뭘 만들지”를 아이가 먼저 말하면, 그 아이는 계속 옵니다. 그 한마디를 들으려고 20분을 씁니다." },
+    weeks:[
+      {n:"1단계", weeks:"1~4주", name:"손에 익히기", goal:"스튜디오 조작과 저장 습관을 몸에 익힙니다.",
+       acts:["오브젝트 만들기·옮기기·색 바꾸기","저장과 되돌리기를 반복 연습","매주 ‘이번 주 작품’ 한 컷 남기기"], out:"산출물 · 나만의 방 1개"},
+      {n:"2단계", weeks:"5~8주", name:"규칙 하나 붙이기", goal:"‘하면 반응한다’는 감각을 잡습니다.",
+       acts:["터치하면 점수 오르는 파트 만들기","간단한 스크립트 3줄 읽고 고치기","일부러 오류를 내고 되돌려 보기"], out:"산출물 · 점수 오르는 미니 게임"},
+      {n:"3단계", weeks:"9~12주", name:"맵과 목표 만들기", goal:"시작과 끝이 있는 게임 구조를 만듭니다.",
+       acts:["시작 지점·도착 지점 정하기","장애물과 아이템 배치","난이도 두 단계로 조절"], out:"산출물 · 끝이 있는 맵 1개"},
+      {n:"4단계", weeks:"13~16주", name:"친구와 테스트", goal:"남이 해 보고 고치는 경험을 합니다.",
+       acts:["가족·친구에게 한 번 해 보게 하기","불편한 점 3가지 적어 오기","그중 1가지만 고치기"], out:"산출물 · 수정 기록 1장"},
+      {n:"5단계", weeks:"17~20주", name:"나만의 게임 완성", goal:"마무리하는 힘을 기릅니다.",
+       acts:["이름·썸네일·설명 정하기","처음부터 끝까지 한 번에 해 보기","완성 기준을 아이가 말로 정하기"], out:"산출물 · 완성 게임 1편"},
+      {n:"6단계", weeks:"21~24주", name:"발표와 다음 판", goal:"성취를 확인하고 다음 목표를 세웁니다.",
+       acts:["학부모·친구 앞에서 3분 발표","잘된 점·아쉬운 점 스스로 말하기","다음 24주 목표 1개 정하기"], out:"산출물 · 발표 영상 1편"}
+    ]
+  },
+  K2:{
+    primary:"캡컷 영상 편집",
+    sub:"스크래치",
+    why:"만든 것을 사람에게 보여 주는 순간에 가장 크게 동기부여되는 아이예요. 캡컷은 결과가 30초 안에 눈에 보이고, 편집·자막·효과로 자기 표현을 마음껏 할 수 있습니다. 코딩 사고는 스크래치로 보조하며 함께 키웁니다.",
+    trial:{ minutes:"20분", mode:"만들고 바로 보여 주는 체험",
+      steps:[
+        {t:"0~5분", text:"좋아하는 영상 소재 3개를 아이가 직접 고릅니다"},
+        {t:"5~15분", text:"자르기·자막 하나를 넣어 15초 영상으로 완성합니다"},
+        {t:"15~20분", text:"완성본을 가족에게 보여 주고, 반응을 함께 확인합니다"}
+      ],
+      point:"‘보여 줄 사람’이 정해지면 이 아이는 준비를 스스로 해 옵니다. 체험 때 그 사람을 꼭 정해 두세요." },
+    weeks:[
+      {n:"1단계", weeks:"1~4주", name:"자르고 붙이기", goal:"편집의 기본 동작을 익힙니다.",
+       acts:["영상 자르기·순서 바꾸기","필요 없는 부분 지우기","30초 안에 끝내는 연습"], out:"산출물 · 30초 영상 1편"},
+      {n:"2단계", weeks:"5~8주", name:"자막과 소리", goal:"보는 사람을 생각하는 편집을 배웁니다.",
+       acts:["자막 넣고 위치·크기 조정","배경음악과 볼륨 맞추기","말이 잘 들리는지 확인"], out:"산출물 · 자막 있는 영상"},
+      {n:"3단계", weeks:"9~12주", name:"이야기 만들기", goal:"순서와 이유가 있는 구성을 만듭니다.",
+       acts:["시작-중간-끝 3장 스토리보드","장면마다 한 문장씩 대본","찍기 전에 순서 정하기"], out:"산출물 · 스토리보드 1장"},
+      {n:"4단계", weeks:"13~16주", name:"효과와 색", goal:"표현의 폭을 넓힙니다.",
+       acts:["전환·효과 한 가지만 골라 쓰기","색감 통일해서 세 장면 맞추기","과한 효과 빼 보기"], out:"산출물 · 톤이 맞는 영상"},
+      {n:"5단계", weeks:"17~20주", name:"스크래치로 움직임 만들기", goal:"코딩으로 화면을 움직이는 경험을 합니다.",
+       acts:["스크래치 캐릭터 움직이기","만든 애니메이션을 영상에 넣기","반복·조건 블록 1개씩 익히기"], out:"산출물 · 코딩 애니메이션 1편"},
+      {n:"6단계", weeks:"21~24주", name:"공개와 피드백", goal:"반응을 받고 다음을 설계합니다.",
+       acts:["유튜브·학원 채널에 공개","댓글·반응 확인하고 한 가지 수정","다음 주제 아이가 정하기"], out:"산출물 · 공개 작품 1편"}
+    ]
+  },
+  K3:{
+    primary:"파이썬 기초",
+    sub:"스크래치 심화",
+    why:"순서와 규칙이 분명할 때 가장 안정적으로 힘을 내는 아이예요. 파이썬은 한 줄 한 줄이 논리로 이어져서 ‘왜 이렇게 되는지’를 확인하며 가는 이 아이에게 잘 맞습니다. 24주 동안 단계마다 확인 문제로 진도를 스스로 점검합니다.",
+    trial:{ minutes:"30분", mode:"계획을 먼저 세우는 체험",
+      steps:[
+        {t:"0~7분", text:"오늘 만들 것(예: 자동 계산기)을 종이에 순서로 적어 봅니다"},
+        {t:"7~22분", text:"한 단계씩 코드로 옮기고, 실행해서 직접 확인합니다"},
+        {t:"22~30분", text:"안 되는 부분을 스스로 찾아 고치고, 배운 것을 한 줄로 정리합니다"}
+      ],
+      point:"이 아이는 ‘빨리’보다 ‘정확히’가 편해요. 30분 안에 한 가지를 확실히 끝내 보여 주는 것이 가장 좋은 첫인상입니다." },
+    weeks:[
+      {n:"1단계", weeks:"1~4주", name:"입력과 출력", goal:"명령과 결과의 관계를 익힙니다.",
+       acts:["print·input으로 대화 만들기","변수에 값 담기","오류 메시지 읽는 법"], out:"산출물 · 자기소개 프로그램"},
+      {n:"2단계", weeks:"5~8주", name:"조건과 반복", goal:"생각을 순서도로 옮깁니다.",
+       acts:["if로 갈림길 만들기","for·while로 반복하기","손으로 순서도 먼저 그리기"], out:"산출물 · 숫자 맞히기 게임"},
+      {n:"3단계", weeks:"9~12주", name:"함수로 정리", goal:"같은 일을 묶어 쓰는 법을 배웁니다.",
+       acts:["자주 쓰는 코드를 함수로 묶기","입력값과 결과값 구분","이름 잘 붙이기"], out:"산출물 · 계산 함수 모음"},
+      {n:"4단계", weeks:"13~16주", name:"여러 개 다루기", goal:"목록으로 데이터를 다룹니다.",
+       acts:["리스트에 단어 담고 꺼내기","딕셔너리로 짝짓기","정렬·검색해 보기"], out:"산출물 · 단어장 프로그램"},
+      {n:"5단계", weeks:"17~20주", name:"미니 프로젝트", goal:"배운 것을 하나로 합칩니다.",
+       acts:["주제 정하고 기능 3개로 나누기","기능별로 하나씩 완성","중간 점검표로 진도 확인"], out:"산출물 · 퀴즈 프로그램"},
+      {n:"6단계", weeks:"21~24주", name:"정리와 확장", goal:"결과를 설명하고 다음을 준비합니다.",
+       acts:["코드에 주석으로 설명 달기","가족 앞에서 시연","다음 과정(로블록스·유니티) 미리 보기"], out:"산출물 · 발표 자료 1장"}
+    ]
+  },
+  K4:{
+    primary:"유니티 3D 입문",
+    sub:"파이썬",
+    why:"혼자 깊이 파고드는 힘이 큰 아이예요. 유니티는 손으로 만지고 눈으로 확인하는 3D 환경이라 몰입이 오래 가고, ‘왜 이렇게 되는지’를 스스로 확인하며 갈 수 있습니다. 발표를 강요하지 않고, 결과물로 조용히 인정받게 설계합니다.",
+    trial:{ minutes:"30분", mode:"혼자 해 보고 설명하는 체험",
+      steps:[
+        {t:"0~8분", text:"완성된 3D 장면을 먼저 보여 주고, 어떻게 만들었는지 함께 짚어 봅니다"},
+        {t:"8~22분", text:"캐릭터 하나를 움직이는 데까지 아이가 혼자 해 봅니다 (원장은 옆에서 대기)"},
+        {t:"22~30분", text:"아이가 방금 한 것을 자기 말로 설명하고, 다음에 만들 것을 정합니다"}
+      ],
+      point:"말을 재촉하지 말고 기다려 주세요. 이 아이는 준비되면 정확하게 말합니다. 그 말이 나오면 수업이 시작된 겁니다." },
+    weeks:[
+      {n:"1단계", weeks:"1~4주", name:"공간에 익숙해지기", goal:"3D 화면과 도구에 편해집니다.",
+       acts:["씬 둘러보기와 오브젝트 배치","카메라·조명 만져 보기","작업 저장과 정리"], out:"산출물 · 나만의 방 씬"},
+      {n:"2단계", weeks:"5~8주", name:"움직임과 충돌", goal:"원인과 결과를 눈으로 확인합니다.",
+       acts:["중력·충돌 설정해 보기","공 굴리기·튕기기 실험","왜 그렇게 되는지 한 줄 기록"], out:"산출물 · 물리 실험 씬"},
+      {n:"3단계", weeks:"9~12주", name:"C# 첫 줄", goal:"코드가 화면을 바꾼다는 감각을 잡습니다.",
+       acts:["키 입력으로 캐릭터 이동","속도 값 바꿔 보기","오류 메시지 천천히 읽기"], out:"산출물 · 움직이는 캐릭터"},
+      {n:"4단계", weeks:"13~16주", name:"게임 규칙 만들기", goal:"점수·상태 같은 규칙을 넣습니다.",
+       acts:["점수 오르는 조건 만들기","시작·종료 화면 넣기","난이도 조절해 보기"], out:"산출물 · 한 판이 끝나는 게임"},
+      {n:"5단계", weeks:"17~20주", name:"나만의 스테이지", goal:"자기 세계를 완성합니다.",
+       acts:["배경·소품 직접 고르기","사운드 넣기","친구가 해 봤을 때의 동선 점검"], out:"산출물 · 스테이지 1개"},
+      {n:"6단계", weeks:"21~24주", name:"빌드와 기록", goal:"완성과 설명을 경험합니다.",
+       acts:["실행 파일로 빌드해 보기","만든 과정을 글로 정리","가족에게 조용히 보여 주기"], out:"산출물 · 배포 가능한 게임 1편"}
+    ]
+  }
+};
+
+/* ============ 7. 16가지 조합 ============ */
+/* 토큰: {mom}=어머니 성함, {kid}=아이 이름, {kid:는}/{kid:가} = 받침에 맞춘 조사 */
+const COMBOS = {
+
+/* ───────── 엄마 🔥 직진·추진형 ───────── */
+"M1-K1":{
+  title:"같이 달리되, <mark>결승선은 아이 손에</mark>",
+  one:"둘 다 출발이 빨라요. 다만 엄마는 결승선을 정하고, 아이는 옆길을 구경하러 가요.",
+  clash:"시작은 늘 성공하는데 끝을 보는 사람이 없어요. 엄마는 ‘마무리’를 보고 아이는 ‘다음 재미’를 보기 때문에, 만들던 게임이 사흘을 못 갑니다. 서로 게으른 게 아니라, 관심의 방향이 조금 다를 뿐이에요.",
+  bridge:"결승선을 엄마가 정하지 말고 아이가 손으로 고르게 해 보세요. “오늘은 여기까지”를 아이 입으로 말하게 하는 것, 그 한 줄이 아이를 끝까지 데려갑니다.",
+  momView:"시작은 잘하는데, 왜 마무리는 늘 이 모양일까?",
+  kidView:"다음 것도 재밌어 보이는데, 지금 이걸 꼭 끝내야 해?",
+  dialogs:[
+    {before:"“이건 끝내고 다음 거 하자.”",
+     after:"“다음 거 하기 전에, 이건 어디까지 하면 끝이라고 생각해? 네가 정해 봐.”"},
+    {before:"“또 중간에 그만뒀네.”",
+     after:"“여기까지 온 거 봐. 마지막 한 줄만 같이 하고 접자.”"}
+  ],
+  classGuide:[
+    "수업 시작에 ‘오늘의 도착지’를 칠판에 한 줄로 적고, 그 한 줄은 아이가 직접 고릅니다.",
+    "시작 3분은 아이가 먼저 눌러 보게 두고, 제가 정리한 설명은 그 뒤에 붙입니다.",
+    "‘끝냈다’는 순간을 소리 내어 인정해 줍니다. 마무리 감각을 몸으로 배우는 시기예요."
+  ],
+  home:[
+    {t:"0~2분", text:"오늘 만들 것의 ‘끝’을 아이가 한 문장으로 말한다 (엄마는 받아 적기만)"},
+    {t:"2~6분", text:"만들던 작품을 열어 마지막 한 부분만 손본다 — 새로 시작하지 않는다"},
+    {t:"6~9분", text:"가족에게 30초 보여 주고, 잘된 점 하나를 아이가 말한다"},
+    {t:"9~10분", text:"“오늘 여기까지”를 아이가 말하고, 엄마는 수고했다고 한마디 한다"}
+  ],
+  counselor:{
+    opening:"{mom}님은 시작을 만드는 힘이 큰 분이에요. {kid:는} 시작은 누구보다 빨라요. 이 둘에게 필요한 건 속도가 아니라 ‘끝맺음’ 한 가지입니다.",
+    points:[
+      "시작이 빠른 조합은 마무리 습관 하나만 붙어도 성과가 눈에 띄게 달라집니다.",
+      "아이가 스스로 도착지를 정하면, 엄마의 재촉 없이도 완주율이 올라갑니다.",
+      "주 2회 수업에서 도착지를 칠판에 적는 방식으로 끝맺음 감각을 훈련하고 있습니다."
+    ],
+    risks:[
+      "복습을 ‘양’으로 채우기 시작하면 2~3주 안에 아이가 흥미를 잃습니다.",
+      "‘또 안 했네’가 반복되면 엄마가 먼저 지쳐 학습량을 줄이는 패턴이 옵니다 — 양을 줄이고 완주를 남기세요."
+    ]
+  }
+},
+
+"M1-K2":{
+  title:"박수는 큰데, <mark>조용한 연습이 비어요</mark>",
+  one:"엄마의 추진력과 아이의 표현력이 만나면 수업이 금세 뜨거워져요. 다만 둘 다 ‘지금 재밌는 것’으로 달려가서, 혼자 쌓는 시간이 비어요.",
+  clash:"엄마는 결과를 빨리 보고 싶고, 아이는 말하고 보여 주며 배워요. 엄마가 “조용히 앉아서 마저 해 봐”라고 하면 아이의 배터리가 3분 만에 꺼집니다. 반대로 아이가 계속 떠들면 엄마는 진도가 안 나간다고 느껴요.",
+  bridge:"말하기 전에 만들기를 먼저 넣어 주세요. 아이가 입으로 한 번 설명한 화면은 손으로 고칠 때 훨씬 빨리 정리됩니다. 엄마가 원하는 속도는 ‘만들기 → 설명 → 다듬기’ 순서 하나로 지킬 수 있어요.",
+  momView:"왜 이렇게 가만히 못 있지? 진도가 안 나가는데.",
+  kidView:"보여 주면 다 하는 건데, 왜 꼭 조용히 해야 해?",
+  dialogs:[
+    {before:"“조용히 앉아서 마저 해 봐.”",
+     after:"“먼저 네가 만든 걸 30초로 설명해 볼래? 그다음에 그 부분만 고치자.”"},
+    {before:"“그만 떠들고 집중해.”",
+     after:"“네가 방금 한 설명, 아주 좋았어. 그걸 화면에도 그대로 넣어 볼까?”"}
+  ],
+  classGuide:[
+    "새 기능은 항상 ‘보여 주기 → 따라 만들기 → 직접 설명하기 → 다듬기’ 순서로 갑니다.",
+    "발표 기회를 수업마다 한 번은 꼭 넣습니다. 무대가 있으면 아이가 스스로 준비해 옵니다.",
+    "혼자 집중하는 시간은 5분 이내로 짧게, 대신 자주. 길게 앉히면 효율이 급격히 떨어집니다."
+  ],
+  home:[
+    {t:"0~2분", text:"오늘 만든 것을 아이가 가족에게 30초 설명한다 (엄마는 박수 담당)"},
+    {t:"2~5분", text:"아이가 선생님, 엄마가 학생이 되어 역할을 바꾼다"},
+    {t:"5~8분", text:"설명하다 걸린 부분 하나만 같이 고친다 — 한 번이면 충분해요"},
+    {t:"8~10분", text:"오늘 잘한 것 한 가지를 아이가 스스로 말해 본다"}
+  ],
+  counselor:{
+    opening:"{kid:는} 보여 주면서 자라는 아이예요. {mom}님이 원하는 진도는 ‘설명을 먼저’ 넣는 것만으로도 훨씬 잘 나갑니다.",
+    points:[
+      "표현형 아이는 조용한 반복보다 발표·시연 자리에서 기억률이 눈에 띄게 높습니다.",
+      "엄마가 결과를 빨리 확인하고 싶을수록 ‘만들기 → 설명 → 다듬기’ 순서를 지키는 게 결국 더 빠릅니다.",
+      "주 1회는 시연형 활동으로 배치해, 아이가 무대에서 성취를 맛보게 하고 있습니다."
+    ],
+    risks:[
+      "‘가만히 못 있네’가 반복되면 아이가 코딩 시간을 ‘혼나는 시간’으로 기억할 수 있어요.",
+      "혼자 하는 과제가 길어지면 다음 주부터 숙제를 숨기기 시작합니다 — 분량을 먼저 줄여 주세요."
+    ]
+  }
+},
+
+"M1-K3":{
+  title:"빠른 엄마, 느린 아이 — <mark>방향은 같아요</mark>",
+  one:"엄마는 앞에서 손짓하고, 아이는 한 걸음씩 제 속도로 와요. 목적지는 같아서, 기다림 하나만 더하면 아주 단단한 조합이 됩니다.",
+  clash:"엄마의 ‘지금’과 아이의 ‘조금 있다가’가 부딪혀요. 아이는 순서를 잡기 전에 시작하면 오히려 더 느려지는데, 엄마 눈에는 멈춘 것처럼 보입니다. 재촉이 반복되면 아이는 ‘나는 느린 아이’로 자신을 정의하게 돼요.",
+  bridge:"시작 전 3초를 세는 것만으로 달라져요. 아이가 늦게 시작해도 끝까지 해내면 그 완주를 짚어 칭찬해 주세요. 속도가 아니라 완주를 칭찬하는 겁니다.",
+  momView:"이걸 왜 이렇게 오래 걸리지? 지금 하면 5분이면 되는데.",
+  kidView:"지금 하면 틀릴 것 같아. 순서를 좀 정리할 시간이 필요해.",
+  dialogs:[
+    {before:"“지금 바로 해. 5분이면 되잖아.”",
+     after:"“언제 시작할지 네가 정해 봐. 3분 안이면 엄마는 기다릴게.”"},
+    {before:"“아까 그거 왜 안 하고 있어?”",
+     after:"“순서 정리하고 있구나. 어디부터 할지 정해지면 알려 줘.”"}
+  ],
+  classGuide:[
+    "수업 전날에 오늘 할 내용을 미리 문자로 보내 둡니다. 예측이 되면 아이가 훨씬 빨라집니다.",
+    "순서를 중간에 바꿔야 할 때는 바꾸는 이유를 먼저 설명하고 허락을 구합니다.",
+    "완주한 순간을 그 자리에서 구체적으로 짚어 줍니다 — ‘여기까지 네 순서대로 끝냈네’."
+  ],
+  home:[
+    {t:"0~2분", text:"오늘 할 일을 아이가 순서대로 종이에 적는다"},
+    {t:"2~6분", text:"적은 순서대로 하나씩 한다 (엄마는 순서를 바꾸지 않는다)"},
+    {t:"6~9분", text:"끝난 항목에 아이가 직접 동그라미를 친다"},
+    {t:"9~10분", text:"‘네 순서대로 끝냈다’를 엄마가 한 문장으로 말해 준다"}
+  ],
+  counselor:{
+    opening:"{mom}님은 방향을 빨리 잡아 주는 분이고, {kid:는} 그 방향을 자기 순서로 걸어가는 아이예요. 같은 곳을 보고 있어서, 기다림만 더해지면 아주 튼튼해집니다.",
+    points:[
+      "속도를 맞추는 대신 ‘예측 가능성’을 주면 두 사람의 마찰이 크게 줄어듭니다.",
+      "전날 예고는 이 아이에게 특히 효과가 큽니다 — 준비 시간이 줄어듭니다.",
+      "주 2회 수업에서 순서표를 아이가 직접 쓰게 하고 있습니다."
+    ],
+    risks:[
+      "재촉이 반복되면 아이가 ‘준비 중’을 ‘못하는 것’으로 받아들이고 시도를 줄입니다.",
+      "엄마가 대신 순서를 정해 주면 당장은 빨라지지만 3개월 뒤 자기주도가 사라집니다."
+    ]
+  }
+},
+
+"M1-K4":{
+  title:"확인 질문이 <mark>시험처럼 들릴 수 있어요</mark>",
+  one:"엄마는 빠르게 확인하고 싶고, 아이는 충분히 본 뒤에 말해요. 같은 질문이 엄마에게는 관심, 아이에게는 채점이 됩니다.",
+  clash:"“이거 왜 이렇게 만들었어?”라는 질문이 아이에게는 정답을 요구하는 것처럼 들려요. 아이가 대답을 미루면 엄마는 ‘관심이 없나’ 싶어 더 물어보고, 아이는 더 굳습니다. 둘 다 애정에서 나온 행동인데 방향이 반대예요.",
+  bridge:"질문을 ‘왜’에서 ‘뭐가 제일 재밌었어’로 바꿔 보세요. 정답이 필요 없는 질문에는 이 아이가 반드시 대답합니다. 그리고 대답이 나올 때까지 5초는 기다려 주세요.",
+  momView:"물어보면 대답을 해야 대화가 이어지는데, 왜 자꾸 말이 없지?",
+  kidView:"아직 정리가 안 됐는데, 틀리면 어쩌지.",
+  dialogs:[
+    {before:"“이거 왜 이렇게 만들었어?”",
+     after:"“만들면서 제일 재밌었던 부분이 어디야?”"},
+    {before:"“대답 좀 해 봐.”",
+     after:"“천천히 생각해도 돼. 준비되면 들려줘.”"}
+  ],
+  classGuide:[
+    "질문은 한 번에 하나만, 대답을 기다리는 5초를 꼭 둡니다.",
+    "아이가 만든 화면을 먼저 같이 보고, 제 해석은 아이 말 뒤에 붙입니다.",
+    "작업 과정(색 선택·고민한 시간)을 관찰해 두었다가 구체적으로 언급해 줍니다 — 미술심리상담사로서 쓰는 가장 좋은 칭찬입니다."
+  ],
+  home:[
+    {t:"0~2분", text:"아이가 만든 화면을 말없이 같이 30초 본다"},
+    {t:"2~5분", text:"“제일 재밌었던 부분” 한 가지만 묻고 끝까지 듣는다"},
+    {t:"5~8분", text:"엄마가 본 좋은 점 하나를 구체적으로 말한다"},
+    {t:"8~10분", text:"오늘은 여기까지. 다음에 하고 싶은 것을 아이가 한 줄 적는다"}
+  ],
+  counselor:{
+    opening:"{kid:는} 마음속에서 답을 완성한 뒤에 말하는 아이예요. {mom}님의 질문은 관심인데, 이 아이에게는 조금 빠를 수 있습니다. 기다림의 5초가 이 조합의 열쇠입니다.",
+    points:[
+      "정답이 없는 질문으로 바꾸면 대화가 열립니다 — ‘왜’보다 ‘어땠어’.",
+      "관찰한 디테일을 칭찬하면 아이의 자기효능감이 가장 빠르게 올라갑니다.",
+      "수업에서는 아이가 먼저 말할 때까지 기다렸다가 제 설명을 붙이고 있습니다."
+    ],
+    risks:[
+      "질문이 반복되면 아이가 ‘틀릴까 봐 말하지 않는’ 패턴으로 굳습니다.",
+      "엄마가 대신 정답을 말해 버리면 아이는 다음부터 시도 자체를 미룹니다."
+    ]
+  }
+},
+
+/* ───────── 엄마 🌈 대화·감성형 ───────── */
+"M2-K1":{
+  title:"대화는 잘 통하는데, <mark>규칙이 없어요</mark>",
+  one:"아이 말에 잘 맞장구치는 엄마라 아이가 신나요. 다만 둘 다 ‘재밌는 지금’으로 흘러서, 마무리와 반복이 비어요.",
+  clash:"엄마는 대화로 이끌고 아이는 놀이로 달려가요. 대화가 길어지면 정작 만드는 시간이 줄고, 아이는 ‘말하다 끝난 수업’을 겪습니다. 엄마는 정서적으로 잘 붙어 있는데, 배움의 흔적이 남지 않아 아쉬워요.",
+  bridge:"대화 끝에 ‘한 줄 규칙’을 정해 보세요. “오늘은 20분 만들고, 한 번 저장하기.” 규칙을 아이 입으로 말하게 하면 이 조합은 놀랍게 잘 굴러갑니다.",
+  momView:"이야기는 잘 하는데, 실제로 남는 게 있을까?",
+  kidView:"엄마랑 얘기하는 게 재밌어. 근데 만들다 보면 시간이 다 가.",
+  dialogs:[
+    {before:"“오늘 뭐 만들었어? 어땠어? 힘들었어?”",
+     after:"“오늘 20분은 만들기만 하자. 끝나고 엄마한테 하나만 알려 줄래?”"},
+    {before:"“재밌게 했으면 됐지 뭐.”",
+     after:"“재밌었던 거, 한 번 다시 열어서 저장해 둘까? 다음에 이어서 하자.”"}
+  ],
+  classGuide:[
+    "수업 첫 1분에 아이와 규칙 한 줄을 정하고, 그 규칙은 칠판에 남겨 둡니다.",
+    "대화는 만들면서 하는 것으로 바꿉니다 — 손은 움직이고 입은 이야기해도 됩니다.",
+    "끝나기 3분 전에 ‘저장·정리·한 줄 소감’을 늘 같은 순서로 반복합니다."
+  ],
+  home:[
+    {t:"0~2분", text:"오늘의 규칙 한 줄을 아이가 말하고 엄마가 적는다"},
+    {t:"2~12분", text:"만들기 — 대화는 옆에서 짧게, 손은 계속 움직이게"},
+    {t:"12~13분", text:"저장하고 화면을 한 장 캡처해 둔다"},
+    {t:"13~15분", text:"오늘 한 것 중 하나만 아이가 말한다"}
+  ],
+  counselor:{
+    opening:"{mom}님은 아이의 말을 잘 받아 주는 분이에요. {kid:는} 그 대화 속에서 에너지를 얻고요. 이 조합에 필요한 건 단 하나, ‘한 줄 규칙’입니다.",
+    points:[
+      "관계가 이미 좋아서, 규칙 하나만 붙으면 실행력이 급격히 올라갑니다.",
+      "규칙은 엄마가 정하지 말고 아이 입으로 말하게 하는 것이 핵심입니다.",
+      "수업에서도 대화를 없애지 않고, 대화와 만들기를 동시에 가게 하고 있습니다."
+    ],
+    risks:[
+      "대화가 길어지면 실습 시간이 줄어 3개월 뒤 ‘재밌었는데 남은 게 없는’ 상태가 됩니다.",
+      "아이가 ‘규칙’을 혼내는 말로 배우지 않도록, 규칙은 늘 아이가 고르게 해 주세요."
+    ]
+  }
+},
+
+"M2-K2":{
+  title:"에너지는 넘치는데 <mark>혼자 있는 시간이 약해요</mark>",
+  one:"둘 다 말이 많은 조합이에요. 수업이 시끌시끌 신나지만, 혼자 몰입해 결과를 만들어 본 경험이 적어요.",
+  clash:"아이는 보여 주려고 하고 엄마는 그걸 받아 주느라 시간이 갑니다. 정작 ‘혼자 15분’이 없어서 결과물이 얇아지고, 둘 다 그건 잘 모릅니다. 즐거움과 성취는 다른 근육이에요.",
+  bridge:"‘조용한 10분’을 약속하세요. 그 10분은 엄마도 말을 걸지 않고, 아이도 설명하지 않습니다. 끝나면 그때 마음껏 보여 주게 해요.",
+  momView:"애가 재밊게 하는 건 좋은데, 결과물이 늘 비슷해.",
+  kidView:"엄마가 봐 주면 더 신나는데, 왜 혼자 하래?",
+  dialogs:[
+    {before:"“잠깐만 조용히 해 봐.”",
+     after:"“지금 10분은 조용히 만들기. 끝나면 엄마가 다 봐 줄게.”"},
+    {before:"“또 같은 거 만들었네.”",
+     after:"“이번엔 지난번이랑 어디가 달라졌는지 하나만 알려 줄래?”"}
+  ],
+  classGuide:[
+    "수업을 ‘조용히 만들기 10분 → 발표 3분’ 두 토막으로 나눕니다.",
+    "아이의 설명을 영상으로 남겨, 나중에 스스로 돌아볼 수 있게 합니다.",
+    "다른 아이에게 설명하는 역할을 맡겨, 표현 에너지를 배움으로 바꿉니다."
+  ],
+  home:[
+    {t:"0~10분", text:"조용히 혼자 만들기 (엄마는 옆에서 다른 일, 말 걸지 않기)"},
+    {t:"10~12분", text:"아이가 오늘 만든 것을 30초로 설명한다"},
+    {t:"12~14분", text:"지난번 작품과 다른 점을 하나 찾아본다"},
+    {t:"14~15분", text:"다음에 바꿔 볼 것을 아이가 한 줄 정한다"}
+  ],
+  counselor:{
+    opening:"{kid:는} 보여 주면서 자라는 아이이고, {mom}님은 그 무대를 잘 만들어 주는 분이에요. 여기에 ‘조용한 10분’만 더해지면 결과물의 두께가 달라집니다.",
+    points:[
+      "표현형 아이는 발표 자리를 보상으로 주면 혼자 하는 시간을 견딥니다.",
+      "설명을 영상으로 남기면 자기 언어로 정리하는 힘이 같이 자랍니다.",
+      "수업에서 ‘만들기 10분 / 발표 3분’ 리듬을 고정해 두고 있습니다."
+    ],
+    risks:[
+      "즐거움만 남고 산출물이 없으면 6개월 뒤 학부모가 ‘뭘 배웠는지 모르겠다’고 느낍니다.",
+      "아이의 말을 다 받아 주면 수업이 대화로 끝나 — 발표는 짧고 정해진 시간에."
+    ]
+  }
+},
+
+"M2-K3":{
+  title:"아이는 순서가 필요한데, <mark>엄마가 자주 바꿔요</mark>",
+  one:"대화로 유연하게 움직이는 엄마와, 순서가 있어야 편한 아이. 둘 다 사이는 좋은데 계획이 자주 흔들려요.",
+  clash:"엄마는 “오늘은 이거 해 볼까?” 하고 즉흥적으로 바꾸고, 아이는 바뀐 순서에 적응하느라 에너지를 다 씁니다. 그러면 엄마는 아이가 의욕이 없다고 느껴요. 실제로는 준비 시간이 필요한 것뿐이에요.",
+  bridge:"바꿀 때는 하루 전에 말해 주세요. 그리고 바뀐 계획은 종이에 다시 적어 아이 손에 쥐여 주세요. 종이가 있으면 이 아이는 훨씬 편안해집니다.",
+  momView:"이걸 재밌게 바꿔 주면 더 좋아할 텐데, 왜 표정이 안 좋지?",
+  kidView:"어제는 이거 한다고 했는데. 갑자기 바뀌면 어떻게 해야 하지?",
+  dialogs:[
+    {before:"“오늘은 이거 말고 이거 하자!”",
+     after:"“다음 시간에 이걸 해 보자. 오늘은 약속한 것부터 하고, 남으면 이걸 하자.”"},
+    {before:"“왜 또 표정이 안 좋아?”",
+     after:"“계획이 바뀌어서 헷갈렸구나. 바뀐 순서 같이 적어 볼까?”"}
+  ],
+  classGuide:[
+    "한 달 커리큘럼을 종이로 아이 책상에 붙여 두고, 바뀌면 즉시 수정해 다시 붙입니다.",
+    "수업 시작 때 ‘오늘 할 것 3개’를 아이가 소리 내어 확인합니다.",
+    "즉흥 활동은 ‘보너스 5분’으로 따로 두어, 계획과 섞이지 않게 합니다."
+  ],
+  home:[
+    {t:"0~2분", text:"오늘 할 것 3개를 아이가 소리 내어 읽는다"},
+    {t:"2~8분", text:"적힌 순서대로 진행 (엄마는 순서를 바꾸지 않는다)"},
+    {t:"8~10분", text:"남으면 ‘보너스 시간’으로 아이가 고른 것을 한다"},
+    {t:"10~12분", text:"내일 할 것을 함께 적어 둔다"}
+  ],
+  counselor:{
+    opening:"{mom}님은 유연함이 강점이고, {kid:는} 그 유연함 속에서 흔들리지 않을 틀이 필요해요. 둘 다 나쁜 게 아니라, 속도가 다른 겁니다.",
+    points:[
+      "이 조합은 ‘바꾸는 것’을 금지하기보다 ‘바꾸는 방법’을 정하면 해결됩니다.",
+      "종이에 적힌 계획은 이 아이에게 안정감 그 자체입니다.",
+      "수업에서도 한 달 계획표를 아이 책상에 붙여 두고 있습니다."
+    ],
+    risks:[
+      "즉흥 변경이 반복되면 아이가 ‘무엇을 해도 중간에 바뀐다’고 학습해 계획을 세우지 않습니다.",
+      "아이의 무표정을 의욕 없음으로 읽으면, 아이는 자기 감정을 감추는 쪽으로 갑니다."
+    ]
+  }
+},
+
+"M2-K4":{
+  title:"말 걸고 싶은 엄마, <mark>조용히 있어야 하는 아이</mark>",
+  one:"엄마는 대화로 가까워지고 싶고, 아이는 조용한 곁에 있을 때 마음이 편해요. 사랑의 방식이 달라서 생기는 서운함이에요.",
+  clash:"엄마가 옆에서 말을 걸면 아이의 집중이 끊기고, 아이가 말이 없으면 엄마는 거리감을 느낍니다. 둘 다 상처받는데 아무도 그 이유를 말하지 않아요.",
+  bridge:"말 대신 ‘곁에 있기’를 해 보세요. 5분은 옆에서 조용히 같이 화면을 보고, 끝난 뒤에 한 가지만 묻습니다. 이 아이는 그 침묵을 애정으로 기억합니다.",
+  momView:"옆에 있어도 말이 없으니, 내가 필요 없는 건가 싶어.",
+  kidView:"엄마가 옆에 있으면 좋은데, 자꾸 물어보면 머리가 하얘져.",
+  dialogs:[
+    {before:"“엄마가 옆에 있는데 왜 말이 없어?”",
+     after:"“엄마는 옆에서 조용히 볼게. 다 하면 하나만 들려줘.”"},
+    {before:"“오늘 뭐 했는지 얘기해 봐.”",
+     after:"“오늘 만든 것 중에 네가 제일 마음에 드는 부분이 어디야?”"}
+  ],
+  classGuide:[
+    "수업 중에는 아이가 말할 때까지 기다리고, 제 설명은 짧게 끊어서 넣습니다.",
+    "작업 중에는 옆에서 조용히 관찰하고, 그 과정을 나중에 구체적으로 언급합니다.",
+    "수업 끝 3분에만 대화 시간을 둡니다 — 예측 가능한 대화는 부담이 아닙니다."
+  ],
+  home:[
+    {t:"0~5분", text:"엄마는 옆에서 조용히 같이 화면을 본다 (질문 없이)"},
+    {t:"5~10분", text:"아이가 먼저 말할 때까지 기다린다"},
+    {t:"10~12분", text:"말이 나오면 한 가지만 더 묻는다"},
+    {t:"12~13분", text:"“옆에 있어 줘서 고마워” 대신 “같이 봐서 좋았다” 한마디"}
+  ],
+  counselor:{
+    opening:"{mom}님은 대화로 사랑을 전하는 분이고, {kid:는} 조용한 곁에서 사랑을 느끼는 아이예요. 방식이 다른 것뿐이라, 조금만 바꾸면 둘 다 편해집니다.",
+    points:[
+      "이 아이에게 침묵은 거리감이 아니라 편안함입니다.",
+      "대화를 없애지 말고 ‘정해진 시간’으로 옮기면 엄마도 채워집니다.",
+      "수업에서도 작업 중에는 기다리고, 마지막 3분에 대화를 두고 있습니다."
+    ],
+    risks:[
+      "말을 걸 때마다 집중이 끊기면 아이가 ‘엄마 앞에서는 집중 못 한다’고 느낍니다.",
+      "아이의 무표정을 서운함으로 쌓아 두면, 엄마 쪽에서 먼저 지칩니다 — 짧게 확인하고 넘어가세요."
+    ]
+  }
+},
+
+/* ───────── 엄마 🧭 계획·루틴형 ───────── */
+"M3-K1":{
+  title:"계획표 앞에서 <mark>둘 다 지쳐요</mark>",
+  one:"순서를 세우는 엄마와 즉흥적으로 뛰는 아이. 엄마의 계획은 좋은데, 아이에겐 너무 촘촘해요.",
+  clash:"계획이 5분 단위로 있으면 이 아이는 숨이 막힙니다. 아이가 계획을 벗어나면 엄마는 ‘약속을 안 지킨다’고 느끼고, 아이는 ‘또 혼났다’고 느껴요. 계획의 목적이 뒤바뀐 상태예요.",
+  bridge:"계획을 ‘순서’가 아니라 ‘오늘의 3가지’로 줄여 보세요. 시간은 비워 두고, 무엇을 할지만 정합니다. 자유 시간이 계획 안에 있어야 이 아이는 계획을 지킵니다.",
+  momView:"계획을 세워 줬는데 왜 자꾸 벗어나지?",
+  kidView:"하고 싶은 게 생겼는데, 시간이 자꾸 나를 재촉해.",
+  dialogs:[
+    {before:"“3시부터 3시 30분까지 이거 하기로 했잖아.”",
+     after:"“오늘 안에 이 세 개만 하면 돼. 순서는 네가 정해.”"},
+    {before:"“또 계획대로 안 했네.”",
+     after:"“계획에서 벗어난 게 아니라 다른 걸 먼저 한 거구나. 남은 두 개 중에 뭐부터 할까?”"}
+  ],
+  classGuide:[
+    "수업 계획은 ‘할 것 3개’로만 제시하고, 순서는 아이가 고릅니다.",
+    "중간에 자유 탐색 5분을 공식 일정으로 넣습니다 — 벗어나는 게 아니라 계획 안에 있습니다.",
+    "끝나고 ‘오늘 3개 중 몇 개 했는지’만 함께 확인합니다."
+  ],
+  home:[
+    {t:"0~2분", text:"오늘 할 것 3개를 함께 정한다 (시간은 정하지 않는다)"},
+    {t:"2~10분", text:"아이 순서대로 진행, 중간에 자유 시간 2분 허용"},
+    {t:"10~12분", text:"한 것·못 한 것을 표시한다"},
+    {t:"12~13분", text:"못 한 것은 내일로 넘기고 끝낸다 — 야단치지 않는다"}
+  ],
+  counselor:{
+    opening:"{mom}님은 아이에게 흐름을 만들어 주는 분이에요. 다만 {kid:}에게는 촘촘한 시간표보다 ‘할 것 3개’가 훨씬 잘 맞습니다.",
+    points:[
+      "계획의 밀도를 낮추면 아이의 실행률이 오히려 올라갑니다.",
+      "자유 시간을 계획 안에 넣으면 ‘계획을 지키는 아이’가 됩니다.",
+      "수업에서는 3개 목록 + 자유 5분 구조로 운영하고 있습니다."
+    ],
+    risks:[
+      "시간 단위 계획이 반복되면 아이가 컴퓨터 시간 자체를 회피합니다.",
+      "‘계획을 안 지켰다’는 평가가 쌓이면 아이는 계획을 세우는 것부터 거부합니다."
+    ]
+  }
+},
+
+"M3-K2":{
+  title:"순서는 좋은데, <mark>무대가 없어요</mark>",
+  one:"차분한 루틴을 만드는 엄마와, 보여 주고 싶은 아이. 안정적이지만 아이의 에너지가 갈 곳이 없어요.",
+  clash:"엄마는 조용하고 순서 있는 시간을 만들고, 아이는 그 안에서 ‘언제 보여 주지?’만 기다립니다. 발표 자리가 없으면 아이는 수업을 지루해하고, 엄마는 ‘집중을 못 한다’고 느껴요.",
+  bridge:"계획 안에 ‘보여 주기’를 공식 일정으로 넣으세요. 매주 금요일 3분 발표처럼 정해 두면, 아이는 그날을 위해 스스로 준비합니다.",
+  momView:"차분히 앉아서 하는 걸 힘들어해.",
+  kidView:"만들었는데 아무도 안 봐 주면 재미없어.",
+  dialogs:[
+    {before:"“오늘은 조용히 여기까지 하자.”",
+     after:"“오늘 만든 거, 금요일에 3분 동안 보여 주기로 하자. 그때 뭘 보여 줄지 정해 둘까?”"},
+    {before:"“집중 좀 해.”",
+     after:"“네가 방금 만든 거, 엄마한테 먼저 보여 줄래? 그다음에 이어서 하자.”"}
+  ],
+  classGuide:[
+    "매주 마지막 수업 10분을 ‘시연회’로 고정합니다 — 일정표에 미리 적혀 있습니다.",
+    "아이의 작품을 짧은 영상으로 남겨 학부모에게 보내는 루틴을 만듭니다.",
+    "혼자 하는 시간은 7분 단위로 끊고, 그 사이에 한 번 보여 주는 자리를 둡니다."
+  ],
+  home:[
+    {t:"0~7분", text:"조용히 만들기 (엄마는 옆에서 함께 조용히)"},
+    {t:"7~9분", text:"중간 보고: 지금까지 만든 것 30초 보여 주기"},
+    {t:"9~15분", text:"이어서 만들기"},
+    {t:"15~16분", text:"오늘 작품을 사진으로 남겨 두기"}
+  ],
+  counselor:{
+    opening:"{mom}님이 만드는 루틴은 이 아이에게 좋은 틀이에요. 거기에 ‘보여 주는 자리’만 일정으로 넣으면, 아이가 루틴을 스스로 지킵니다.",
+    points:[
+      "표현형 아이는 발표 일정이 있으면 그 전에 혼자 준비하는 힘을 보입니다.",
+      "루틴은 그대로 두고 ‘무대’만 추가하면 됩니다 — 구조를 바꿀 필요는 없어요.",
+      "주 1회 시연회를 일정표에 고정해 운영하고 있습니다."
+    ],
+    risks:[
+      "보여 줄 자리가 없으면 아이는 3개월 안에 ‘재미없다’고 말합니다.",
+      "발표를 상으로만 쓰면 시험처럼 느낄 수 있어 — 짧고 가볍게, 매주 같은 시간에."
+    ]
+  }
+},
+
+"M3-K3":{
+  title:"아주 잘 맞아요, 다만 <mark>실수가 두려워요</mark>",
+  one:"순서와 규칙을 좋아하는 두 사람이라 수업이 매끄럽게 굴러가요. 대신 둘 다 ‘틀리는 것’을 싫어해서 도전이 줄어듭니다.",
+  clash:"잘 맞는 조합이라 갈등은 적어요. 문제는 두 사람이 함께 ‘안전한 것’만 고른다는 점이에요. 새로운 도구·어려운 문제를 피하다 보면 6개월 뒤에도 실력이 비슷한 자리에 있습니다.",
+  bridge:"‘일부러 틀려 보기’를 계획에 넣어 주세요. 한 번은 오류를 내고, 같이 고치는 시간을 정식 일정으로 둡니다. 틀리는 게 규칙 안에 있으면 이 아이는 훨씬 편해져요.",
+  momView:"잘하고 있는데, 왜 새로운 건 안 해 보려고 하지?",
+  kidView:"지금 것도 잘 되는데, 굳이 어려운 걸 해서 틀리면?",
+  dialogs:[
+    {before:"“이번엔 어려운 거 해 보자.”",
+     after:"“오늘은 일부러 한 번 틀려 보는 시간이야. 틀리면 어떻게 되는지 같이 보자.”"},
+    {before:"“또 쉬운 것만 하네.”",
+     after:"“이번엔 한 단계만 올려 볼까? 안 되면 되돌리면 되니까.”"}
+  ],
+  classGuide:[
+    "매 수업 5분은 ‘오류 실험실’ — 일부러 오류를 만들고 원인을 찾습니다.",
+    "새 도구는 실패해도 되는 ‘연습 저장본’에서 먼저 만져 봅니다.",
+    "진도표에 ‘도전 1개’ 칸을 따로 두어, 성공 여부와 상관없이 시도만으로 체크합니다."
+  ],
+  home:[
+    {t:"0~2분", text:"오늘의 ‘도전 1개’를 아이가 고른다"},
+    {t:"2~10분", text:"도전해 보고, 안 되면 그 이유를 함께 찾는다"},
+    {t:"10~12분", text:"성공·실패와 상관없이 도전한 것에 동그라미"},
+    {t:"12~13분", text:"오늘 배운 것을 한 줄로 적는다"}
+  ],
+  counselor:{
+    opening:"{mom}님과 {kid:}는 결이 아주 비슷한 조합이에요. 그래서 편안하지만, 함께 안전한 쪽으로만 가려는 경향이 있습니다. ‘틀려도 되는 시간’을 제도로 만들어 두는 게 답입니다.",
+    points:[
+      "이 조합의 과제는 관계가 아니라 ‘도전의 양’입니다.",
+      "실패를 일정에 넣으면 두 사람 모두 덜 불안해합니다.",
+      "수업에서 오류 실험실 5분을 고정으로 운영하고 있습니다."
+    ],
+    risks:[
+      "편안함이 오래가면 아이가 ‘잘하는 것만 하는 아이’로 굳습니다.",
+      "엄마도 실수를 싫어해서, 아이가 실패하면 분위기가 조용히 가라앉습니다 — 표정 관리가 중요해요."
+    ]
+  }
+},
+
+"M3-K4":{
+  title:"조용하고 안정적, 다만 <mark>속도가 붙지 않아요</mark>",
+  one:"차분한 루틴과 깊은 몰입이 만나 수업이 조용히 잘 흘러가요. 대신 둘 다 서두르지 않아서 진도가 천천히 갑니다.",
+  clash:"갈등은 거의 없어요. 대신 ‘확실해질 때까지’ 미루는 습관이 서로를 강화합니다. 아이는 시작을 미루고, 엄마는 그 기다림을 존중해서 결국 오늘 분량이 남습니다.",
+  bridge:"완벽하지 않아도 ‘오늘 한 번 저장’을 목표로 삼으세요. 완성 대신 ‘한 번 해 보기’를 칭찬하면 이 아이는 훨씬 빨리 움직입니다.",
+  momView:"아이가 신중해서 좋은데, 시작을 너무 오래 미뤄.",
+  kidView:"조금만 더 생각하고 시작하면 안 될까?",
+  dialogs:[
+    {before:"“오늘은 이거 다 해야 해.”",
+     after:"“오늘은 한 번 해 보고 저장까지만 하자. 다듬는 건 다음에.”"},
+    {before:"“아직 안 했어?”",
+     after:"“어디까지 생각했는지 들려줘. 그다음 바로 한 줄만 해 보자.”"}
+  ],
+  classGuide:[
+    "수업 첫 3분은 ‘일단 한 줄 실행’ — 설명 전에 손부터 움직입니다.",
+    "완성도 평가 대신 ‘오늘 새로 해 본 것’을 기록합니다.",
+    "아이의 속도를 존중하되, 세션마다 작은 마감(저장·캡처)을 둡니다."
+  ],
+  home:[
+    {t:"0~1분", text:"오늘은 ‘다듬기’가 아니라 ‘해 보기’라고 정한다"},
+    {t:"1~10분", text:"생각은 2분까지만, 나머지는 손으로"},
+    {t:"10~12분", text:"완성 안 해도 저장하고 캡처한다"},
+    {t:"12~13분", text:"‘오늘 새로 해 본 것’ 한 줄 적기"}
+  ],
+  counselor:{
+    opening:"{mom}님과 {kid:}는 조용히 잘 맞는 조합이에요. 다만 둘 다 확신을 기다리다 보면 시작이 늦어집니다. ‘완성’ 대신 ‘한 번 해 보기’를 기준으로 삼아 주세요.",
+    points:[
+      "이 조합은 갈등 관리가 아니라 ‘시작의 문턱’을 낮추는 게 과제입니다.",
+      "작은 마감(저장·캡처)이 완벽주의를 부드럽게 깨줍니다.",
+      "수업에서 3분 실행 규칙을 쓰고 있습니다."
+    ],
+    risks:[
+      "진도가 느린 것을 ‘아이 성향’으로만 설명하면 1년 뒤 격차가 됩니다.",
+      "엄마의 기다림이 길어지면 아이는 ‘준비만 하는 아이’가 됩니다 — 작은 마감을 꼭 두세요."
+    ]
+  }
+},
+
+/* ───────── 엄마 🔍 관찰·섬세형 ───────── */
+"M4-K1":{
+  title:"엄마 눈엔 엉성하고, <mark>아이 눈엔 완성</mark>",
+  one:"꼼꼼히 보는 엄마와 마무리가 흐린 아이. 아이는 신나는데 엄마는 아쉬운 부분이 먼저 보여요.",
+  clash:"아이가 “다 했어!”라고 할 때마다 엄마가 한 가지를 짚으면, 아이는 ‘또 부족하다’는 말로 기억합니다. 세 번 반복되면 아이는 보여 주지 않기 시작해요. 엄마는 아낌없이 칭찬하는 편인데, 그 한마디가 더 크게 들립니다.",
+  bridge:"짚는 말은 하루에 한 번만, 그리고 ‘다음에’로 미뤄 주세요. “이건 다음에 같이 고쳐 보자”가 “지금 고쳐”보다 이 아이에겐 훨씬 잘 들어갑니다.",
+  momView:"조금만 더 하면 훨씬 좋아질 텐데, 왜 여기서 끝내지?",
+  kidView:"재밌게 만들었는데, 엄마는 늘 아쉬운 것만 봐.",
+  dialogs:[
+    {before:"“여기 글자가 삐뚤어졌어. 다시 해 볼까?”",
+     after:"“만드는 거 진짜 빠르다! 이건 다음에 같이 다듬어 보자.”"},
+    {before:"“아직 안 끝났잖아.”",
+     after:"“여기까지 다 했네. 다음에 붙일 것 하나만 같이 정해 둘까?”"}
+  ],
+  classGuide:[
+    "칭찬은 구체적으로 먼저, 지적은 한 번만 맨 마지막에 합니다.",
+    "완성 기준을 아이와 함께 3개로 정해 두고, 그 3개만 확인합니다.",
+    "과정에서의 시도(색 고르기·지웠다 다시 만들기)를 관찰해 두었다가 짚어 줍니다."
+  ],
+  home:[
+    {t:"0~3분", text:"아이가 보여 주는 것을 끝까지 본다 (말없이)"},
+    {t:"3~5분", text:"좋은 점 하나를 구체적으로 말한다"},
+    {t:"5~8분", text:"다음에 다듬을 것 하나만 ‘다음에’로 정해 둔다"},
+    {t:"8~10분", text:"오늘 만든 것 사진으로 남기기"}
+  ],
+  counselor:{
+    opening:"{kid:}는 일단 만들어 내는 힘이 큰 아이예요. {mom}님의 꼼꼼함은 분명 강점인데, 지금은 그 한마디가 아이의 시작을 줄이고 있습니다.",
+    points:[
+      "칭찬과 지적의 비율을 3:1로만 바꿔도 아이의 발표 빈도가 달라집니다.",
+      "‘다음에’로 미루는 표현은 완벽주의 엄마의 마음을 지키면서 아이를 살립니다.",
+      "수업에서는 완성 기준을 아이와 3개로 정해 두고 있습니다."
+    ],
+    risks:[
+      "지적이 반복되면 아이가 작품을 보여 주지 않고, 성장의 피드백이 끊깁니다.",
+      "엄마가 직접 고쳐 버리면 아이는 ‘내 것은 엄마 것’이 됩니다 — 손대지 않기."
+    ]
+  }
+},
+
+"M4-K2":{
+  title:"말 걸 때마다 <mark>엄마가 지쳐요</mark>",
+  one:"조용히 지켜보는 엄마와 계속 말을 거는 아이. 아이는 애정이고 엄마는 소진이에요.",
+  clash:"아이는 5분마다 “봐 봐!” 하고 부르고, 엄마는 그걸 다 받아 주다 지칩니다. 그러다 한 번씩 크게 혼내고, 아이는 ‘갑자기 화내는 엄마’로 기억해요. 엄마의 예산을 미리 정해 두면 이 반복이 끊깁니다.",
+  bridge:"‘봐 줘’는 하루 세 번까지, 라고 정해 보세요. 대신 그 세 번은 진짜로 다 봐 줍니다. 정해진 만큼 충분히 받으면 아이는 덜 조릅니다.",
+  momView:"집중해서 뭘 좀 하려는데 계속 불러.",
+  kidView:"엄마가 안 봐 주면 만든 게 의미가 없어.",
+  dialogs:[
+    {before:"“지금은 안 돼, 이따 봐.”",
+     after:"“지금 10분만 기다려 줘. 끝나면 네 거 3분 동안 다 볼게.”"},
+    {before:"“그만 좀 불러!”",
+     after:"“오늘 세 번 중에 두 번 봤어. 마지막 한 번 남았네. 이따 볼까?”"}
+  ],
+  classGuide:[
+    "수업 중 ‘보여 주기’ 시간을 미리 정해 두어 아이가 그때를 기다리게 합니다.",
+    "작업 중 리액션은 짧게(고개·한마디), 다 보는 시간은 정해진 때에 몰아 줍니다.",
+    "아이 작품을 영상으로 남겨, 가족이 나중에 볼 수 있게 합니다."
+  ],
+  home:[
+    {t:"0~10분", text:"엄마는 다른 일, 아이는 혼자 만들기 (부를 횟수 3번 남겨 두기)"},
+    {t:"10~13분", text:"‘보여 주기 3분’ — 그동안은 다른 일 안 하기"},
+    {t:"13~15분", text:"잘한 점 한 가지를 구체적으로"},
+    {t:"15~16분", text:"내일 볼 시간을 미리 정해 둔다"}
+  ],
+  counselor:{
+    opening:"{kid:}가 “봐 봐” 하는 건 엄마가 그만큼 중요하다는 뜻이에요. {mom}님은 그 마음을 다 받아 주고 싶지만, 지속하려면 예산이 필요합니다.",
+    points:[
+      "정해진 횟수만큼 충분히 보는 것이, 계속 흘깃 보는 것보다 아이를 안심시킵니다.",
+      "엄마의 소진은 아이 문제가 아니라 구조 문제 — 시간을 미리 정하면 해결됩니다.",
+      "수업에서도 보여 주기 시간을 정해 두고 기다리게 하는 훈련을 합니다."
+    ],
+    risks:[
+      "반복된 참다가 한 번 크게 혼내는 패턴이 굳으면 아이는 표현을 줄입니다.",
+      "아이의 발표 욕구를 억누르면, 대신 다른 곳(친구·게임)에서 인정을 찾게 됩니다."
+    ]
+  }
+},
+
+"M4-K3":{
+  title:"잘 맞지만 <mark>진도가 느리고, 둘 다 예민해요</mark>",
+  one:"꼼꼼한 엄마와 순서를 지키는 아이. 수업이 정갈하지만, 둘 다 실수에 예민해서 새것을 잘 못 건드려요.",
+  clash:"서로 잘 맞아서 갈등이 드러나지 않아요. 그런데 둘 다 ‘틀리면 안 된다’는 기준을 공유해서, 어려운 단계로 갈 때 같이 멈춥니다. 겉으로는 평화롭지만 안에서 긴장이 쌓여요.",
+  bridge:"한 번은 ‘엄마도 틀려 보는 시간’을 만들어 주세요. 엄마가 오류를 내고 웃으면서 고치면, 아이는 그 장면을 오래 기억하고 훨씬 편해집니다.",
+  momView:"아이가 신중한 건 좋은데, 새로운 걸 너무 피해.",
+  kidView:"잘하고 있는데, 왜 꼭 어려운 걸 해야 해?",
+  dialogs:[
+    {before:"“이번엔 어려운 걸 해 보자.”",
+     after:"“오늘은 같이 틀려 보는 날이야. 엄마가 먼저 틀려 볼게.”"},
+    {before:"“또 그거만 하네.”",
+     after:"“여기에 하나만 더 붙여 볼까? 안 되면 원래대로 돌아오면 돼.”"}
+  ],
+  classGuide:[
+    "새 단계는 반드시 ‘돌아올 수 있는 저장’을 만든 뒤에 시작합니다 — 안전감이 핵심입니다.",
+    "선생님이 일부러 오류를 내고 고치는 시범을 먼저 보여 줍니다.",
+    "진도표에 ‘시도한 것’ 칸을 두어 성공과 분리해 기록합니다."
+  ],
+  home:[
+    {t:"0~2분", text:"오늘의 ‘한 단계 위’ 하나를 정한다"},
+    {t:"2~10분", text:"해 보고, 안 되면 되돌리는 연습을 함께 한다"},
+    {t:"10~12분", text:"되돌리는 것도 실력이라는 걸 아이가 말로 확인"},
+    {t:"12~13분", text:"오늘 새로 알게 된 것 한 줄"}
+  ],
+  counselor:{
+    opening:"{mom}님과 {kid:}는 꼼꼼함이 잘 맞는 조합이에요. 대신 두 사람이 함께 ‘안전한 것’만 고르는 경향이 있어서, 도전을 제도로 만들어 두는 게 좋습니다.",
+    points:[
+      "갈등이 없어 보여도 도전이 줄면 실력이 정체됩니다 — 이 조합의 유일한 과제입니다.",
+      "엄마가 먼저 틀리는 모습을 보여 주는 것이 가장 강력한 허가증입니다.",
+      "수업에서 ‘되돌리기’를 먼저 가르치고 있습니다."
+    ],
+    risks:[
+      "완벽 기준이 조용히 유지되면 아이는 어려운 과제를 ‘안 하는 것’으로 회피합니다.",
+      "엄마의 미세한 표정(한숨·눈썹)이 아이에겐 평가로 들립니다."
+    ]
+  }
+},
+
+"M4-K4":{
+  title:"완벽한 둘, <mark>시작을 못 해요</mark>",
+  one:"섬세한 엄마와 신중한 아이. 서로를 잘 이해하지만, 둘 다 ‘충분히 준비될 때까지’ 기다리다 시작이 늦어요.",
+  clash:"갈등이 없는 대신 정체가 옵니다. 아이는 시작 전에 오래 망설이고, 엄마는 그 마음을 알아서 기다립니다. 한 달이 지나도 첫 프로젝트가 그대로예요. 둘 다 상처 없이 함께 멈춰 있는 상태예요.",
+  bridge:"‘5분만 하고 멈추기’를 규칙으로 정해 보세요. 끝까지 하지 않아도 되는 약속이 있으면 이 아이는 시작합니다. 그리고 엄마는 그 5분을 평가하지 않습니다.",
+  momView:"아이가 준비될 때까지 기다려 주는 게 맞는 것 같은데, 너무 오래 걸려.",
+  kidView:"제대로 하고 싶은데, 시작하면 틀릴 것 같아.",
+  dialogs:[
+    {before:"“이제 시작해 볼까?”",
+     after:"“오늘은 5분만 하고 그만해도 돼. 어디부터 만져 볼까?”"},
+    {before:"“천천히 해도 되는데, 언제 할 거야?”",
+     after:"“엄마는 3시에 옆에 앉을게. 그때 같이 5분만 해 보자.”"}
+  ],
+  classGuide:[
+    "수업은 항상 ‘완성된 예시를 만져 보기’로 시작해 시작 부담을 없앱니다.",
+    "5분 타이머로 시작하고, 멈춰도 다음 시간에 이어 갈 수 있게 저장해 둡니다.",
+    "결과물 평가 대신 ‘오늘 손을 댄 시간’을 함께 확인합니다."
+  ],
+  home:[
+    {t:"0~1분", text:"5분 타이머를 켠다 (끝까지 안 해도 된다고 먼저 말한다)"},
+    {t:"1~5분", text:"한 부분만 손댄다"},
+    {t:"5~7분", text:"멈추고 저장한다 — 멈춘 것도 성공"},
+    {t:"7~8분", text:"다음 5분에 할 것을 한 줄 적어 둔다"}
+  ],
+  counselor:{
+    opening:"{mom}님과 {kid:}는 서로를 아주 잘 이해하는 조합이에요. 그래서 둘 다 기다려 주는데, 그 기다림이 길어지면 시작 자체가 어려워집니다. ‘5분만’ 규칙이 이 조합의 열쇠입니다.",
+    points:[
+      "이 조합은 갈등 해결이 아니라 ‘착수’를 설계하는 문제입니다.",
+      "짧은 약속은 완벽주의를 건드리지 않고 움직이게 하는 가장 좋은 방법입니다.",
+      "수업에서 5분 타이머와 저장 루틴을 쓰고 있습니다."
+    ],
+    risks:[
+      "기다림이 계속되면 아이는 ‘시작하지 않는 것’이 안전하다고 학습합니다.",
+      "엄마의 완벽 기준이 말없이 전달되면 아이는 완성 전에는 아무것도 보여 주지 않습니다."
+    ]
+  }
+}
+
+};
+
+</script>
+<script>
+/* ============ 라피네코딩 기질·학습 성향 궁합 테스트 · 앱 로직 ============ */
+(function(){
+  "use strict";
+
+  var state = {
+    names:{ mom:"", kid:"" },
+    answers:{ mom:[null,null,null,null,null,null,null,null],
+              kid:[null,null,null,null,null,null,null,null] },
+    idx:0,
+    result:null,
+    screen:"start"
+  };
+
+  var MOM_ORDER = ["M1","M2","M3","M4"];
+  var KID_ORDER = ["K1","K2","K3","K4"];
+  var PROTO = {
+    M1:[1,0.5,0.7,-0.7], M2:[0,-0.8,1,-0.3], M3:[-0.9,1,-0.5,0.5], M4:[-0.6,-0.3,-1,1],
+    K1:[1,-0.5,0.6,-0.8], K2:[0.4,-0.2,1,-0.3], K3:[-0.7,1,-0.3,0.6], K4:[-0.9,0,-1,1]
+  };
+  var WEIGHT = { speed:0.28, rules:0.24, expr:0.26, sens:0.22 };
+
+  /* ---------- 유틸 ---------- */
+  function esc(s){
+    return String(s==null?"":s).replace(/[&<>"']/g, function(c){
+      return {"&":"&amp;","<":"&lt;",">":"&gt;",'"':"&quot;","'":"&#39;"}[c];
+    });
+  }
+  function hasJong(word){
+    if(!word) return false;
+    var code = word.charCodeAt(word.length-1);
+    if(code < 0xAC00 || code > 0xD7A3) return true;
+    return (code - 0xAC00) % 28 !== 0;
+  }
+  var JOSA = {
+    "이":{yes:"이", no:"가"},
+    "는":{yes:"은", no:"는"},
+    "을":{yes:"을", no:"를"},
+    "과":{yes:"과", no:"와"},
+    "으로":{yes:"으로", no:"로"}
+  };
+  function josaFor(name, key){
+    var j = JOSA[key]; if(!j) return key;
+    var jong = hasJong(name);
+    if(key === "으로"){
+      var code = name ? name.charCodeAt(name.length-1) : 0;
+      var isRieul = (code >= 0xAC00 && code <= 0xD7A3) && ((code-0xAC00)%28 === 8);
+      return (jong && !isRieul) ? "으로" : "로";
+    }
+    return jong ? j.yes : j.no;
+  }
+  function fill(text){
+    if(!text) return "";
+    var momName = state.names.mom;
+    var mom = momName || "어머니";
+    var kid = state.names.kid || "아이";
+    return text
+      .replace(/\{mom\}님/g, momName ? esc(momName) + "님" : "어머님")
+      .replace(/\{mom\}/g, esc(mom))
+      .replace(/\{kid\:([이가은는을를과와으로]+)\}/g, function(_,k){
+        return esc(kid) + josaFor(kid, k);
+      })
+      .replace(/\{kid\}/g, esc(kid));
+  }
+  function $(sel, root){ return (root||document).querySelector(sel); }
+  function $all(sel, root){ return Array.prototype.slice.call((root||document).querySelectorAll(sel)); }
+  function today(){
+    var d = new Date();
+    return d.getFullYear() + ". " + (d.getMonth()+1) + ". " + d.getDate();
+  }
+
+  /* ---------- 채점 ---------- */
+  function scoreFromAnswers(person){
+    var qs = QUESTIONS.filter(function(q){ return q.p === person; });
+    var sums = {};
+    AXES.forEach(function(a){ sums[a.id] = { v:0, n:0 }; });
+    qs.forEach(function(q, i){
+      var pick = state.answers[person][i];
+      var val  = (pick == null) ? 2.5 : (q.opts[pick].s);
+      sums[q.axis].v += val; sums[q.axis].n += 1;
+    });
+    var out = {};
+    AXES.forEach(function(a){
+      var s = sums[a.id];
+      var max = s.n * 4, min = s.n * 1;
+      out[a.id] = Math.round((s.v - min) / (max - min) * 100);
+    });
+    return out;
+  }
+
+  function classify(scores, order){
+    var t = AXES.map(function(a){ return scores[a.id] - 50; });
+    var sc = {
+      T1: Math.max(t[0],0) + Math.max(-t[3],0),
+      T2: Math.max(-t[1],0) + Math.max(t[2],0),
+      T3: Math.max(-t[0],0) + Math.max(t[1],0),
+      T4: Math.max(-t[2],0) + Math.max(t[3],0)
+    };
+    var total = sc.T1 + sc.T2 + sc.T3 + sc.T4;
+    var shares = {};
+    order.forEach(function(k, i){
+      shares[k] = total > 0 ? Math.round(sc["T"+(i+1)] / total * 100) : 25;
+    });
+    var mx = Math.max(sc.T1, sc.T2, sc.T3, sc.T4);
+    var tied = [];
+    ["T1","T2","T3","T4"].forEach(function(k){ if(Math.abs(sc[k] - mx) < 1e-6) tied.push(k); });
+    var winner = tied[0];
+    if(tied.length > 1){
+      var best = -2;
+      tied.forEach(function(k){
+        var id = order[["T1","T2","T3","T4"].indexOf(k)];
+        var c = cosine(t, PROTO[id]);
+        if(c > best){ best = c; winner = k; }
+      });
+    }
+    var tidx = ["T1","T2","T3","T4"].indexOf(winner);
+    return { type: order[tidx], shares: shares };
+  }
+
+  function cosine(a,b){
+    var na = Math.sqrt(a.reduce(function(s,x){return s+x*x;},0));
+    var nb = Math.sqrt(b.reduce(function(s,x){return s+x*x;},0));
+    if(!na || !nb) return 0;
+    var d = 0; for(var i=0;i<a.length;i++) d += a[i]*b[i];
+    return d/(na*nb);
+  }
+
+  function compatibility(m, k){
+    var dist = 0, wsum = 0;
+    AXES.forEach(function(a){
+      var w = WEIGHT[a.id];
+      dist += Math.abs(m[a.id] - k[a.id]) * w;
+      wsum += w;
+    });
+    dist = dist / wsum;
+    var score = Math.round(100 - 0.75 * dist);
+    return Math.max(45, Math.min(98, score));
+  }
+  function compatLevel(v){
+    if(v >= 85) return { label:"찰떡 궁합", tone:"mint" };
+    if(v >= 72) return { label:"편안하게 맞는 궁합", tone:"mint" };
+    if(v >= 60) return { label:"서로를 자극하는 궁합", tone:"sun" };
+    return { label:"서로 다른 결을 배우는 궁합", tone:"coral" };
+  }
+
+  /* ---------- 결과 코드 (RC-XXXX) ---------- */
+  /* 자리 1: 어머니 유형(1~4) · 자리 2: 아이 유형(1~4)
+     자리 3: 어머니 4축 높낮이 4비트(hex) · 자리 4: 아이 4축 높낮이 4비트(hex) */
+  function axisMask(scores){
+    var h = 0;
+    AXES.forEach(function(a, i){ if(scores[a.id] >= 50) h |= (1 << (3 - i)); });
+    return h.toString(16).toUpperCase();
+  }
+  function encodeCode(r){
+    return "RC-" + r.mom.type.slice(1) + r.kid.type.slice(1) + axisMask(r.mom.scores) + axisMask(r.kid.scores);
+  }
+  function decodeMask(ch){
+    var v = parseInt(ch, 16);
+    return AXES.map(function(a, i){ return (v & (1 << (3 - i))) ? "↑" : "↓"; }).join("");
+  }
+  function codeReadable(code){
+    var m = /^RC-([1-4])([1-4])([0-9A-F])([0-9A-F])$/i.exec(code || "");
+    if(!m) return "코드를 읽지 못했어요.";
+    var momT = MOM_TYPES["M"+m[1]], kidT = KID_TYPES["K"+m[2]];
+    return "<b>" + esc(code) + "</b> · 어머니 M" + m[1] + "(" + momT.name + ") / 아이 K" + m[2] + "(" + kidT.name + ")" +
+      "<br>축 높낮이 — 어머니 <code>" + decodeMask(m[3]) + "</code>, 아이 <code>" + decodeMask(m[4]) + "</code> " +
+      "<span style=\"color:#A08A6E\">(순서: 속도·구조·표현·민감, ↑ 높은 쪽)</span>";
+  }
+
+  /* ---------- 문항 화면 ---------- */
+  function show(screen){
+    $all(".screen").forEach(function(s){ s.classList.remove("is-active"); });
+    $("#screen-" + screen).classList.add("is-active");
+    state.screen = screen;
+    try{ window.scrollTo({ top:0, behavior:"auto" }); }catch(e){ window.scrollTo(0,0); }
+  }
+
+  function renderQuestion(){
+    var i = state.idx;
+    var q = QUESTIONS[i];
+    var person = q.p;
+    var qi = person === "mom" ? i : i - 8;
+    var answered = state.answers[person][qi];
+
+    var chip = person === "mom"
+      ? '<span class="person-chip mom"><span class="p-dot"></span>어머니 문항 ' + (qi+1) + ' / 8</span>'
+      : '<span class="person-chip kid"><span class="p-dot"></span>아이 문항 ' + (qi+1) + ' / 8</span>';
+
+    var head = person === "mom"
+      ? (state.names.mom ? esc(state.names.mom) + "님" : "평소 엄마") + "의 모습에 가까운 것"
+      : (state.names.kid ? "요즘 " + esc(state.names.kid) : "요즘 아이") + "의 모습에 가까운 것";
+
+    $("#quizBody").innerHTML =
+      chip +
+      '<div class="q-card q-fade">' +
+        '<div class="q-num">Q' + (i+1) + '</div>' +
+        '<p class="q-text">' + esc(q.text) + '</p>' +
+        '<p class="q-hint">' + head + '을 골라 주세요. 정답은 없어요.</p>' +
+        '<div class="opts" id="opts">' +
+          q.opts.map(function(o, k){
+            return '<button type="button" class="opt ' + person + (answered === k ? ' is-picked' : '') + '" data-k="' + k + '">' +
+                     '<span class="num">' + (k+1) + '</span>' +
+                     '<span class="txt">' + esc(o.t) + '</span>' +
+                   '</button>';
+          }).join("") +
+        '</div>' +
+      '</div>' +
+      '<div class="quiz-foot no-print">' +
+        '<button type="button" class="link-btn" id="btnRestart">처음부터 다시 하기</button>' +
+      '</div>';
+
+    $all("#opts .opt").forEach(function(btn){
+      btn.addEventListener("click", function(){ pick(parseInt(btn.dataset.k, 10)); });
+    });
+    $("#btnRestart").addEventListener("click", function(){ resetAll(true); });
+
+    $("#progMeta").innerHTML = '<span>' + (person === "mom" ? "어머니 문항" : "아이 문항") + '</span><span><b>' + (i+1) + '</b> / 16</span>';
+    var fillEl = $("#progFill");
+    fillEl.style.width = Math.max(3, i / 16 * 100) + "%";
+    fillEl.className = "progress-fill" + (person === "kid" ? " kid" : "");
+    $("#btnBack").disabled = false;
+  }
+
+  var advanceTimer = null;
+  function pick(k){
+    var i = state.idx, q = QUESTIONS[i], person = q.p;
+    var qi = person === "mom" ? i : i - 8;
+    state.answers[person][qi] = k;
+
+    $all("#opts .opt").forEach(function(b){
+      b.classList.toggle("is-picked", parseInt(b.dataset.k,10) === k);
+    });
+    var fillEl = $("#progFill");
+    fillEl.style.width = ((i+1) / 16 * 100) + "%";
+
+    clearTimeout(advanceTimer);
+    advanceTimer = setTimeout(function(){
+      if(state.idx >= 15){ finish(); }
+      else { state.idx += 1; renderQuestion(); }
+    }, 240);
+  }
+
+  function goBack(){
+    clearTimeout(advanceTimer);
+    if(state.idx === 0){ show("start"); return; }
+    state.idx -= 1;
+    renderQuestion();
+  }
+
+  function startQuiz(){
+    state.answers = { mom:[null,null,null,null,null,null,null,null],
+                      kid:[null,null,null,null,null,null,null,null] };
+    state.idx = 0;
+    show("quiz");
+    renderQuestion();
+  }
+
+  function resetAll(toStart){
+    clearTimeout(advanceTimer);
+    state.answers = { mom:[null,null,null,null,null,null,null,null],
+                      kid:[null,null,null,null,null,null,null,null] };
+    state.idx = 0;
+    state.result = null;
+    if(toStart){ show("start"); }
+    else { renderQuestion(); }
+  }
+
+  /* ---------- 결과 계산 ---------- */
+  function buildResult(momScores, kidScores){
+    var mc = classify(momScores, MOM_ORDER);
+    var kc = classify(kidScores, KID_ORDER);
+    var combo = COMBOS[mc.type + "-" + kc.type];
+    var compat = compatibility(momScores, kidScores);
+    var r = {
+      mom:{ scores:momScores, type:mc.type, shares:mc.shares },
+      kid:{ scores:kidScores, type:kc.type, shares:kc.shares },
+      combo:combo, compat:compat, track:TRACKS[kc.type]
+    };
+    r.code = encodeCode(r);
+    return r;
+  }
+
+  function finish(){
+    state.result = buildResult(scoreFromAnswers("mom"), scoreFromAnswers("kid"));
+    renderResult();
+    show("result");
+  }
+
+  function runSample(n){
+    var s = SAMPLES[n];
+    if(!state.names.mom){ state.names.mom = s.momName; $("#inpMom").value = s.momName; }
+    if(!state.names.kid){ state.names.kid = s.kidName; $("#inpKid").value = s.kidName; }
+    state.result = buildResult(
+      { speed:s.momScores.speed, rules:s.momScores.rules, expr:s.momScores.expr, sens:s.momScores.sens },
+      { speed:s.kidScores.speed, rules:s.kidScores.rules, expr:s.kidScores.expr, sens:s.kidScores.sens }
+    );
+    renderResult();
+    show("result");
+  }
+
+  /* ---------- 차트 ---------- */
+  function radarSVG(m, k){
+    var cx = 174, cy = 152, R = 94;
+    var dirs = [{ang:-90},{ang:0},{ang:90},{ang:180}];
+    function pt(ang, val){
+      var r = R * val / 100, a = ang * Math.PI/180;
+      return [cx + Math.cos(a)*r, cy + Math.sin(a)*r];
+    }
+    function poly(scores){
+      return AXES.map(function(a, i){
+        var p = pt(dirs[i].ang, scores[a.id]);
+        return p[0].toFixed(1) + "," + p[1].toFixed(1);
+      }).join(" ");
+    }
+    var rings = [25,50,75,100].map(function(v){
+      var pts = dirs.map(function(d){ var p = pt(d.ang, v); return p[0].toFixed(1)+","+p[1].toFixed(1); });
+      return '<polygon points="' + pts.join(" ") + '" fill="none" stroke="#EFE4D6" stroke-width="1"/>';
+    }).join("");
+    var spokes = dirs.map(function(d){
+      var p = pt(d.ang, 100);
+      return '<line x1="' + cx + '" y1="' + cy + '" x2="' + p[0].toFixed(1) + '" y2="' + p[1].toFixed(1) + '" stroke="#F4EBDD" stroke-width="1"/>';
+    }).join("");
+    var labels = [
+      { t:"탐색·속도", x:cx, y:cy-R-15, anchor:"middle" },
+      { t:"구조·규칙", x:cx+R+10, y:cy+4, anchor:"start" },
+      { t:"표현·소통", x:cx, y:cy+R+27, anchor:"middle" },
+      { t:"오류·완성", x:cx-R-10, y:cy+4, anchor:"end" }
+    ].map(function(l){
+      return '<text x="' + l.x + '" y="' + l.y + '" text-anchor="' + l.anchor + '" font-size="11" font-weight="700" fill="#8A7F72">' + l.t + '</text>';
+    }).join("");
+    return '<svg viewBox="0 0 348 300" role="img" aria-label="엄마와 아이의 4축 비교 레이더 차트">' +
+      rings + spokes +
+      '<polygon points="' + poly(m) + '" fill="rgba(236,122,97,.14)" stroke="#EC7A61" stroke-width="2" stroke-linejoin="round"/>' +
+      '<polygon points="' + poly(k) + '" fill="rgba(62,163,145,.15)" stroke="#3EA391" stroke-width="2" stroke-linejoin="round"/>' +
+      AXES.map(function(a,i){
+        var p = pt(dirs[i].ang, m[a.id]);
+        return '<circle cx="'+p[0].toFixed(1)+'" cy="'+p[1].toFixed(1)+'" r="3.1" fill="#EC7A61" stroke="#fff" stroke-width="1.4"/>';
+      }).join("") +
+      AXES.map(function(a,i){
+        var p = pt(dirs[i].ang, k[a.id]);
+        return '<circle cx="'+p[0].toFixed(1)+'" cy="'+p[1].toFixed(1)+'" r="3.1" fill="#3EA391" stroke="#fff" stroke-width="1.4"/>';
+      }).join("") +
+      labels +
+    '</svg>';
+  }
+
+  function gaugeSVG(v){
+    var r = 54, c = 2*Math.PI*r;
+    var tone = v >= 72 ? "#3EA391" : (v >= 60 ? "#F0A94E" : "#EC7A61");
+    return '<svg viewBox="0 0 132 132" role="img" aria-label="궁합 온도 ' + v + '점">' +
+      '<circle cx="66" cy="66" r="' + r + '" fill="none" stroke="#F2EAE0" stroke-width="11"/>' +
+      '<circle id="gaugeArc" cx="66" cy="66" r="' + r + '" fill="none" stroke="' + tone + '" stroke-width="11" stroke-linecap="round" ' +
+        'stroke-dasharray="' + c.toFixed(1) + '" stroke-dashoffset="' + c.toFixed(1) + '" ' +
+        'style="transition:stroke-dashoffset 1s cubic-bezier(.3,.9,.3,1)"/>' +
+    '</svg>';
+  }
+
+  var AXIS_READ = {
+    speed:{
+      same:"두 사람 모두 비슷한 속도예요. 함께 시작하는 데 마찰이 거의 없습니다.",
+      momUp:"어머니가 {g}점 빠릅니다. 시작을 3초만 늦추고 아이가 들어올 자리를 남기면, 같은 말이 다르게 들려요.",
+      kidUp:"아이가 {g}점 빠릅니다. 아이가 앞서 나갈 때 어머니가 브레이크를 잡아 주는 쪽이 오히려 안정적이에요."
+    },
+    rules:{
+      same:"구조를 좋아하는 정도가 비슷해요. 한번 정한 순서를 함께 지키는 데 무리가 없습니다.",
+      momUp:"어머니의 계획 쪽이 {g}점 강해요. 계획을 아이가 한 칸 직접 고르게 하면 ‘함께 지키는’ 기분이 생깁니다.",
+      kidUp:"아이의 규칙 선호가 {g}점 강해요. 순서를 자주 바꾸면 아이가 흔들리니, 바꿀 때는 미리 알려 주세요."
+    },
+    expr:{
+      same:"표현 방식이 비슷해요. 말이 통하는 속도가 같아서 대화가 편안합니다.",
+      momUp:"어머니의 표현이 {g}점 큽니다. 아이가 반응하기 전 3초를 기다리면, 아이만의 방식이 보여요.",
+      kidUp:"아이의 에너지가 {g}점 높아요. ‘지금 말하고 싶구나’ 한 번만 알아봐 주면 수업 태도가 달라집니다."
+    },
+    sens:{
+      same:"오류와 완성도에 반응하는 정도가 비슷해요. 기준을 함께 정하기 쉬운 조합입니다.",
+      momUp:"어머니의 디테일 감각이 {g}점 예리해요. 한 번에 하나만 짚어 주는 것만으로 아이가 편해집니다.",
+      kidUp:"아이가 {g}점 더 민감해요. 틀린 것보다 시도한 것을 먼저 말해 주세요."
+    }
+  };
+
+  function typeBars(person, order, table, kind){
+    return '<div class="mini-axes" dir="ltr">' +
+      order.map(function(id){
+        var v = person.shares[id];
+        return '<div class="mini-axis">' +
+          '<span class="ma-name">' + table[id].emoji + ' ' + table[id].short + '</span>' +
+          '<span class="ma-bar"><span class="ma-fill" style="width:' + v + '%' + (kind==='kid' ? ';background:linear-gradient(90deg,#7FC8B8,#3EA391)' : '') + '"></span></span>' +
+          '<span class="ma-val">' + v + '%</span>' +
+        '</div>';
+      }).join("") + '</div>';
+  }
+
+  function flatNote(person, order){
+    var vals = order.map(function(id){ return person.shares[id]; });
+    var spread = Math.max.apply(null, vals) - Math.min.apply(null, vals);
+    if(spread > 8) return "";
+    return '<p class="axis-read" style="color:var(--muted);margin:8px 0 0">네 가지 결이 고르게 나타난 <b style="font-weight:700">균형형</b> 프로필이에요. 특정 결로 치우치지 않아서, 그중 가장 앞선 결을 대표로 보여 드립니다.</p>';
+  }
+
+  /* ---------- 카톡 전송용 요약 ---------- */
+  function summaryText(r){
+    var momT = MOM_TYPES[r.mom.type], kidT = KID_TYPES[r.kid.type];
+    var lv = compatLevel(r.compat);
+    var kidName = state.names.kid || "아이";
+    var momName = state.names.mom || "어머니";
+    var lines = [];
+    lines.push("[라피네코딩 기질·학습 성향 리포트]");
+    lines.push("결과 코드: " + r.code);
+    lines.push("아이: " + kidName + " / 어머니: " + momName);
+    lines.push("유형: 아이 " + r.kid.type + " " + kidT.name + " × 어머니 " + r.mom.type + " " + momT.name);
+    lines.push("궁합: " + lv.label + " (" + r.compat + "점)");
+    lines.push("");
+    AXES.forEach(function(a){
+      lines.push("· " + a.name + " — 아이 " + r.kid.scores[a.id] + " / 어머니 " + r.mom.scores[a.id]);
+    });
+    lines.push("");
+    lines.push("추천 트랙: " + r.track.primary + " (보조 " + r.track.sub + ")");
+    lines.push("무료 체험수업: " + r.track.trial.minutes + " · " + r.track.trial.mode);
+    lines.push("상담: 041-564-1101 / 카톡 https://pf.kakao.com/_NPJhG");
+    lines.push("라피네코딩컴퓨터학원 두정점 · 천안시 서북구 부성1길 19, 3층");
+    return lines.join("\n");
+  }
+
+  /* ---------- 결과 렌더 ---------- */
+  function renderResult(){
+    var r = state.result;
+    var momT = MOM_TYPES[r.mom.type], kidT = KID_TYPES[r.kid.type];
+    var lv = compatLevel(r.compat);
+    var momName = state.names.mom || "어머니";
+    var kidName = state.names.kid || "아이";
+
+    $("#resName").innerHTML = esc(kidName) + ' <span class="amp">×</span> ' + esc(momName);
+    $("#resDate").textContent = today() + " · 16문항 · 4개 축 · 결과 코드 " + r.code;
+
+    var gaps = {};
+    AXES.forEach(function(a){ gaps[a.id] = Math.round(Math.abs(r.mom.scores[a.id] - r.kid.scores[a.id])); });
+    var sameCnt = AXES.filter(function(a){ return gaps[a.id] < 17; }).length;
+    var farAxis = AXES.slice().sort(function(a,b){ return gaps[b.id]-gaps[a.id]; })[0];
+    var closeAxis = AXES.slice().sort(function(a,b){ return gaps[a.id]-gaps[b.id]; })[0];
+
+    /* ① 조합 */
+    $("#heroCard").innerHTML =
+      '<span class="card-tag coral">① 어머니 유형 × 아이 유형 궁합</span>' +
+      '<div class="hero-grid">' +
+        '<div class="hero-left">' +
+          '<div class="pair-row">' +
+            '<span class="pair-chip mom"><span class="pe">' + momT.emoji + '</span><span><span class="pl">어머니</span>' + momT.name + '</span></span>' +
+            '<span class="pair-x">×</span>' +
+            '<span class="pair-chip kid"><span class="pe">' + kidT.emoji + '</span><span><span class="pl">아이</span>' + kidT.name + '</span></span>' +
+          '</div>' +
+          '<h2 class="combo-title">' + r.combo.title + '</h2>' +
+          '<p class="combo-one">' + r.combo.one + '</p>' +
+        '</div>' +
+        '<div class="hero-right">' +
+          '<div class="gauge-row">' +
+            '<div class="gauge">' + gaugeSVG(r.compat) +
+              '<div class="gauge-txt"><div class="num">' + r.compat + '<small>점</small></div><div class="lab">궁합 온도</div></div>' +
+            '</div>' +
+            '<div class="gauge-side">' +
+              '<p class="gauge-level">' + lv.label + '</p>' +
+              '<p class="gauge-note">두 사람의 결이 얼마나 비슷한지를 보여 줘요. 낮을수록 다른 결이 많다는 뜻이고, 그 다름이 서로를 채워 주는 자리이기도 합니다.</p>' +
+            '</div>' +
+          '</div>' +
+          '<div class="hero-chips" style="margin:14px 0 0">' +
+            '<span class="chip">' + (sameCnt === 0 ? "네 축 모두 다른 결" : "결이 같은 축 " + sameCnt + "곳") + '</span>' +
+            '<span class="chip">가장 다른 축 · ' + farAxis.short + '</span>' +
+            '<span class="chip">가장 닮은 축 · ' + closeAxis.short + '</span>' +
+          '</div>' +
+        '</div>' +
+      '</div>';
+
+    /* ② 결과 코드 */
+    $("#codeCard").innerHTML =
+      '<span class="card-tag mint">② 결과 코드 · 상담 연동</span>' +
+      '<div class="code-wrap">' +
+        '<div class="code-left">' +
+          '<h2 class="card-title">이 코드 하나면 상담이 이어집니다</h2>' +
+          '<p class="card-sub" style="margin-bottom:12px">유형과 4축 방향이 코드에 담겨 있어요. 카톡으로 보내 주시면 원장이 라피네 클래스 학생 프로필에 그대로 입력합니다.</p>' +
+          '<div class="code-line">' +
+            '<span class="code-pill" id="codePill">' + r.code + '</span>' +
+            '<span class="code-type">' + kidT.emoji + ' ' + r.kid.type + ' × ' + momT.emoji + ' ' + r.mom.type + '</span>' +
+          '</div>' +
+          '<p class="code-note">' + codeReadable(r.code) + '</p>' +
+        '</div>' +
+        '<div class="code-btns no-print">' +
+          '<button type="button" class="btn btn-mint" id="btnCopySummary">📋 결과 요약 복사 (카톡 상담 전송용)</button>' +
+          '<button type="button" class="btn btn-ghost" id="btnCopyCode">🔗 결과 코드만 복사</button>' +
+        '</div>' +
+      '</div>';
+
+    /* ③④ 기질 카드 */
+    $("#momTypeCard").innerHTML =
+      '<span class="card-tag coral">어머니의 기질</span>' +
+      '<div class="pair-row" style="margin-bottom:10px">' +
+        '<span class="pair-chip mom"><span class="pe">' + momT.emoji + '</span><span><span class="pl">어머니</span>' + momT.name + '</span></span>' +
+      '</div>' +
+      '<p class="combo-one" style="margin-bottom:10px"><b>' + momT.tagline + '</b></p>' +
+      '<p class="axis-read" style="margin-top:0">' + momT.essence + '</p>' +
+      typeBars(r.mom, MOM_ORDER, MOM_TYPES, "mom") + flatNote(r.mom, MOM_ORDER) +
+      '<ul class="ticks" style="margin-top:14px">' +
+        momT.strengths.map(function(s){ return '<li>' + s + '</li>'; }).join("") +
+      '</ul>' +
+      '<p class="axis-read" style="color:var(--muted)"><b style="color:var(--ink-2);font-weight:700">그 마음의 뿌리</b> — ' + momT.root + '</p>' +
+      '<p class="axis-read" style="color:var(--muted);margin-top:2px"><b style="color:var(--ink-2);font-weight:700">한 가지만 더하면</b> — ' + momT.style + '</p>';
+
+    $("#kidTypeCard").innerHTML =
+      '<span class="card-tag mint">아이의 기질</span>' +
+      '<div class="pair-row" style="margin-bottom:10px">' +
+        '<span class="pair-chip kid"><span class="pe">' + kidT.emoji + '</span><span><span class="pl">아이</span>' + kidT.name + '</span></span>' +
+      '</div>' +
+      '<p class="combo-one" style="margin-bottom:10px"><b>' + kidT.tagline + '</b></p>' +
+      '<p class="axis-read" style="margin-top:0">' + kidT.essence + '</p>' +
+      typeBars(r.kid, KID_ORDER, KID_TYPES, "kid") + flatNote(r.kid, KID_ORDER) +
+      '<ul class="ticks" style="margin-top:14px">' +
+        kidT.strengths.map(function(s){ return '<li>' + s + '</li>'; }).join("") +
+      '</ul>' +
+      '<p class="axis-read" style="color:var(--muted)"><b style="color:var(--ink-2);font-weight:700">그 마음의 뿌리</b> — ' + kidT.root + '</p>' +
+      '<p class="axis-read" style="color:var(--muted);margin-top:2px"><b style="color:var(--ink-2);font-weight:700">잘 통하는 말</b> — ' + kidT.style + '</p>';
+
+    /* ⑤ 4축 차트 */
+    $("#axisCard").innerHTML =
+      '<span class="card-tag mint">③ 어머니 vs 아이 4축 비교</span>' +
+      '<h2 class="card-title">어디서 같고, 어디서 다른가요</h2>' +
+      '<p class="card-sub">같은 자리에 있으면 결이 비슷하고, 벌어져 있으면 서로 다른 방식으로 움직인다는 뜻이에요.</p>' +
+      '<div class="axis-layout">' +
+        '<div class="radar-col">' +
+          '<div class="legend"><span class="l-mom"><i></i>어머니 · ' + esc(momName) + '</span><span class="l-kid"><i></i>아이 · ' + esc(kidName) + '</span></div>' +
+          '<div class="radar-box">' + radarSVG(r.mom.scores, r.kid.scores) + '</div>' +
+        '</div>' +
+        '<div class="axis-col">' +
+      AXES.map(function(a){
+        var m = r.mom.scores[a.id], k = r.kid.scores[a.id];
+        var g = gaps[a.id];
+        var cls = g < 17 ? "same" : (g <= 33 ? "near" : "far");
+        var gtxt = g < 17 ? "같은 결" : g + "점 차이";
+        var read = AXIS_READ[a.id][g < 17 ? "same" : (m > k ? "momUp" : "kidUp")].replace("{g}", g);
+        var left = Math.min(m,k), width = Math.abs(m-k);
+        return '<div class="axis-block">' +
+          '<div class="axis-head"><span class="axis-name">' + a.name + '</span><span class="axis-gap ' + cls + '">' + gtxt + '</span></div>' +
+          '<div class="axis-poles"><span>' + a.low + '</span><span>' + a.high + '</span></div>' +
+          '<div class="axis-track"><div class="axis-rail">' +
+            '<div class="axis-line"></div>' +
+            '<div class="axis-link" style="left:' + left + '%;width:' + width + '%"></div>' +
+            '<div class="axis-dot mom" style="left:' + m + '%"></div>' +
+            '<div class="axis-dot kid" style="left:' + k + '%"></div>' +
+          '</div></div>' +
+          '<p class="axis-read">' + read + '</p>' +
+        '</div>';
+      }).join("") +
+      '<p class="axis-read" style="color:var(--muted);border-top:1px dashed var(--line);padding-top:12px;margin-top:2px">' +
+        '네 축 모두 ‘높음’이 좋은 것이 아니에요. 왼쪽과 오른쪽은 서로 다른 강점이고, 차이가 크다는 건 배울 점이 많다는 뜻입니다.' +
+      '</p>' +
+        '</div>' +
+      '</div>';
+
+    /* ⑥ 속마음 통역기 */
+    $("#transCard").innerHTML =
+      '<span class="card-tag">④ 부딪히기 쉬운 지점</span>' +
+      '<h2 class="card-title">1:1 속마음 통역기</h2>' +
+      '<p class="card-sub">같은 장면을 두 사람이 어떻게 다르게 보고 있는지 나란히 놓았어요. 둘 다 잘 되길 바라는 마음이고, 보이는 지점만 다를 뿐이에요.</p>' +
+      '<div class="translate">' +
+        '<div class="bubble mom"><div class="who">어머니의 시선</div><p>“' + r.combo.momView + '”</p></div>' +
+        '<div class="bubble kid"><div class="who">아이의 시선</div><p>“' + r.combo.kidView + '”</p></div>' +
+      '</div>' +
+      '<p class="axis-read" style="background:#FBF7F0;border-radius:12px;padding:12px 14px;margin:0 0 16px"><b style="color:var(--ink);font-weight:700">부딪히는 지점</b> — ' + r.combo.clash + '</p>' +
+      '<div class="fix-title"><span class="bar"></span>이렇게 바꿔 말해 보세요</div>' +
+      r.combo.dialogs.map(function(d){
+        return '<div class="dialog">' +
+          '<div class="say bad"><span class="mk">✕</span><span><span class="lbl">BEFORE · 그대로 나가기 쉬운 말</span><span class="q">' + d.before + '</span></span></div>' +
+          '<div class="say good"><span class="mk">✓</span><span><span class="lbl">AFTER · 이렇게 바꿔 보세요</span><span class="q"><em>' + d.after + '</em></span></span></div>' +
+        '</div>';
+      }).join("") +
+      '<p class="axis-read" style="color:var(--muted);margin-top:4px"><b style="color:var(--ink-2);font-weight:700">집에서의 한마디 팁</b> — ' + r.combo.bridge + '</p>';
+
+    /* ⑦ 수업 + 가정 */
+    $("#planCard").innerHTML =
+      '<span class="card-tag mint">⑤ 원장의 처방전</span>' +
+      '<h2 class="card-title">수업에서는, 집에서는</h2>' +
+      '<p class="card-sub">같은 아이를 두 자리에서 같은 방향으로 도와주는 것이 핵심이에요.</p>' +
+      '<div class="panel class">' +
+        '<div class="panel-head"><span class="pe">🎓</span>수업 시간엔 이렇게 이끌게요</div>' +
+        '<ul class="ticks">' + r.combo.classGuide.map(function(t){ return '<li>' + t + '</li>'; }).join("") + '</ul>' +
+      '</div>' +
+      '<div class="panel home">' +
+        '<div class="panel-head"><span class="pe">🏡</span>가정에선 딱 이렇게만 해 주세요 · 10분</div>' +
+        '<div class="routine">' + r.combo.home.map(function(h){
+          return '<div class="routine-item"><span class="t">' + h.t + '</span><span class="rt">' + h.text + '</span></div>';
+        }).join("") + '</div>' +
+      '</div>';
+
+    /* ⑧ 추천 트랙 + 24주 커리큘럼 */
+    var tr = r.track;
+    $("#trackCard").innerHTML =
+      '<span class="card-tag mint">⑥ 아이 기질에 맞는 트랙 · 24주 커리큘럼</span>' +
+      '<h2 class="card-title">어디서 시작하면 좋을까요</h2>' +
+      '<p class="card-sub">아이 기질을 기준으로 24주(6단계 · 4주 단위) 계획을 짰어요. 중간에 바뀌어도 괜찮습니다.</p>' +
+      '<div class="track-hero">' +
+        '<div class="track-main">' +
+          '<div class="track-kicker">추천 시작 트랙</div>' +
+          '<p class="track-name">' + tr.primary + '</p>' +
+          '<p class="track-why">' + tr.why + '</p>' +
+        '</div>' +
+        '<div class="track-alt"><b>보조 트랙</b>' + tr.sub + '</div>' +
+      '</div>' +
+      '<div class="stage-flow">' +
+        tr.weeks.map(function(w, i){ return '<span class="' + (i === 0 ? "on" : "") + '">' + w.n + ' · ' + w.weeks + '</span>'; }).join("") +
+      '</div>' +
+      '<div class="stage-list">' +
+        tr.weeks.map(function(w){
+          return '<div class="stage">' +
+            '<div class="stage-top"><span class="stage-idx">' + w.n + '</span><span class="stage-name">' + w.name + '</span><span class="stage-weeks">' + w.weeks + '</span></div>' +
+            '<p class="stage-goal">' + w.goal + '</p>' +
+            '<ul class="stage-acts">' + w.acts.map(function(a){ return '<li>' + a + '</li>'; }).join("") + '</ul>' +
+            '<div class="stage-out">' + w.out + '</div>' +
+          '</div>';
+        }).join("") +
+      '</div>';
+
+    /* ⑨ 무료 체험수업 매칭 */
+    $("#trialCard").innerHTML =
+      '<span class="card-tag coral">⑦ 무료 체험수업 매칭</span>' +
+      '<div class="trial-grid">' +
+        '<div>' +
+          '<span class="trial-badge">⏱ ' + tr.trial.minutes + ' · ' + tr.trial.mode + '</span>' +
+          '<h2 class="trial-title">' + esc(kidName) + '에게 맞는 체험수업 방식</h2>' +
+          '<p class="trial-sub">같은 20~30분이라도 아이 기질에 따라 진행이 달라야 체험수업이 의미가 있어요.</p>' +
+          '<ul class="trial-steps">' +
+            tr.trial.steps.map(function(s){
+              return '<li class="trial-step"><span class="tt">' + s.t + '</span><span class="tx">' + s.text + '</span></li>';
+            }).join("") +
+          '</ul>' +
+        '</div>' +
+        '<div class="trial-point">' +
+          '<b>원장이 보는 이 조합의 포인트</b>' +
+          '<p>' + tr.trial.point + '</p>' +
+          '<p style="margin-top:10px;color:var(--muted);font-size:11.8px">체험수업 예약 시 결과 코드 <b style="color:var(--coral-deep)">' + r.code + '</b>를 알려 주시면, 아이 유형에 맞춰 준비해 둡니다.</p>' +
+        '</div>' +
+      '</div>';
+
+    /* ⑩ 원장 가이드 */
+    $("#teacherBody").innerHTML =
+      '<div class="card">' +
+        '<span class="t-badge">원장 전용 · 학부모에게는 보이지 않게 사용하세요</span>' +
+        '<h2 class="card-title">상담 진행 가이드</h2>' +
+        '<p class="card-sub">' + momT.name + ' 어머니 × ' + kidT.name + ' 아이 조합에서 바로 쓸 수 있는 멘트입니다.</p>' +
+        '<div class="code-decode">' + codeReadable(r.code) +
+          '<span>궁합 ' + r.compat + '점 · ' + lv.label + ' / 추천 트랙 ' + tr.primary + ' (' + tr.trial.minutes + ' 체험)</span>' +
+        '</div>' +
+        '<div class="opening"><span class="qmark">“</span>' +
+          '<span id="openingText">' + fill(r.combo.counselor.opening) + '</span>' +
+        '</div>' +
+        '<div class="opening-foot no-print"><button type="button" class="copy-btn" id="btnCopy">📋 이 멘트 복사하기</button></div>' +
+        '<div class="t-grid">' +
+          '<div class="t-box"><h4>핵심 설득 포인트</h4><ul>' +
+            r.combo.counselor.points.map(function(t){ return '<li>' + t + '</li>'; }).join("") +
+          '</ul></div>' +
+          '<div class="t-box risk"><h4>이탈·흥미 상실 주의 신호</h4><ul>' +
+            r.combo.counselor.risks.map(function(t){ return '<li>' + t + '</li>'; }).join("") +
+          '</ul></div>' +
+        '</div>' +
+      '</div>';
+
+    /* 버튼 */
+    var cp = $("#btnCopy"); if(cp) cp.addEventListener("click", function(){ copyText($("#openingText").textContent, "상담 오프닝 멘트를 복사했어요"); });
+    var cs = $("#btnCopySummary"); if(cs) cs.addEventListener("click", function(){ copyText(summaryText(r), "상담 전송용 요약을 복사했어요"); });
+    var cc = $("#btnCopyCode"); if(cc) cc.addEventListener("click", function(){ copyText(r.code, "결과 코드 " + r.code + " 복사 완료"); });
+
+    /* 게이지 애니메이션 */
+    requestAnimationFrame(function(){
+      setTimeout(function(){
+        var arc = $("#gaugeArc");
+        if(arc){
+          var r2 = 54, c = 2*Math.PI*r2;
+          arc.style.strokeDashoffset = (c * (1 - r.compat/100)).toFixed(1);
+        }
+      }, 120);
+    });
+  }
+
+  /* ---------- 기타 동작 ---------- */
+  function copyText(text, msg){
+    function ok(){ toast(msg); }
+    function fallback(){
+      try{
+        var ta = document.createElement("textarea");
+        ta.value = text; ta.style.position = "fixed"; ta.style.top = "0"; ta.style.opacity = "0";
+        document.body.appendChild(ta); ta.focus(); ta.select();
+        document.execCommand("copy");
+        document.body.removeChild(ta);
+        ok();
+      }catch(e){ toast("복사가 되지 않았어요. 직접 선택해 주세요."); }
+    }
+    if(navigator.clipboard && window.isSecureContext !== false){
+      navigator.clipboard.writeText(text).then(ok, fallback);
+    } else { fallback(); }
+  }
+
+  var toastTimer = null;
+  function toast(msg){
+    var t = $("#toast");
+    t.textContent = msg;
+    t.classList.add("show");
+    clearTimeout(toastTimer);
+    toastTimer = setTimeout(function(){ t.classList.remove("show"); }, 2400);
+  }
+
+  /* ---------- 초기화 ---------- */
+  function init(){
+    $("#inpMom").addEventListener("input", function(){ state.names.mom = this.value.trim(); });
+    $("#inpKid").addEventListener("input", function(){ state.names.kid = this.value.trim(); });
+    $("#btnStart").addEventListener("click", startQuiz);
+    $("#btnBack").addEventListener("click", goBack);
+    $("#btnRetest").addEventListener("click", function(){ resetAll(true); });
+    $("#btnPrint").addEventListener("click", function(){ window.print(); });
+    $("#btnTeacher").addEventListener("click", function(){
+      var box = $("#teacherBox");
+      var open = box.classList.toggle("open");
+      this.setAttribute("aria-pressed", open ? "true" : "false");
+      $("#teacherLabel").textContent = open ? "원장님 상담 가이드 접기" : "원장님 상담 가이드 보기";
+      if(open){ setTimeout(function(){ box.scrollIntoView({ behavior:"smooth", block:"start" }); }, 180); }
+    });
+
+    $all("#sampleList .sample").forEach(function(el, i){
+      el.addEventListener("click", function(){ runSample(i); });
+    });
+
+    $("#inpKid").addEventListener("keydown", function(e){ if(e.key === "Enter") startQuiz(); });
+    $("#inpMom").addEventListener("keydown", function(e){ if(e.key === "Enter") startQuiz(); });
+  }
+
+  if(document.readyState === "loading"){
+    document.addEventListener("DOMContentLoaded", init);
+  } else { init(); }
+})();
+
+</script>
+</body>
+</html>
