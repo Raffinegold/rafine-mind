@@ -624,15 +624,19 @@ ul.ticks li::before{content:"";position:absolute;left:2px;top:8px;width:6px;heig
 
 /* 원장 가이드 확장 */
 .code-decode{
-  display:grid;gap:4px;background:#fff;border:1px solid #EFE2CF;border-radius:12px;
-  padding:11px 13px;margin-bottom:14px;font-size:12.2px;color:var(--ink-2);line-height:1.6;
+  display:block;background:#fff;border:1px solid #EFE2CF;border-radius:12px;
+  padding:12px 14px;margin-bottom:14px;font-size:12.2px;color:var(--ink-2);line-height:1.75;
 }
+.code-decode>span{display:block;margin-top:6px;padding-top:6px;border-top:1px dashed #F0E4D2}
+.code-decode code{white-space:nowrap}
 .code-decode b{color:#6E5B45;font-weight:800}
 .code-decode code{font-family:ui-monospace,Menlo,monospace;font-weight:700;color:var(--coral-deep)}
 
 @media print{
   .academy-foot{display:block;break-inside:avoid;page-break-inside:avoid}
   .code-pill{border-style:solid}
+  /* 원장 전용 가이드는 학부모 인쇄물에 나오지 않게 */
+  .teacher{display:none !important}
 }
 
 </style>
